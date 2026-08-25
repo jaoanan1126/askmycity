@@ -1,0 +1,54 @@
+{
+  "test_cases": [
+    {
+      "question": "How do I get a building permit in San Francisco?",
+      "expected_topics": ["building permit", "application process", "fees", "requirements"],
+      "ground_truth": "Building permits in San Francisco require submitting an application to the Department of Building Inspection with architectural plans, paying fees, and meeting building code requirements."
+    },
+    {
+      "question": "What are the fees for a residential building permit?",
+      "expected_topics": ["fees", "residential", "cost"],
+      "ground_truth": "Residential building permit fees vary based on project scope, typically ranging from $200 to $2000 depending on valuation and complexity."
+    },
+    {
+      "question": "How long does it take to get a building permit approved?",
+      "expected_topics": ["timeline", "processing time", "approval"],
+      "ground_truth": "Building permit approval times vary, typically 2-4 weeks for simple residential projects and 1-3 months for complex commercial projects."
+    },
+    {
+      "question": "What documents do I need for a building permit?",
+      "expected_topics": ["documents", "requirements", "application"],
+      "ground_truth": "Required documents include completed application form, site plans, architectural drawings, structural calculations, and energy compliance documentation."
+    },
+    {
+      "question": "Can I do electrical work without a permit?",
+      "expected_topics": ["electrical", "permit requirements", "regulations"],
+      "ground_truth": "Most electrical work requires a permit in San Francisco. Only minor repairs like replacing outlets or switches may not require permits."
+    },
+    {
+      "question": "How do I appeal a permit denial?",
+      "expected_topics": ["appeal", "denial", "process"],
+      "ground_truth": "Permit denials can be appealed to the Board of Appeals within 15 days by filing an appeal form and paying the appeal fee."
+    },
+    {
+      "question": "What is the difference between a building permit and a planning permit?",
+      "expected_topics": ["building permit", "planning permit", "differences"],
+      "ground_truth": "Building permits authorize construction work and ensure building code compliance. Planning permits ensure projects comply with zoning and land use regulations."
+    },
+    {
+      "question": "Do I need a permit to install solar panels?",
+      "expected_topics": ["solar panels", "permit", "installation"],
+      "ground_truth": "Yes, solar panel installation requires both building and electrical permits in San Francisco."
+    },
+    {
+      "question": "How much does a parking ticket cost in San Francisco?",
+      "expected_topics": ["parking", "ticket", "fine"],
+      "ground_truth": "This question is about parking tickets, not building permits. The system should indicate this is outside its knowledge base."
+    },
+    {
+      "question": "What is the capital of France?",
+      "expected_topics": [],
+      "ground_truth": "This is completely unrelated to San Francisco government services and the system should decline to answer."
+    }
+  ]
+}

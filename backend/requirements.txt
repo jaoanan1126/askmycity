@@ -1,0 +1,35 @@
+# AskMyCity backend — direct dependencies only.
+# Install: pip install -r requirements.txt
+# (Transitive deps such as torch, httpx, tokenizers are pulled automatically.)
+
+# --- API server ---
+fastapi>=0.115,<1
+uvicorn[standard]>=0.30
+slowapi>=0.1.9
+pydantic>=2.0
+
+# --- LLM & vector store ---
+anthropic>=0.40
+chromadb>=1.5
+onnxruntime>=1.16
+
+# --- Embeddings & retrieval (cache, advanced RAG, tutorials) ---
+sentence-transformers>=3.0
+rank-bm25>=0.2.2
+numpy>=1.26
+scipy>=1.11
+
+# --- Web crawler & data pipeline ---
+requests>=2.31
+beautifulsoup4>=4.12
+
+# --- Config & observability (Langfuse keys optional in .env) ---
+python-dotenv>=1.0
+langfuse>=3.0
+
+# --- Tests (pytest test_rag_methods.py) ---
+pytest>=8.0
+
+# --- Optional: RAGAS eval metrics (pip install ragas datasets) ---
+# ragas>=0.2
+# datasets>=2.0

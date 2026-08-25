@@ -1,0 +1,44 @@
+
+Zoning Regulations in San Francisco
+
+San Francisco Zoning Districts:
+
+Residential Districts:
+- RH-1: Single-family homes
+- RH-2: Two-family homes
+- RH-3: Three-family homes
+- RM: Mixed residential (up to 6 units)
+
+Commercial Districts:
+- NC: Neighborhood commercial
+- C-3: Downtown commercial
+- PDR: Production, distribution, repair
+
+Height Limits:
+- Residential areas: 40 feet (varies by district)
+- Commercial corridors: 40-65 feet
+- Downtown: Up to 550 feet (special approval)
+
+Setback Requirements:
+- Front yard: 5-15 feet (varies)
+- Rear yard: 25% of lot depth
+- Side yard: 4 feet minimum
+
+Parking Requirements:
+- Residential: 1 space per unit (some exceptions)
+- Commercial: Varies by use
+- Transit-oriented areas: Reduced requirements
+
+Variances:
+- Apply to Board of Appeals
+- Public hearing required
+- Fee: $500-2000
+- 30-60 day process
+
+Contact Planning Department:
+49 South Van Ness Ave, Suite 1400
+Phone: 415-558-6378
+Email: planning@sfgov.org
+
+Check zoning for your property:
+sf.gov/check-zoning-my-property

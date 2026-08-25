@@ -1,0 +1,31 @@
+SOURCE_URL: https://sf.gov/apply-building-permit-affordable
+SEED: otc_interior_remodel
+DEPTH: 2
+
+ServiceApply for your Affordable Housing and Development Agreement onlineYou can now submit some building permit applications online.Department of Building InspectionWhat to doWe are currently accepting new and revised online permit applications for 100% affordable housing projects and Development Agreement projects.
+Development Agreement projects have a legal agreement with the City and a project sponsor that are approved by the Board of Supervisors and the Mayor.
+We also accept ADU applications online and building permit applications for some small businesses that qualify for 30-day review.
+1. Check what you need to apply for a building permitYou will need property and construction details to fill out our building permit application. Review everything you need.
+2. Prepare your plansIf your permit needs architectural plans, follow these rules to create PDFs of your plans or addenda.
+PDFs must be editable. Do not submit locked, password-protected, encrypted, or “restricted” documents.
+Each upload must be less than 350 MB. You may upload multiple documents.
+Title blocks must have your project address, sheet count, and sheet name.
+Every sheet must have your signature and stamp. Use a scanned graphic signature with a PDF stamp.
+You must upload all required documents and your complete plan set. It takes longer to process incomplete plans or applications without supporting documents.
+3. Add our Back Check pageYou must add our Back Check Page PDF to submit plans in Bluebeam.
+Add our Back Check Page to your plans.
+4. Provide your priority confirmation letterIf your project qualifies for the specific priority criteria above, you will need a letter from the City department you are working with. You will upload this letter with your application.
+If you have not received a priority confirmation letter, email your partner at the City to get one.
+5. Apply for your permitTo apply for a building permit, we will ask you about:
+Your project team
+The location or existing building information
+Your project plan
+Construction details
+You will also need to upload your plans and priority confirmation letter and agree to our legal terms.
+If you are applying for a revision to an issued permit, you must provide the building permit application number for the issued permit.
+ApplyWe will email you a copy of your submission.
+6. We will contact youWe will contact you after we review your application.
+If we need additional information, we will email you.
+If we can process your application with the information you provide, we will invite you to a new Bluebeam project. Find out how the City uses Bluebeam, our plan review software, to review plans.
+Thank you for your patience.
+RelatedIn-house permitsGet your small business permits with a 30-day reviewOver-the-Counter (OTC) permitsSubmit construction addenda for your Site PermitContact usEmailDBI EPR Intakedbi.epr@sfgov.org
