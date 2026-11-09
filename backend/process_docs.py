@@ -39,6 +39,7 @@ MAX_WORDS = 180         # hard cap (~230 tokens + header stays under 256)
 MIN_SECTION_WORDS = 40  # smaller sections are merged into the next one
 OVERLAP_WORDS = 25      # carried into the next chunk of the SAME section
 MAX_TOKENS = 256        # embedding model's window, header included
+MAX_HEADER_TOKENS = 64  # longer "Title › Section" headers are shortened
 # Long PDFs are reports/studies that would crowd out how-to pages in search.
 # Each PDF page with text is one section, so this counts pages with text.
 MAX_PDF_PAGES = 20
@@ -51,10 +52,23 @@ def _tokens(text: str) -> int:
     """Token count using the same tokenizer as the embedding model."""
     global _tokenizer
     if _tokenizer is None:
-        _tokenizer = ONNXMiniLM_L6_V2().tokenizer
+        embedding_function = ONNXMiniLM_L6_V2()
+        # .tokenizer only reads the model files from disk; embedding one
+        # string makes chromadb download them first on a fresh machine.
+        embedding_function(["download"])
+        _tokenizer = embedding_function.tokenizer
         _tokenizer.no_truncation()
         _tokenizer.no_padding()
     return len(_tokenizer.encode(text).ids)
+
+
+def shorten_header(header: str) -> str:
+    """Trim a header to MAX_HEADER_TOKENS so the body always has room."""
+    words = header.split()
+    while len(words) > 1 and _tokens(" ".join(words) + " …") > MAX_HEADER_TOKENS:
+        words.pop()
+    shortened = " ".join(words)
+    return shortened if shortened == header else f"{shortened} …"
 
 
 def fit_to_token_limit(header: str, body: str) -> list[str]:
@@ -146,7 +160,7 @@ def chunk_page(page: dict, slug: str) -> list[dict]:
     title = page["title"] or slug
     chunks = []
     for section in merge_small_sections(page["sections"]):
-        header = f"{title} › {section['heading']}" if section["heading"] else title
+        header = shorten_header(f"{title} › {section['heading']}" if section["heading"] else title)
         for body in chunk_section(section["paragraphs"]):
             for piece in fit_to_token_limit(header, body):
                 chunks.append({"header": header, "section": section["heading"], "body": piece})
@@ -189,8 +203,9 @@ def process_all_documents() -> int:
         if page.get("doc_type") == "pdf" and len(page["sections"]) > MAX_PDF_PAGES:
             skipped_pdfs.append(page["title"])
             continue
-        slug = path.stem.split("__")[0]
-        all_chunks.extend(chunk_page(page, slug))
+        # The full stem ("<slug>__<url hash>") keeps chunk IDs unique when two
+        # URLs share a path, e.g. sf.gov/x.pdf and media.api.sf.gov/x.pdf.
+        all_chunks.extend(chunk_page(page, path.stem))
     if skipped_pdfs:
         print(f"Skipped {len(skipped_pdfs)} PDFs over {MAX_PDF_PAGES} pages: {skipped_pdfs}\n")
 

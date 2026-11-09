@@ -163,26 +163,35 @@ class Robots:
 
     Follows RFC 9309: a 4xx response (other than 429) means the site has
     no robots.txt, so nothing is disallowed. Network errors, 429 and 5xx
-    raise, because we never crawl blind.
+    raise, because we never crawl blind. A failed lookup is remembered, so
+    a struggling host isn't asked again for every URL.
     """
 
     def __init__(self, session: requests.Session):
         self.session = session
         self._rules: dict[str, RobotFileParser] = {}
+        self._failures: dict[str, str] = {}
 
     def allows(self, url: str) -> bool:
         host = urlparse(url).netloc
+        if host in self._failures:
+            raise RuntimeError(self._failures[host])
         if host not in self._rules:
-            response = self.session.get(f"https://{host}/robots.txt",
-                                        timeout=REQUEST_TIMEOUT_SECONDS)
+            try:
+                response = self.session.get(f"https://{host}/robots.txt",
+                                            timeout=REQUEST_TIMEOUT_SECONDS)
+            except requests.RequestException as e:
+                self._failures[host] = f"robots.txt for {host} unavailable ({e})"
+                raise RuntimeError(self._failures[host]) from e
             rules = RobotFileParser()
             if response.status_code == 200:
                 rules.parse(response.text.splitlines())
             elif 400 <= response.status_code < 500 and response.status_code != 429:
                 rules.parse([])
             else:
-                raise RuntimeError(f"robots.txt for {host} unavailable "
-                                   f"(HTTP {response.status_code})")
+                self._failures[host] = (f"robots.txt for {host} unavailable "
+                                        f"(HTTP {response.status_code})")
+                raise RuntimeError(self._failures[host])
             self._rules[host] = rules
         return self._rules[host].can_fetch(USER_AGENT, url)
 
@@ -207,11 +216,12 @@ def _has_block_ancestor(el: Tag, root: Tag) -> bool:
     return False
 
 
-def parse_page(html: bytes) -> dict:
+def parse_page(html: bytes, base_url: str = SITE) -> dict:
     """
-    Extract the title and heading-based sections from an sf.gov page.
+    Extract the title, heading-based sections and PDF links from an sf.gov page.
 
-    Returns {"title": str, "sections": [{"heading": str, "paragraphs": [str]}]}
+    Returns {"title": str, "sections": [{"heading": str, "paragraphs": [str]}],
+             "pdf_links": [str]}
     where heading is "" for text before the first <h2>, "H2" or "H2 › H3".
     """
     soup = BeautifulSoup(html, "html.parser")
@@ -242,16 +252,22 @@ def parse_page(html: bytes) -> dict:
                 sections[-1]["paragraphs"].append(text)
 
     sections = [s for s in sections if s["paragraphs"]]
-    return {"title": title, "sections": sections}
+    return {"title": title, "sections": sections,
+            "pdf_links": extract_pdf_links(main, base_url)}
 
 
-def extract_pdf_links(html: bytes, base_url: str) -> list[str]:
+def normalize_pdf_url(url: str) -> str:
+    """One spelling per file: sf.gov -> www.sf.gov, no query or fragment."""
+    parsed = urlparse(url)
+    host = "www.sf.gov" if parsed.netloc == "sf.gov" else parsed.netloc
+    return parsed._replace(netloc=host, query="", fragment="").geturl()
+
+
+def extract_pdf_links(main: Tag, base_url: str) -> list[str]:
     """Absolute URLs of PDFs linked from the page's main content."""
-    soup = BeautifulSoup(html, "html.parser")
-    main = soup.find("main") or soup
     links = []
     for a in main.find_all("a", href=True):
-        url = urljoin(base_url, a["href"].strip()).split("#")[0]
+        url = normalize_pdf_url(urljoin(base_url, a["href"].strip()))
         parsed = urlparse(url)
         if parsed.path.lower().endswith(".pdf") and parsed.netloc in PDF_HOSTS \
                 and url not in links:
@@ -259,12 +275,25 @@ def extract_pdf_links(html: bytes, base_url: str) -> list[str]:
     return links
 
 
+def _is_random_suffix(part: str) -> bool:
+    """
+    sf.gov appends a random 7-character suffix to some file names
+    (_l3tFiXs, _589lGbh). Real name parts like Rev2024, Phase2A or
+    1234567 must be kept.
+    """
+    return (len(part) == 7 and part.isalnum()
+            and any(c.isdigit() for c in part) and not part.isdigit()
+            and any(c.islower() for c in part)
+            and not re.match(r"[A-Z][a-z]{2}", part))
+
+
 def pdf_title(url: str) -> str:
     """'.../Table_1A-A_-_Building_Permit_Fees_2026.pdf' -> 'Table 1A-A - Building Permit Fees 2026'"""
     name = unquote(Path(urlparse(url).path).name)
     name = re.sub(r"\.pdf$", "", name, flags=re.IGNORECASE)
-    # sf.gov appends a random 7-character suffix to some file names (_l3tFiXs)
-    name = re.sub(r"_(?=[A-Za-z]*\d)[A-Za-z0-9]{7}$", "", name)
+    stem, _, last = name.rpartition("_")
+    if stem and _is_random_suffix(last):
+        name = stem
     return _clean(name.replace("_", " "))
 
 
@@ -289,20 +318,35 @@ def parse_pdf(content: bytes) -> list[dict]:
 def _get_allowed(session: requests.Session, robots: Robots, url: str,
                  headers: dict) -> Optional[requests.Response]:
     """
-    GET that checks robots.txt on every redirect hop. None if disallowed.
+    Streaming GET that checks robots.txt on every redirect hop and never
+    leaves PDF_HOSTS. None if robots.txt disallows the URL.
     Waits REQUEST_DELAY_SECONDS before each request actually sent.
     """
     for _ in range(MAX_REDIRECTS + 1):
+        if urlparse(url).netloc not in PDF_HOSTS:
+            raise RuntimeError(f"redirected outside allowed hosts: {url}")
         if not robots.allows(url):
             return None
         time.sleep(REQUEST_DELAY_SECONDS)
         response = session.get(url, headers=headers, timeout=REQUEST_TIMEOUT_SECONDS,
-                               allow_redirects=False)
+                               allow_redirects=False, stream=True)
         if response.status_code in (301, 302, 303, 307, 308):
             url = urljoin(url, response.headers["Location"])
             continue
         return response
     raise RuntimeError(f"more than {MAX_REDIRECTS} redirects")
+
+
+def _read_capped(response: requests.Response, max_bytes: int) -> Optional[bytes]:
+    """Body of a streamed response, or None as soon as it exceeds max_bytes."""
+    if int(response.headers.get("Content-Length") or 0) > max_bytes:
+        return None
+    content = bytearray()
+    for block in response.iter_content(chunk_size=64 * 1024):
+        content.extend(block)
+        if len(content) > max_bytes:
+            return None
+    return bytes(content)
 
 
 def _word_count(page: dict) -> int:
@@ -377,7 +421,7 @@ def crawl(urls: dict[str, str], out_dir: Path, previous_dir: Optional[Path]) -> 
                 shutil.copy2(prev_file, pages_dir / prev["file"])
                 manifest_pages[url] = prev
                 for pdf in prev.get("pdf_links", []):
-                    pdf_links.setdefault(pdf, category)
+                    pdf_links.setdefault(normalize_pdf_url(pdf), category)
                 stats["unchanged"] += 1
                 print(f"{prefix} = unchanged  {url}")
                 continue
@@ -388,7 +432,7 @@ def crawl(urls: dict[str, str], out_dir: Path, previous_dir: Optional[Path]) -> 
                 print(f"{prefix} • not HTML  {url}")
                 continue
 
-            parsed = parse_page(response.content)
+            parsed = parse_page(response.content, url)
             if _word_count(parsed) < MIN_SECTION_WORDS_PER_PAGE:
                 stats["skipped_empty"] += 1
                 print(f"{prefix} • too little text  {url}")
@@ -406,7 +450,7 @@ def crawl(urls: dict[str, str], out_dir: Path, previous_dir: Optional[Path]) -> 
             (pages_dir / filename).write_text(
                 json.dumps(page, indent=2, ensure_ascii=False), encoding="utf-8")
 
-            links = extract_pdf_links(response.content, url)
+            links = parsed["pdf_links"]
             for pdf in links:
                 pdf_links.setdefault(pdf, category)
 
@@ -479,10 +523,12 @@ def crawl_pdfs(pdf_links: dict[str, str], session: requests.Session, robots: Rob
                 continue
             response.raise_for_status()
 
-            content = response.content
-            if len(content) > MAX_PDF_BYTES:
+            # Stop downloading as soon as the file passes the size limit
+            content = _read_capped(response, MAX_PDF_BYTES)
+            response.close()
+            if content is None:
                 stats["skipped_too_large"] += 1
-                print(f"{prefix} • too large ({len(content):,} bytes)  {url}")
+                print(f"{prefix} • too large (over {MAX_PDF_BYTES:,} bytes)  {url}")
                 continue
             if not content.startswith(b"%PDF"):
                 stats["skipped_empty"] += 1
