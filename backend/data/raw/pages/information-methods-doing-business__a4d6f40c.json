@@ -1,0 +1,82 @@
+{
+  "url": "https://www.sf.gov/information--methods-doing-business",
+  "category": "business",
+  "title": "Methods of Doing Business",
+  "sections": [
+    {
+      "heading": "",
+      "paragraphs": [
+        "Info Page",
+        "The following information is taken from Black’s Law Dictionary, Revised Fourth Edition. It is not intended to provide exact legal definitions under California’s law or to supplant the need to consult an attorney."
+      ]
+    },
+    {
+      "heading": "Business Trust",
+      "paragraphs": [
+        "As distinguished from a joint-stock company, a pure “business trust” is one in which the managers are principals, and the share holders are cestuis que trust (those who have a right to a beneficial interest in and out of an estate the legal title to which is vested in another)."
+      ]
+    },
+    {
+      "heading": "CoPartnership",
+      "paragraphs": [
+        "A partnership (a voluntary contract between two or more competent persons to place their money, effects, labor, and skill, or some or all of them, in lawful commerce or business, with the understanding that there shall be a proportional sharing of the profits and losses between them)."
+      ]
+    },
+    {
+      "heading": "Corporation",
+      "paragraphs": [
+        "An artificial person or legal entity created by or under the authority of the laws of a state or nation, composed, in some rare instances, of a single person and his successors, being the incumbent of a particular office, but ordinarily consisting of an association of numerous individuals, who subsist as a body politic under a special denomination, which is regarded in law as having a personality and existence distinct from that of its several members, and which is, by the same authority, vested with the capacity of continuous succession, irrespective of changes in its membership, either in perpetuity or for a limited term of years, and of acting as a unit or single individual in the matters relating to the common purpose of the association, within the scope of the powers and authorities conferred upon such bodies by law."
+      ]
+    },
+    {
+      "heading": "General Partnership",
+      "paragraphs": [
+        "A partnership in which the parties carry on all their trade and business, whatever it may be, for the joint benefit and profit of all the parties concerned, whether the capital stock be limited or not, or the contributions thereto be equal or in equal percentages."
+      ]
+    },
+    {
+      "heading": "Individual",
+      "paragraphs": [
+        "A single person as distinguished from a group or class."
+      ]
+    },
+    {
+      "heading": "Married Couple",
+      "paragraphs": [
+        "One of the great domestic relationships; being that of two unmarried persons, lawfully joined in marriage, by which, at common law, the legal existence of one spouse is incorporated with another spouse."
+      ]
+    },
+    {
+      "heading": "Joint Venture",
+      "paragraphs": [
+        "A commercial or maritime enterprise undertaken by several persons jointly; a limited partnership, - not limited in the statutory sense as to the liability of the partners, but as to its scope and duration."
+      ]
+    },
+    {
+      "heading": "Limited Partnership",
+      "paragraphs": [
+        "A partnership consisting of one or more general partners, jointly and severally responsible as ordinary partners, and by whom the business is conducted, and one or more special partners, contributing in cash payments as a specific sum as capital to the common stock, and who are not liable for the debts of the partnership beyond the debts of the partnership beyond the fund so contributed."
+      ]
+    },
+    {
+      "heading": "Unincorporated Association",
+      "paragraphs": [
+        "This term is applied to a group of people who act together in a common enterprise and for a common purpose."
+      ]
+    },
+    {
+      "heading": "Limited Liability Company (LLC)",
+      "paragraphs": [
+        "US business structure type that is relatively recent. It combines corporation limited personal liability with partnership or sole proprietorship single taxation. Each shareholder files own separate tax return. Profits and tax benefits are split any way the stockholder and shareholder entities choose. LLC tax return is informational for the taxation authorities."
+      ]
+    },
+    {
+      "heading": "Limited Liability Partnership (LLP)",
+      "paragraphs": [
+        "To prevent liability as a partner for the negligent acts caused by any other partners or any one else not under his or her command, one enters into this type of US partnership."
+      ]
+    }
+  ],
+  "fetched_at": "2026-11-09T18:45:14+00:00",
+  "content_hash": "1de4d484352128e4"
+}

@@ -1,0 +1,41 @@
+{
+  "url": "https://www.sf.gov/information--current-island-construction-impacts",
+  "category": "permits",
+  "title": "Learn about construction impacts to transit and transportation on-Island",
+  "sections": [
+    {
+      "heading": "",
+      "paragraphs": [
+        "Info Page",
+        "Information about current transit and transportation impacts associated with ongoing Treasure and Yerba Buena Islands construction activities."
+      ]
+    },
+    {
+      "heading": "MUNI 25 bus route and stop changes",
+      "paragraphs": [
+        "The MUNI 25-Treasure Island bus route and stops change due to construction and traffic re-routing on both Treasure and Yerba Buena Islands.",
+        "Find current MUNI-25 route, stop and schedule information."
+      ]
+    },
+    {
+      "heading": "Street closures - Treasure Island",
+      "paragraphs": [
+        "Current Treasure Island streets closed to vehicles, pedestrians and cyclists are:",
+        "Clipper Cove Ave. closed between Seven Seas Ave. and Avenue H",
+        "Avenue H closed between 4th St. and 9th St.",
+        "Avenue M closed between 10th St. and 13th St."
+      ]
+    },
+    {
+      "heading": "Street closures and traffic detours - Yerba Buena Island",
+      "paragraphs": [
+        "Learn about ongoing Yerba Buena Island detours in place through 2027 .",
+        "Current Yerba Buena Island streets closed to vehicles, pedestrians and cyclists are:",
+        "Treasure Island Road closed south of Macalla Road",
+        "Hillcrest Road closed between TI Road and Forest Road Detour Road"
+      ]
+    }
+  ],
+  "fetched_at": "2026-11-09T18:44:31+00:00",
+  "content_hash": "991fee3eaff92119"
+}

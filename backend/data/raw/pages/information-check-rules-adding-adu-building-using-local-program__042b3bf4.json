@@ -1,0 +1,47 @@
+{
+  "url": "https://www.sf.gov/information--check-rules-adding-adu-building-using-local-program",
+  "category": "permits",
+  "title": "Check rules for adding an ADU to a building using the Local Program",
+  "sections": [
+    {
+      "heading": "",
+      "paragraphs": [
+        "Info Page",
+        "If you are building an ADU with the Local Program, follow these rules",
+        "These rules only apply to ADUs in the Local program . California state law affects whether we can subject some ADUs to rent stabilization."
+      ]
+    },
+    {
+      "heading": "Rent Ordinance for new ADUs",
+      "paragraphs": [
+        "Your new units will be subject to the Rent Ordinance if:",
+        "You are building a Local program ADU",
+        "You are adding an ADU to an existing building that already has a rental unit subject to the Rent Ordinance",
+        "You request a waiver for your project",
+        "The Rent Ordinance regulates evictions and rents. See more from the SF Rent Board .",
+        "You must register these units with a Regulatory Agreement called a Costa Hawkins Agreement. Here is a template for a Costa Hawkins Agreement."
+      ]
+    },
+    {
+      "heading": "Waivers",
+      "paragraphs": [
+        "Depending on your property and ADU plans, you may need a Waiver to build your ADU. A waiver is an exception to a Planning Code requirement.",
+        "For ADUs added to existing buildings, we grant waivers or partial waivers for requirements for:",
+        "Density (or the amount of residential units on a property)",
+        "Open space (or the amount of outdoor useable space per unit)",
+        "Rear yard (or the amount of back yard)",
+        "Exposure (or the amount of windows that a unit has or amount of open area that it’s facing onto)",
+        "For ADUs added to new constriction, we grant waivers for density requirements only.",
+        "We do not grant waivers for ceiling height, ventilation, fire safety, and exits. These are Building Code requirements. See more info in EG-05 and FS-05 ."
+      ]
+    },
+    {
+      "heading": "Other activities",
+      "paragraphs": [
+        "You may need to work with the Rent Board on other actions ."
+      ]
+    }
+  ],
+  "fetched_at": "2026-11-09T18:44:26+00:00",
+  "content_hash": "2058648b20b524cf"
+}

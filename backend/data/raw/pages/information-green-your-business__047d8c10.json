@@ -1,0 +1,46 @@
+{
+  "url": "https://www.sf.gov/information--green-your-business",
+  "category": "business",
+  "title": "Green your business",
+  "sections": [
+    {
+      "heading": "",
+      "paragraphs": [
+        "Info Page",
+        "Make your business better for the environment. Save money, improve employee health, and attract customers."
+      ]
+    },
+    {
+      "heading": "Environmental programs › San Francisco Green Business Program",
+      "paragraphs": [
+        "The City of SF promotes businesses that take extra steps to help protect our environment. Green Businesses can also get extra rebates for green purchases."
+      ]
+    },
+    {
+      "heading": "Environmental programs › EnergyAccess SF",
+      "paragraphs": [
+        "Get a free energy assessment and help getting rebates, zero or low-interest financing, and equipment upgrades."
+      ]
+    },
+    {
+      "heading": "Environmental programs › Reusable Foodware for Restaurants and Cafes",
+      "paragraphs": [
+        "Get up to $700 of free reusable foodware."
+      ]
+    },
+    {
+      "heading": "Environmental programs › Automatic Dishwashing Grant",
+      "paragraphs": [
+        "Grants of up to $1,500 toward leasing or buying automatic dishwashers, to help food service businesses build reusable foodware infrastructure for on-site dining."
+      ]
+    },
+    {
+      "heading": "Environmental laws",
+      "paragraphs": [
+        "San Francisco has several key environmental laws affecting businesses. Review the details at SF Environment."
+      ]
+    }
+  ],
+  "fetched_at": "2026-11-09T18:44:54+00:00",
+  "content_hash": "351c632b7aaac7a4"
+}

@@ -1,0 +1,95 @@
+{
+  "url": "https://www.sf.gov/information--check-commercial-construction-requirements",
+  "category": "permits",
+  "title": "Check commercial construction requirements",
+  "sections": [
+    {
+      "heading": "",
+      "paragraphs": [
+        "Info Page",
+        "Check our required processes to apply for a building permit for a commercial project."
+      ]
+    },
+    {
+      "heading": "Cannabis",
+      "paragraphs": [
+        "If your project includes the sale, distribution, or on-site consumption of cannabis, follow this guide to cannabis permitting."
+      ]
+    },
+    {
+      "heading": "Chain stores or formula retail",
+      "paragraphs": [
+        "Follow this guide for permitting a chain store in San Francisco."
+      ]
+    },
+    {
+      "heading": "Change of use",
+      "paragraphs": [
+        "Changes of use depend on the zoning district and any other Special Use District overlays. Some changes of use can be processed over the counter. If your project requires neighborhood notification or a conditional use authorization at the Planning Commission, it will have to be reviewed in-house.",
+        "If you are changing the use of the property, you must fill out our Affidavit for Formula Retail Establishments.",
+        "See more guidance in the Small Business Portal and check your zone in this tool ."
+      ]
+    },
+    {
+      "heading": "Child care facility",
+      "paragraphs": [
+        "Fill out a drop-off and pick-up management plan for a new child care facility or school.",
+        "This is only required if your child care facility or school will have 30 or more students or a location 1,500 square feet or greater.",
+        "Upload it with your building permit application or bring it to your appointment."
+      ]
+    },
+    {
+      "heading": "Commercial Tenant improvements",
+      "paragraphs": [
+        "All tenant improvements require building permits.",
+        "Other agencies, including the Planning Department, Fire Department, and Health Department may need to review the permit depending on the scope of work.",
+        "Disabled Access Upgrade Compliance Checklist Package (For Existing Buildings Only)"
+      ]
+    },
+    {
+      "heading": "Planning Project Application (PRJ)",
+      "paragraphs": [
+        "If your project requires neighborhood notification or any land use entitlements (such as a Variance or Conditional Use Authorization) , you must fill out a Project Application (PRJ) .",
+        "Download it and fill it out. Upload it with your building permit application or bring it to your appointment."
+      ]
+    },
+    {
+      "heading": "Restaurants",
+      "paragraphs": [
+        "All new restaurants must follow steps with the Planning review process, the Health Department’s permitting process, SFPUC, and building permits.",
+        "The City has 2 categories of restaurants:",
+        "Limited Restaurants where there are no alcoholic beverages served on-site",
+        "Restaurants which allow alcoholic beverages to be served on-site",
+        "Changing your business to a Limited Restaurant or Restaurant is considered a change of use.",
+        "Forms for restaurants",
+        "Preliminary screening for restaurants, mobile food facilities, and related uses",
+        "Read our Permit and Inspection Services guidelines for restaurant alterations or new construction (IS G-25)",
+        "Affidavit for Formula Retail Establishments",
+        "SFPUC Checklist"
+      ]
+    },
+    {
+      "heading": "Water use",
+      "paragraphs": [
+        "Fill out water use forms ."
+      ]
+    },
+    {
+      "heading": "Wireless providers",
+      "paragraphs": [
+        "You must get land use approval for a wireless project in San Francisco. Follow these steps to install or modify a wireless service facility.",
+        "For modifications to existing facilities that are considered an eligible facility under Section 6409(a) of the Middle Class Tax Relief and Job Creation Act of 2012, applicants must submit the following in addition to a Building Permit Application and Plans:",
+        "PRJ application for Planning",
+        "Photo simulations",
+        "Radio Frequency report",
+        "Department of Public Health approval letter",
+        "Coverage maps",
+        "A written 6409 request letter",
+        "For new sites, a Conditional Use Authorization (CUA) from the Planning Department may be required.",
+        "Email CPC.Wireless@sfgov.org with questions and to determine if you need a CUA."
+      ]
+    }
+  ],
+  "fetched_at": "2026-11-09T18:44:21+00:00",
+  "content_hash": "32f1212d8c462262"
+}

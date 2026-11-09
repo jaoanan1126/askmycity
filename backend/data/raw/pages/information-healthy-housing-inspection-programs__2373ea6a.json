@@ -1,0 +1,41 @@
+{
+  "url": "https://www.sf.gov/information--healthy-housing-inspection-programs",
+  "category": "permits",
+  "title": "Healthy housing inspection programs",
+  "sections": [
+    {
+      "heading": "",
+      "paragraphs": [
+        "Info Page",
+        "We inspect apartments, hotels, and emergency shelters to make sure they are safe, healthy, and free of vermin.",
+        "Report a vermin issue or health hazard in your building."
+      ]
+    },
+    {
+      "heading": "Apartment inspections",
+      "paragraphs": [
+        "We inspect apartments in buildings with 3 or more units. We look for vermin infestations and other health hazards in:",
+        "Common areas",
+        "Yards",
+        "Garbage storage areas",
+        "Lobbies",
+        "We also inspect homes for asthma patients and families with lead-poisoned children."
+      ]
+    },
+    {
+      "heading": "Hotel and emergency shelter inspections",
+      "paragraphs": [
+        "We inspect hotels and emergency shelters such as:",
+        "Single room occupancy hotels",
+        "Transitional homes",
+        "Tourist hotels",
+        "Family single room occupancies (SROs)",
+        "Drop-in centers",
+        "Drug treatment centers",
+        "We make sure conditions are safe and healthy for residents. We also provide training and resources to owners, residents, and the general public."
+      ]
+    }
+  ],
+  "fetched_at": "2026-11-09T18:44:55+00:00",
+  "content_hash": "a69b50e217c592db"
+}

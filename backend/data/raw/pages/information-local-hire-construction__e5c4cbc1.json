@@ -1,0 +1,41 @@
+{
+  "url": "https://www.sf.gov/information--local-hire-construction",
+  "category": "permits",
+  "title": "Local Hire for Construction",
+  "sections": [
+    {
+      "heading": "",
+      "paragraphs": [
+        "Info Page",
+        "Read info and reports about the Local Hiring Policy for Construction in San Francisco.",
+        "The Office of Economic and Workforce Development (OEWD) administers the Local Hiring Policy for Construction.",
+        "The San Francisco Board of Supervisors adopted this policy in December 2010. It has since become one of the strongest pieces of legislation in the country to promote the hiring of local residents on locally sponsored projects."
+      ]
+    },
+    {
+      "heading": "Projects covered by the Local Hiring Policy",
+      "paragraphs": [
+        "Public Works or improvement projects with an engineer's estimate of $600,000 or more and advertised for bid on or after March 25, 2011 are covered by the Local Hiring Policy for Construction.",
+        "City-funded construction projects covered by the Policy can be found on the Office of Contracts Administration website."
+      ]
+    },
+    {
+      "heading": "Trade Exemptions",
+      "paragraphs": [
+        "The Trade Exemptions List designates trades for which the Policy shall not be applicable. Work hours for designated trades are exempt from the requirements. Please review the Criteria for Trade Exemption Summary for additional information."
+      ]
+    },
+    {
+      "heading": "Read the reports",
+      "paragraphs": [
+        "These reports detail the performance and impact of the Local Hiring Policy for Construction:",
+        "Local Hire for Construction Year 15 Report - 2026",
+        "Local Hire for Construction Year 14 Report - 2025",
+        "Local Hire for Construction Year 13 Report - 2024",
+        "Local Hire for Construction Year 12 Report - 2023"
+      ]
+    }
+  ],
+  "fetched_at": "2026-11-09T18:45:12+00:00",
+  "content_hash": "001452358614633e"
+}

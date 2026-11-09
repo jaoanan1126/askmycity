@@ -1,0 +1,58 @@
+{
+  "url": "https://www.sf.gov/information--development-construction-regulations-treasure-island",
+  "category": "permits",
+  "title": "Treasure Island development project construction regulations",
+  "sections": [
+    {
+      "heading": "",
+      "paragraphs": [
+        "Info Page",
+        "Learn about noise, dust, and hazardous materials control programs on the island."
+      ]
+    },
+    {
+      "heading": "Reporting concerns or complaints",
+      "paragraphs": [
+        "Find full contact information here for reporting concerns and complaints about development construction activity."
+      ]
+    },
+    {
+      "heading": "Noise reduction",
+      "paragraphs": [
+        "For all development construction contract agreements, the following noise reduction practices will be incorporated for the contractor’s implementation:",
+        "Provide enclosures and mufflers for stationary equipment, shroud or shield impact tools and install barriers around particularly noisy activities at the construction sites so that the line of sight between the construction activities and nearby sensitive receptor locations is blocked;",
+        "Use construction equipment with lower noise emission ratings whenever feasible, particularly for air compressors;",
+        "Provide sound-control devices on equipment no less effective than those provided by the manufacturer;",
+        "Locate stationary equipment, material stockpiles and vehicle staging areas as far as practicable from sensitive receptor locations;",
+        "Prohibit unnecessary idling of internal combustion engines;",
+        "Require applicable construction related vehicles and equipment to use designated truck routes to access the project sites;",
+        "Implement noise attenuation measures to the extent feasible which may include but are not limited to noise barriers or noise blankets. The placement of such attenuation measures shall be reviewed and approved the Director of Public Works prior to issuance of development permits for construction activities; and",
+        "Designate a Noise Disturbance Coordinator who shall be responsible for responding to complaints about noise during construction."
+      ]
+    },
+    {
+      "heading": "Building demolition - materials control",
+      "paragraphs": [
+        "Treasure Island Community Development (TICD)'s hazardous material abatement plan guides the abatement of any hazardous materials present in a building prior to structural demolition of the building.",
+        "Removal of asbestos-containing building materials is performed under a permit issued by the Bay Area Air District",
+        "View information on the Air District's Asbestos Demolition/Renovation Program"
+      ]
+    },
+    {
+      "heading": "Dust control",
+      "paragraphs": [
+        "In advance of DBI issuing TICD a demolition permit, DPH reviewed and approved a Dust Control Plan for the Yerba Buena Island and Treasure Island demolition projects, which provides specific work practice requirements to all contractors at the site. These include wetting practices and containment of storage piles to prevent visible dust and the migration of dust beyond the worksite.",
+        "The Dust Control Plan for Yerba Buena Island and Treasure Island requires TICD to use qualified third party environmental consultants to provide regular and variably scheduled worksite inspection of required dust control practices by contractors. Whenever the third party observes a deficiency in work practices, they must immediately inform the contractor superintendent onsite to correct those practices."
+      ]
+    },
+    {
+      "heading": "Particulate matter and dust monitoring",
+      "paragraphs": [
+        "The Dust Control Plan requires a third-party environmental consultant to use monitors with optical detection of specific-size particulate matter at several locations around the demolition site perimeter to continuously measure levels of particulate matter that are less than 10 microns in diameter. The monitoring serves as another means to ensure that contractor dust control practices are consistent over time, and to flag specific dates and times when dust control practices should be examined in order to implement improvements.",
+        "PM-10 readings above the established action level do not indicate an immediate health risk to the public. An elevated reading will flag one of two possibilities: 1) A date and time when dust control practices were not effective and should be examined in order to implement improvements or 2) A date and time when an environmental event unrelated to the job site affected all monitors at once. Such events may include the optical detection of fog mist (high humidity) rather than dust particles, or passing vehicle emissions from public roadways."
+      ]
+    }
+  ],
+  "fetched_at": "2026-11-09T18:44:36+00:00",
+  "content_hash": "e9d9b7bf6e34815f"
+}

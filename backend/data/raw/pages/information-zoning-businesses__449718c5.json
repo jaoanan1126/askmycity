@@ -1,0 +1,46 @@
+{
+  "url": "https://www.sf.gov/information--zoning-businesses",
+  "category": "planning",
+  "title": "Zoning for businesses",
+  "sections": [
+    {
+      "heading": "",
+      "paragraphs": [
+        "Info Page",
+        "Before you commit to a location, every location has zoning laws defining what kind of business can open there. The SF Planning Department enforces these zoning regulations (called the Planning Code), reviews projects and proposals for compliance, and issues certain permits."
+      ]
+    },
+    {
+      "heading": "Check zoning for an address › Contact a Permit Specialist",
+      "paragraphs": [
+        "Get one-on-one help from a Small Business Permit Specialist. They can help you understanding the zoning for a space you're considering.",
+        "In person at the Permit Center",
+        "By appointment, in person or by phone"
+      ]
+    },
+    {
+      "heading": "Check zoning for an address › Property Information Map",
+      "paragraphs": [
+        "The Planning Department’s online Property Information Map allows you to see what codes apply to your property and what permits may have been issued on your property in the past."
+      ]
+    },
+    {
+      "heading": "Check zoning for an address › Planning Information Center (PIC)",
+      "paragraphs": [
+        "Professional planners are available in person at the Permit Center to answer questions about permits, zoning and land use, neighborhood and area plans, and more.",
+        "You can email, call, or visit them in person at the Planning Information Center ."
+      ]
+    },
+    {
+      "heading": "Featured Resource › Priority Permit Processing Program",
+      "paragraphs": [
+        "The Priority Permit Processing Program (PPPP) streamlines the Conditional Use process for certain small and mid-sized business applications.",
+        "PPPP Projects are guaranteed:",
+        "A hearing date within 90 days of filing",
+        "Placement on the Planning Commission’s consent calendar"
+      ]
+    }
+  ],
+  "fetched_at": "2026-11-09T18:45:46+00:00",
+  "content_hash": "95e3a0cafa562429"
+}

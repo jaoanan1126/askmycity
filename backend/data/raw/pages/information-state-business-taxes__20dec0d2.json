@@ -1,0 +1,50 @@
+{
+  "url": "https://www.sf.gov/information--state-business-taxes",
+  "category": "business",
+  "title": "State business taxes",
+  "sections": [
+    {
+      "heading": "",
+      "paragraphs": [
+        "Info Page",
+        "Learn about the types of taxes your business may need to pay in California.",
+        "In addition to sales tax, California has over 30 special tax and fee programs. Which taxes apply to you and how you pay them depends on your business entity type. For more information on your business industry for tax and fee guides, visit the CA Department of Tax and Fee Administration ."
+      ]
+    },
+    {
+      "heading": "Examples of types of state taxes › Corporate Income Tax",
+      "paragraphs": [
+        "California’s corporate income tax applies to corporations. It is based on income earned in California.",
+        "Income from “pass-through\" entities like limited liability companies (LLCs), partnerships, and sole proprietorships is subject to the state’s tax on personal income."
+      ]
+    },
+    {
+      "heading": "Examples of types of state taxes › Franchise Tax",
+      "paragraphs": [
+        "California’s franchise tax applies to corporations, limited liability companies (LLCs), limited partnerships (LPs), and limited liability partnerships (LLPs)."
+      ]
+    },
+    {
+      "heading": "Examples of types of state taxes › Alternative Minimum Tax",
+      "paragraphs": [
+        "An alternative minimum tax (AMT) is intended to ensure wealthy taxpayers do not use loopholes to avoid paying taxes."
+      ]
+    },
+    {
+      "heading": "Examples of types of state taxes › Special Taxes and Fees",
+      "paragraphs": [
+        "The California Department of Tax and Fee Administration has a Business Tax and Fee Division. This division runs over 30 special tax and fee programs. These programs cover many different activities and transactions. Review which may apply to your business."
+      ]
+    },
+    {
+      "heading": "Tax by business type",
+      "paragraphs": [
+        "Tax types and rates vary by the business structure (e.g. LLC, S-Corp).",
+        "Tax codes change often.",
+        "Refer to the State of California Income Tax filing requirements by business ownership type to get the most up-to-date details."
+      ]
+    }
+  ],
+  "fetched_at": "2026-11-09T18:45:35+00:00",
+  "content_hash": "0e7f8ac9b5620e8f"
+}

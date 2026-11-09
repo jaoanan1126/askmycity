@@ -1,0 +1,88 @@
+{
+  "url": "https://www.sf.gov/information--get-information-about-your-cannabis-business-owners",
+  "category": "business",
+  "title": "Get information about your cannabis business owners",
+  "sections": [
+    {
+      "heading": "",
+      "paragraphs": [
+        "Info Page",
+        "The cannabis permit application asks for personal information and conviction history of all owners.",
+        "You will enter information about your business's owners when you apply for a permit. We will review every owner.",
+        "An owner can be:",
+        "a person or entity with an ownership interest of 20% or more of your business",
+        "the chief executive officer",
+        "members of the board of directors of a nonprofit",
+        "any person or entity that influences how your business will be run"
+      ]
+    },
+    {
+      "heading": "Personal information",
+      "paragraphs": [
+        "For every owner, you need to have:",
+        "Home address",
+        "Date and place of birth",
+        "Title in the cannabis business (like owner or CEO)",
+        "Percentage of ownership in the cannabis business",
+        "Name of current employer",
+        "If they have had a commercial cannabis license taken away in the last 3 years",
+        "Demographic data such as race, ethnicity, gender, income level, education (not mandatory)"
+      ]
+    },
+    {
+      "heading": "Conviction history",
+      "paragraphs": [
+        "In the application, you must tell us about serious, violent, drug trafficking, or fraud related convictions that any owners have. See the entire list of relevant convictions under Section 1615 (e) Discretionary Grounds for Denial .",
+        "When you get a background check through the FBI for the state application, you may discover out of state convictions.",
+        "If any owners have relevant convictions, we would like their:",
+        "Conviction date",
+        "Incarceration start and end dates",
+        "Probation start and end dates",
+        "Description of the offense, including the statute the conviction is under",
+        "These convictions could otherwise disqualify the business from getting a permit. But owners can prove that they are responsible enough to run a cannabis business.",
+        "You can upload a statement each owner has written for each conviction. Explain why you should get a cannabis business permit.",
+        "If available, you can upload a Certificate of Rehabilitation.",
+        "You can also upload reference letters from employers, instructors, or professional counselors. Date the letter and include your reference's contact information."
+      ]
+    },
+    {
+      "heading": "Business entities",
+      "paragraphs": [
+        "If another company or business entity owns 20% or more of your cannabis business, we need:",
+        "Name of the business entity",
+        "Trade name (if any)",
+        "Address of the business entity",
+        "Date the business entity was incorporated (if applicable)",
+        "Percentage of your cannabis business that business entity owns",
+        "Formation documents (if applicable)",
+        "An explanation of the ownership structure, if it's complex"
+      ]
+    },
+    {
+      "heading": "Equity Applicant businesses",
+      "paragraphs": [
+        "If you are applying as a verified Equity Applicant, you can be:",
+        "Sole owner",
+        "Own 40% of the business and be the CEO",
+        "Own at least 51% of the business",
+        "A board member of a non-profit cannabis business where the majority of the board also qualify as equity applicants",
+        "You must upload a description of how you meet the ownership requirements of the Equity Program. You must also upload any other material agreements in place for the existing ownership structure and operation of the business. These documents include, but are not limited to:",
+        "Management Agreements",
+        "Memorandums of Understanding",
+        "Dividend Sharing Agreements, etc."
+      ]
+    },
+    {
+      "heading": "Equity Incubator businesses",
+      "paragraphs": [
+        "If you are applying as an Equity Incubator, you must upload your Equity Incubator Agreement. This agreement must meet the Equity Incubator Agreement requirements .",
+        "You must upload any material agreements in place for the existing ownership structure and operation of your business. These documents include, but are not limited to:",
+        "Management Agreements",
+        "Memorandums of Understanding",
+        "Dividend Sharing Agreements, etc."
+      ]
+    }
+  ],
+  "fetched_at": "2026-11-09T18:44:48+00:00",
+  "content_hash": "acf8605fcce69beb"
+}

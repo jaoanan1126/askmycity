@@ -1,0 +1,79 @@
+{
+  "url": "https://www.sf.gov/step-by-step--business-associate-decision-tree",
+  "category": "business",
+  "title": "Business Associate Decision Tree",
+  "sections": [
+    {
+      "heading": "",
+      "paragraphs": [
+        "Step-by-step",
+        "This decision tree will help you determine if an entity is a “business associate” and requires a BAA."
+      ]
+    },
+    {
+      "heading": "Step 1: Will the vendor handle PHI as part of the work?",
+      "paragraphs": [
+        "This includes receiving, accessing, maintaining, collecting, or creating PHI.",
+        "If no, BAA not required.",
+        "If yes, go to Step 2."
+      ]
+    },
+    {
+      "heading": "Step 2: Is the department the vendor working with listed below?",
+      "paragraphs": [
+        "Departments include DPH, HSS, SFFD, CAT, TTX, or DOT.",
+        "If no, BAA not required.",
+        "If yes, go to Step 3."
+      ]
+    },
+    {
+      "heading": "Step 3: Do any HIPAA exceptions apply?",
+      "paragraphs": [
+        "Vendor is a healthcare provider receiving PHI only for treatment",
+        "OR",
+        "Vendor is a health plan receiving PHI only for payment",
+        "If yes, BAA not required.",
+        "If no, go to Step 4."
+      ]
+    },
+    {
+      "heading": "Step 4: Will the vendor carry out any HIPAA‑regulated activities using PHI?",
+      "paragraphs": [
+        "These are operational tasks that HIPAA specifically regulates, such as:",
+        "Claims processing or administration",
+        "Data analysis, processing, or administration",
+        "Utilization review",
+        "Quality assurance or patient safety activities",
+        "Billing, benefit management",
+        "Practice management or repricing services",
+        "If no, go to Step 5.",
+        "If yes, go to Step 6."
+      ]
+    },
+    {
+      "heading": "Step 5: Will the vendor provide professional or administrative services that use PHI?",
+      "paragraphs": [
+        "These are services HIPAA classifies as Business Associate functions, including:",
+        "Legal",
+        "Actuarial",
+        "Accounting or auditing",
+        "Consulting",
+        "Management or administrative support",
+        "Accreditation",
+        "Financial services",
+        "If no, BAA not required.",
+        "If yes, go to Step 6."
+      ]
+    },
+    {
+      "heading": "Step 6: Will the vendor need routine or ongoing access to PHI?",
+      "paragraphs": [
+        "Examples include cloud hosting, records storage vendors, HIEs, e‑prescribing gateways, or equipment maintenance on devices that store PHI.",
+        "If no, BAA not required.",
+        "If yes, BAA required."
+      ]
+    }
+  ],
+  "fetched_at": "2026-11-09T18:45:53+00:00",
+  "content_hash": "8a9389abfc21d1e5"
+}

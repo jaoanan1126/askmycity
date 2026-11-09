@@ -1,0 +1,41 @@
+{
+  "url": "https://www.sf.gov/location--san-francisco-permit-center",
+  "category": "permits",
+  "title": "San Francisco Permit Center",
+  "sections": [
+    {
+      "heading": "",
+      "paragraphs": [
+        "The Permit Center will be closed in honor of Veterans Day Wednesday, November 11, 2026.",
+        "Location",
+        "We are open for in-person Over the Counter permits and services.",
+        "San Francisco Permit Center",
+        "We offer in-person Over the Counter (OTC) permits and services for construction , business , and special events.",
+        "Over the Counter plan reviews until 4:30 PM, and general questions or seek assistance until 5:00 PM. For a quicker experience, we recommend arriving in the morning, as wait times tend to be shorter. Keep in mind that midday can get busy, leading to longer waits. Please note that queues may close early if we reach capacity. To make your visit smoother, check the current wait times at the Permit Center before you head over.",
+        "See our list of available in-person permits and services",
+        "In-House permits; larger and more complicated projects are submitted directly to the Department of Building Inspections. See instructions on how to submit In-House projects",
+        "The Permit Center uses QLess to manage customer lines and wait times."
+      ]
+    },
+    {
+      "heading": "Getting here",
+      "paragraphs": [
+        "Enter on South Van Ness and follow the signs."
+      ]
+    },
+    {
+      "heading": "Contact us › Address",
+      "paragraphs": [
+        "We are closed on public holidays. Plan Review and Print Center queues will close at 4:30pm, but payments will be accepted until 5pm."
+      ]
+    },
+    {
+      "heading": "Contact us › Email",
+      "paragraphs": [
+        "Other services"
+      ]
+    }
+  ],
+  "fetched_at": "2026-11-09T18:45:47+00:00",
+  "content_hash": "1f3c24cce64dd063"
+}

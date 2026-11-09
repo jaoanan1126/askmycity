@@ -1,0 +1,130 @@
+{
+  "url": "https://www.sf.gov/information--add-adu-details-your-plan-set",
+  "category": "permits",
+  "title": "Add ADU details to your plan set",
+  "sections": [
+    {
+      "heading": "",
+      "paragraphs": [
+        "Info Page",
+        "You must add details like street tree location to your plan sets for ADUs. See the complete list.",
+        "You must have all required details on your plan set.",
+        "If your plans do not show these details, it will take us longer to approve your ADU."
+      ]
+    },
+    {
+      "heading": "Title sheet",
+      "paragraphs": [
+        "Show:",
+        "Address and block and lot",
+        "Existing and proposed dwelling units",
+        "Existing and proposed occupancy classification",
+        "Existing and proposed building height, story count, and construction type"
+      ]
+    },
+    {
+      "heading": "Site plan",
+      "paragraphs": [
+        "Show:",
+        "Adjacent lots, and outlines for all their buildings",
+        "All buildings on the lot",
+        "The distance between the building’s existing walls, property lines, and other structures on the lot",
+        "The dimensions between the new unit’s walls and property lines",
+        "The direction of true north and project north",
+        "The width of the sidewalk from the front property line to the curb",
+        "The dimensions of usable open space, like decks, terraces and yards",
+        "If your project includes an expansion, include separate existing and proposed site plan drawings.",
+        "If your property has a front setback, include the required front setback, with landscaping, and permeable surface.",
+        "If you are removing parking, show the curb cuts to be removed and note “remove curb cut.\"",
+        "If you need official City maps of sidewalks and streets for property line information, see our Key Maps ."
+      ]
+    },
+    {
+      "heading": "Street trees",
+      "paragraphs": [
+        "Show the location of existing and proposed street trees.",
+        "If you are paying the in-lieu fee instead, add that note to the plans."
+      ]
+    },
+    {
+      "heading": "Floor plan",
+      "paragraphs": [
+        "On existing and proposed floor plans, show and label:",
+        "Street names, rooms, areas, exits and egresses",
+        "All existing units with the label “Existing Unit”",
+        "Each room and space’s use in the existing unit",
+        "Each ADU’s unit number and square footage",
+        "Each ADU’s room and window dimensions",
+        "All plumbing fixtures (including dishwashers, clothes washers, and hose bibs)",
+        "Laundry and storage locations",
+        "Vehicle and bicycle parking dimensions and outlines",
+        "Gas and electrical meters",
+        "Trash, recycling, and compost cart locations",
+        "Trash, recycling, and compost carts must be on private property, screened from public view, and not in an exit passageway."
+      ]
+    },
+    {
+      "heading": "Building elevations",
+      "paragraphs": [
+        "Show and label:",
+        "Each window dimensions, operation, material type, and fire rating",
+        "Windows that are next to the line openings of a property lot",
+        "Windows that are emergency escape and rescue openings (EEROs)",
+        "Include plan section detail of new windows if located on a public facing facade",
+        "If you are making exterior changes, also show and label:",
+        "Existing and proposed elevations for the face of the building you're working on",
+        "Existing and proposed exterior materials for new or replaced doors, windows, and finish",
+        "If you are making small changes for non-public facing facades, show partial elevations of the level on which you're proposing the work."
+      ]
+    },
+    {
+      "heading": "Section plans",
+      "paragraphs": [
+        "On separate drawings for existing and proposed sections, show and label:",
+        "Floor-to-ceiling heights at the level of the ADU",
+        "Excavation at the level of the ADU"
+      ]
+    },
+    {
+      "heading": "Multi-family ADUs",
+      "paragraphs": [
+        "Any building with more than 2 dwelling units must be reviewed by the SF Fire Department to fire safety.",
+        "If your building will have more than 2 dwelling units after you add an ADU, show these details on your plan sets."
+      ]
+    },
+    {
+      "heading": "Site plans",
+      "paragraphs": [
+        "Show and label:",
+        "The distance between the fire department connection and the nearest hydrant on your plans in feet",
+        "Proposed fire department connection",
+        "Low-pressure fire hydrants",
+        "Proposed fire underground service connection and backflow preventer",
+        "Sprinkler riser and required clearances"
+      ]
+    },
+    {
+      "heading": "Floor plans",
+      "paragraphs": [
+        "On existing and proposed floor plans show and label:",
+        "Exit(s) from all units, and their route to the public way",
+        "All emergency escape and rescue openings (EEROs), and their route to the public way",
+        "The travel path from each EERO location to the public way",
+        "The number of exits, their widths and separations, and the common path of travel distances",
+        "A way to compare the number of exits required by code with existing and proposed exits",
+        "The main fire department access point"
+      ]
+    },
+    {
+      "heading": "Fire alarms and sprinklers",
+      "paragraphs": [
+        "Show:",
+        "The location of the fire alarm control unit, and the fire alarm annunciator",
+        "Existing and proposed fire alarm systems and area of coverage",
+        "Existing and proposed sprinkler system and area of coverage"
+      ]
+    }
+  ],
+  "fetched_at": "2026-11-09T18:44:01+00:00",
+  "content_hash": "ce91adf1b1dd5893"
+}

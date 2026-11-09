@@ -1,0 +1,45 @@
+{
+  "url": "https://www.sf.gov/information--cannabis-distribution-business-operations",
+  "category": "business",
+  "title": "Cannabis distribution business operations",
+  "sections": [
+    {
+      "heading": "",
+      "paragraphs": [
+        "Info Page",
+        "If you transport cannabis between businesses, you must tell us how you will run your business.",
+        "We will ask you for the following information on the distributor operations form of the cannabis business application."
+      ]
+    },
+    {
+      "heading": "Storing cannabis",
+      "paragraphs": [
+        "We will ask for the types of businesses you will store cannabis for. We will also ask how you will store and separate batches of products for other businesses.",
+        "We will ask how you will store and separate batches of product for testing.",
+        "We will also ask how you will label and package your products. This includes when and where labeling will happen in your business."
+      ]
+    },
+    {
+      "heading": "Testing your cannabis",
+      "paragraphs": [
+        "You must test samples of your cannabis product before you can distribute them.",
+        "We will ask when you will arrange for testing after you receive a batch of cannabis product.",
+        "We will ask you to describe your batch sampling process. This includes:",
+        "Checking batch size",
+        "Incremental sampling",
+        "How you will prevent employees from touching either the tested cannabis or the sampling equipment",
+        "We will also ask you to list the steps for:",
+        "Recording cannabis sampling on video",
+        "Chain of custody for tested cannabis batches",
+        "Actions you take after cannabis is tested",
+        "For tested samples, we will ask what you will do:",
+        "If a test sample fails",
+        "If a test sample passes",
+        "For trace and trace",
+        "We will also ask how you will ensure that Certificates of Analysis will stay with the cannabis batches after testing."
+      ]
+    }
+  ],
+  "fetched_at": "2026-11-09T18:44:18+00:00",
+  "content_hash": "4f92417eb57f6158"
+}

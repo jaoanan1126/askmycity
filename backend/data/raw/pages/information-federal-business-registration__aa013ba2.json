@@ -1,0 +1,33 @@
+{
+  "url": "https://www.sf.gov/information--federal-business-registration",
+  "category": "business",
+  "title": "Federal business registration",
+  "sections": [
+    {
+      "heading": "",
+      "paragraphs": [
+        "Info Page",
+        "Most businesses must register with the US Internal Revenue Service (IRS) to obtain an Employer Identification Number (EIN)."
+      ]
+    },
+    {
+      "heading": "Employer Identification Number (EIN)",
+      "paragraphs": [
+        "An Employer Identification Number (EIN) is also known as a Federal Employer Identification Number (FEIN) or Federal Tax Identification Number. It is a unique nine digit number assigned by the Internal Revenue Service (IRS).",
+        "Generally, businesses need an EIN to pay employees and to file business tax returns.",
+        "Apply for an EIN",
+        "A sole proprietor without employees can use their Social Security Number or Individual Taxpayer ID Number (ITIN) instead of getting an EIN."
+      ]
+    },
+    {
+      "heading": "Individual Taxpayer Identification Number (ITIN)",
+      "paragraphs": [
+        "If you don't live in the US and don't have (or are not eligible for) a Social Security Number, you might need to get an Individual Taxpayer Identification Number (ITIN).",
+        "An ITIN is like an EIN. It allows business owners to comply with US tax laws.",
+        "Learn more about the ITIN or apply through the IRS."
+      ]
+    }
+  ],
+  "fetched_at": "2026-11-09T18:44:39+00:00",
+  "content_hash": "59f5e6f54c260892"
+}

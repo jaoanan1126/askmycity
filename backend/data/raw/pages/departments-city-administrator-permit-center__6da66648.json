@@ -1,0 +1,29 @@
+{
+  "url": "https://www.sf.gov/departments--city-administrator--permit-center",
+  "category": "permits",
+  "title": "Permit Center",
+  "sections": [
+    {
+      "heading": "",
+      "paragraphs": [
+        "Agency",
+        "A centralized service center for construction, special events, and business permitting.",
+        "The Permit Center will be closed in honor of Veterans Day Wednesday, November 11, 2026."
+      ]
+    },
+    {
+      "heading": "About",
+      "paragraphs": [
+        "On the second floor of 49 South Van Ness (49SVN), the new Permit Center provides a centralized place for construction, special events, and business permitting. The Permit Center streamlines key services for improving homes and properties, opening and running a business, and planning community events."
+      ]
+    },
+    {
+      "heading": "Contact information › Address",
+      "paragraphs": [
+        "We are closed on public holidays. Plan Review and Print Center queues will close at 4:30pm, but payments will be accepted until 5pm."
+      ]
+    }
+  ],
+  "fetched_at": "2026-11-09T18:43:41+00:00",
+  "content_hash": "c762b7242fb6d630"
+}

@@ -1,0 +1,65 @@
+{
+  "url": "https://www.sf.gov/information--insurance-small-business",
+  "category": "business",
+  "title": "Insurance for small business",
+  "sections": [
+    {
+      "heading": "",
+      "paragraphs": [
+        "Info Page",
+        "Insurance reduces risk in case of fires, accidents, thefts or other events you can't control."
+      ]
+    },
+    {
+      "heading": "Types of insurance coverage › Liability Insurance",
+      "paragraphs": [
+        "Any type of insurance policy that protects a person or business from the risk that they may be sued and held legally liable for something like malpractice, injury or negligence."
+      ]
+    },
+    {
+      "heading": "Types of insurance coverage › Property Insurance",
+      "paragraphs": [
+        "Insurance that pays the property owner or renter if there is damage or theft. Types of property insurance includes: homeowners, renters, flood, and earthquake insurance."
+      ]
+    },
+    {
+      "heading": "Types of insurance coverage › Workers’ Compensation (WC)",
+      "paragraphs": [
+        "If you have employees, you must provide Workers' Compensation Insurance. This is a state-sponsored system for workers who are injured or disabled on the job."
+      ]
+    },
+    {
+      "heading": "Types of insurance coverage › Business Interruption Insurance",
+      "paragraphs": [
+        "This can help a business when it loses income because of an event like a fire or natural disaster. You can add Business Interruption Insurance to your existing insurance package. You can't get it as a separate policy."
+      ]
+    },
+    {
+      "heading": "Types of insurance coverage › Auto Insurance",
+      "paragraphs": [
+        "Get auto insurance to reduce costs if you are in a car accident."
+      ]
+    },
+    {
+      "heading": "Types of insurance coverage › Home Office Insurance",
+      "paragraphs": [
+        "If you run your business from your home, check with your insurance company. Some homeowners' or renter' insurance doesn't cover business losses. If not, consider getting Home Office Insurance."
+      ]
+    },
+    {
+      "heading": "Types of insurance coverage › Directors and Officers Insurance",
+      "paragraphs": [
+        "This policy can protect directors and officers of larger companies against legal liability and costs from certain issues. These issues can include: unlawful acts, bad investment decisions, failure to maintain property, releasing confidential information, hiring and firing decisions, conflicts of interest, gross negligence, and many other scenarios."
+      ]
+    },
+    {
+      "heading": "Featured resource",
+      "paragraphs": [
+        "Guide to Commercial Insurance",
+        "From the California Department of Insurance"
+      ]
+    }
+  ],
+  "fetched_at": "2026-11-09T18:45:00+00:00",
+  "content_hash": "e18e82bf97fc8736"
+}

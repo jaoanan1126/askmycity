@@ -1,0 +1,53 @@
+{
+  "url": "https://www.sf.gov/step-by-step--contractors-vendors-volunteers-and-trainees",
+  "category": "business",
+  "title": "Contractors, vendors, volunteers, and trainees",
+  "sections": [
+    {
+      "heading": "",
+      "paragraphs": [
+        "Step-by-step",
+        "For a City employee that is sponsoring a non-City person working for DPH."
+      ]
+    },
+    {
+      "heading": "Verify your role",
+      "paragraphs": [
+        "Do you have a Disaster Service Worker (DSW) number? This is required to onboard a non-City person.",
+        "Yes: Go to step 2",
+        "No: Contact a supervising City employee and direct them to Getting started at DPH"
+      ]
+    },
+    {
+      "heading": "Review calendar",
+      "paragraphs": [
+        "Check the onboarding calendar for dates of when the account request form is due"
+      ]
+    },
+    {
+      "heading": "Get POI number",
+      "paragraphs": [
+        "Does the non-City person have a Person of Interest (POI) number?",
+        "Yes: Enter their POI number on the account request form in step 3",
+        "No: Download and fill out this POI request form Then email the completed form to dph.requestPOI@sfdph.org"
+      ]
+    },
+    {
+      "heading": "Complete account request form",
+      "paragraphs": [
+        "Once you get their POI number,",
+        "Download and fill out this account request form",
+        "Make sure these columns are also filled out: Column P (DSW/POI): The person's POI number Column U (DPH Email Account Needed): Yes, only if the person is approved to have a SFDPH email Column W (Epic Access Needed): Yes, only if the person is approved to have Epic access"
+      ]
+    },
+    {
+      "heading": "Email form",
+      "paragraphs": [
+        "Send the completed form to dph.onboarding@sfdph.org .",
+        "Once processed successfully, you will receive an email from SFDPH IT Services regarding their account statuses."
+      ]
+    }
+  ],
+  "fetched_at": "2026-11-09T18:45:55+00:00",
+  "content_hash": "0899ff3a56869b6f"
+}

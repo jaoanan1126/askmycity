@@ -1,0 +1,102 @@
+{
+  "url": "https://www.sf.gov/information--instructions-completing-film-permit-application",
+  "category": "permits",
+  "title": "Instructions for completing the film permit application",
+  "sections": [
+    {
+      "heading": "",
+      "paragraphs": [
+        "Info Page",
+        "Details about how to fill out the fields."
+      ]
+    },
+    {
+      "heading": "Using the form",
+      "paragraphs": [
+        "You must download the Film SF Use Agreement to your computer to fill it out.",
+        "You should also download the most recent version of Adobe Acrobat Reader if prompted."
+      ]
+    },
+    {
+      "heading": "Contact information › Contractor / Company Name",
+      "paragraphs": [
+        "Make sure this matches the contractor or company name that is on your insurance certificate ."
+      ]
+    },
+    {
+      "heading": "Contact information › On Location Contact",
+      "paragraphs": [
+        "This is the person who will be on location with the crew at all times. We must be provided with a cell number for this person so we can contact the crew while filming."
+      ]
+    },
+    {
+      "heading": "Production vehicle parking",
+      "paragraphs": [
+        "Include the quantity and size of each production vehicle that you plan on parking .",
+        "Note that we cannot provide parking for passenger vehicles with or without equipment. SFMTA may cite any passenger vehicles posted in parking spots that have been approved as equipment vehicle parking."
+      ]
+    },
+    {
+      "heading": "Locations page › Location #",
+      "paragraphs": [
+        "Each location is assigned a number and considered an \"entry\" for the purposes of this document.",
+        "Assign each location a number, in ascending order according to date and time of filming.",
+        "Note that we are unable to issue blanket permits. You will be required to outline all of your locations on these pages in order for your permit to be approved."
+      ]
+    },
+    {
+      "heading": "Locations page › Location address",
+      "paragraphs": [
+        "Next to the #, list the name of the location. For example a business name along with an address. If the location is a private residence, simply enter the address.",
+        "Include cross streets for street addresses when possible. If you would like to permit a city block, list \"X\" street between \"Y\" and \"Z\" streets."
+      ]
+    },
+    {
+      "heading": "Locations page › Date and day of week",
+      "paragraphs": [
+        "List the day and date you would like to film. For example, \"Friday 8/26/22.\"",
+        "If you are at the location more than one day consecutively, list \"Friday 8/26/22 - Sunday 8/28/22.\"",
+        "If filming at one location is not on consecutive dates, each day at the location should be listed as a separate location entry."
+      ]
+    },
+    {
+      "heading": "Locations page › INT/EXT/BOTH",
+      "paragraphs": [
+        "Select only one option, for interior filming, exterior filming, or both."
+      ]
+    },
+    {
+      "heading": "Locations page › Start and end times",
+      "paragraphs": [
+        "List times in standard format with \"am\" or \"pm.\" Please do not use military time.",
+        "Your start time should indicate what time crew and equipment will begin to arrive at the location, rather than what time filming will begin.",
+        "Your end time should indicate what time all crew and equipment will vacate the location, rather than what time filming will end."
+      ]
+    },
+    {
+      "heading": "Locations page › Summarized Scenes",
+      "paragraphs": [
+        "For all EXT scenes, describe the action taking place. For example, \"Man walks down sidewalk and bumps into friend.\" Or \"Woman chasing man down street while brandishing a gun.\""
+      ]
+    },
+    {
+      "heading": "Locations page › Other select filming activities to indicate",
+      "paragraphs": [
+        "# Cast & Crew On Location",
+        "Indicate if there will be any changes in personnel. For example: 2nd unit or 250 extras. Or, although your production has a 50 person crew only 10 will be at this location.",
+        "Parking Request",
+        "Indicate if you are requesting production vehicle parking at this location. Include a map of your parking diagram with your permit application.",
+        "Street Closure or Intermittent Traffic Control",
+        "Indicate if you are applying for a lane or street closure, or if intermittent traffic control (ITC) may be needed. We will work with you to determine if you need to close the street.",
+        "Wet Downs",
+        "Indicate if you will be wetting down any portion of the location.",
+        "Generator",
+        "Include the size of the generator you plan to use.",
+        "Special equipment",
+        "List any conditions which you feel should be noted on your permit. For example, we will have extras dressed as police officers for this scene."
+      ]
+    }
+  ],
+  "fetched_at": "2026-11-09T18:44:58+00:00",
+  "content_hash": "033c24f73a1435ae"
+}

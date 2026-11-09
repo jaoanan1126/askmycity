@@ -1,0 +1,108 @@
+{
+  "url": "https://www.sf.gov/information--cases-where-your-permit-free-or-you-dont-need-one",
+  "category": "permits",
+  "title": "Cases where your permit is free or you don't need one",
+  "sections": [
+    {
+      "heading": "",
+      "paragraphs": [
+        "Info Page",
+        "Food permits: You may be exempt if you're from certain organizations or operate on state or federal land."
+      ]
+    },
+    {
+      "heading": "No permit needed › Food donated by a permitted restaurant for a nonprofit event (if approved)",
+      "paragraphs": [
+        "If you are a charitable nonprofit hosting an approved community event and get your food donated from a permitted restaurant or market, you might not need a separate permit.",
+        "This special case is known as the “The Craven Act.\" The donating food facility is responsible for handling any problems or complaints.",
+        "People or places without a commercial kitchen and permit cannot donate food.",
+        "Fill out the waiver forms to find out if you qualify."
+      ]
+    },
+    {
+      "heading": "No permit needed › Food facilities on federal property",
+      "paragraphs": [
+        "The San Francisco Health Department does not issue permits on Federal property.",
+        "Federal Law governs these properties and the U.S. Public Health Services permits and conducts their own inspections.",
+        "If you have any questions or problems with these food facilities, reach out to the appropriate federal agency."
+      ]
+    },
+    {
+      "heading": "No permit needed › Food facilities on state property",
+      "paragraphs": [
+        "The San Francisco Health Department does not issue permits for facilities owned by the state and operated by state employees.",
+        "Private operators who rent space on state property still need a permit."
+      ]
+    },
+    {
+      "heading": "No permit needed › Food operations not defined as food facilities",
+      "paragraphs": [
+        "A permit will not be issued if the food facility is not defined as a Food Facility in the California Retail Food Code Section 113789(c) .",
+        "The Health Department can ask for information from your business to make a decision."
+      ]
+    },
+    {
+      "heading": "No permit needed › Complimentary incidental food",
+      "paragraphs": [
+        "If your main business isn't about serving food, you can give away simple safe snacks and drinks to waiting customers without a special permit.",
+        "For example, banks, salons, or auto shops that offer free coffee and pastries. But the snacks must come from a trusted source.",
+        "Only use throw-away or earth-friendly utensils. You can only have one coffee maker or hot water pot.",
+        "If you're unsure about giving out food at your business, call us at 415-252-3800."
+      ]
+    },
+    {
+      "heading": "No permit needed › Transitional (halfway) housing",
+      "paragraphs": [
+        "A permit is not needed for a facility that is not licensed or checked by the state and lets people use a shared kitchen to make their own food."
+      ]
+    },
+    {
+      "heading": "No permit needed › Vending machines",
+      "paragraphs": [
+        "You don't need a permit for vending machines if:",
+        "it only sells safe foods like bottled water, sodas, fruit, or packaged snacks like candy and cookies",
+        "there's no food that needs to be kept cold (below 41 degrees Fahrenheit) and could become unsafe"
+      ]
+    },
+    {
+      "heading": "No-fee permits › Charitable feeding programs",
+      "paragraphs": [
+        "A no-fee permit may be granted by the Director of Environmental Health on a case by case basis if:",
+        "the operation is owned and operated by a certified nonprofit, and",
+        "food is provided for free to people who face vulnerabilities in San Francisco, like low-income, unhoused, disabled, or older adults in San Francisco",
+        "The operation still has to meet minimal health requirements to provide safe food. How often they get health inspections depends on what kind of food they serve and how risky it is. For no-fee status, the majority of food must be donated as charitable feeding.",
+        "Examples include food banks and places that prepare and give out meals."
+      ]
+    },
+    {
+      "heading": "No-fee permits › Blind and disabled operators",
+      "paragraphs": [
+        "A no-fee permit may be granted to blind or disabled operators of food facilities who are sponsored by the Business Enterprise Program of the California Department of Rehabilitation."
+      ]
+    },
+    {
+      "heading": "No-fee permits › Veteran operators",
+      "paragraphs": [
+        "A no-fee permit may be granted to food facility operators who are veterans.",
+        "Operators must present proof of veteran status and write a letter to the Environmental Health Director asking for exemption from license fees.",
+        "Veterans are only exempt per California’s Business and Professions Code Section 16102 .",
+        "And so this does not apply to restaurants or facilities where food products are created or facilities where alcohol is sold."
+      ]
+    },
+    {
+      "heading": "No-fee permits › Food preparation and service facilities used only for child day care",
+      "paragraphs": [
+        "A no-fee permit may be granted if the center is not licensed by California Social Services.",
+        "The center may not need a permit if it is licensed by the state, per California Retail Food Code 113789."
+      ]
+    },
+    {
+      "heading": "No-fee permits › Food preparation and service facilities used for nutrition projects for older adults",
+      "paragraphs": [
+        "No-fee permits may be given to facilities funded through the San Francisco Commission on Aging for nutrition projects for older adults. This is per San Francisco Business Code."
+      ]
+    }
+  ],
+  "fetched_at": "2026-11-09T18:44:20+00:00",
+  "content_hash": "b97c6bd86eda08c1"
+}

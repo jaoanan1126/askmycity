@@ -1,0 +1,77 @@
+{
+  "url": "https://www.sf.gov/information--cannabis-manufacturing-business-operations",
+  "category": "business",
+  "title": "Cannabis manufacturing business operations",
+  "sections": [
+    {
+      "heading": "",
+      "paragraphs": [
+        "Info Page",
+        "If you make cannabis products, you must tell the Office of Cannabis how you will run your business.",
+        "We will ask you for the following information on the manufacturing operations form of the cannabis business application."
+      ]
+    },
+    {
+      "heading": "Manufacturing process",
+      "paragraphs": [
+        "We will ask what you plan on doing at your business, including:",
+        "Extraction",
+        "Packaging",
+        "Infusion of cannabis"
+      ]
+    },
+    {
+      "heading": "Extraction solvents",
+      "paragraphs": [
+        "If you will do extraction, we will ask about that process. We will also ask if you will use:",
+        "Volatile solvents (butane, hexane, or pentane)",
+        "Nonvolatile solvents or mechanical methods",
+        "Microbusinesses cannot use volatile solvents.",
+        "If you will use nonvolatile solvents, you must specify which ones you will use:",
+        "Ethanol",
+        "Food-grade butter",
+        "Oil",
+        "Water",
+        "Carbon dioxide",
+        "Various mechanical methods"
+      ]
+    },
+    {
+      "heading": "Packaging",
+      "paragraphs": [
+        "If you package cannabis products, we will ask you to upload a diagram of your packaging."
+      ]
+    },
+    {
+      "heading": "Infusion processes",
+      "paragraphs": [
+        "If you will infuse cannabis products, we will ask you to describe how you do infusion."
+      ]
+    },
+    {
+      "heading": "List your products",
+      "paragraphs": [
+        "We will ask what kinds of products you will manufacture. They include:",
+        "Flower",
+        "Pre-rolls",
+        "Edibles",
+        "Drinks",
+        "Extracts, such as tinctures, oils, shatter, or wax",
+        "Concentrates without solvents, such as kief, hash, rosin",
+        "Topicals, such as lotion",
+        "Capsules",
+        "Other",
+        "Cannabis manufacturers are not allowed to manufacture noncannabis products."
+      ]
+    },
+    {
+      "heading": "Reducing odors outside",
+      "paragraphs": [
+        "You must have ventilation so the public cannot smell cannabis from outside.",
+        "We will ask if you will use charcoal filters to vent air to the outside. We will also ask about other methods you will use to reduce odors."
+      ]
+    }
+  ],
+  "fetched_at": "2026-11-09T18:44:19+00:00",
+  "content_hash": "5a85c2508e49e644"
+}

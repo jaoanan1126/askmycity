@@ -1,0 +1,48 @@
+{
+  "url": "https://www.sf.gov/information--get-proof-you-can-operate-cannabis-business-your-location",
+  "category": "business",
+  "title": "Get proof you can operate a cannabis business at your location",
+  "sections": [
+    {
+      "heading": "",
+      "paragraphs": [
+        "Info Page",
+        "Cannabis business applicants must have permission to operate a cannabis business at their chosen location.",
+        "Upload your proof when you apply for your cannabis business permit. Required documents vary if you currently rent or own your location, or will rent or own in the future."
+      ]
+    },
+    {
+      "heading": "Currently rent",
+      "paragraphs": [
+        "Upload either:",
+        "Copy of your lease that contains authorization from your landlord for your intended cannabis activities .",
+        "Letter from your landlord that gives explicit authorization for your intended cannabis activities .",
+        "For example, if you will be applying as a cultivator, your landlord must give you authorization to grow cannabis at that address.",
+        "You also need the landowner’s legal name, phone number, email, and mailing address."
+      ]
+    },
+    {
+      "heading": "Will rent",
+      "paragraphs": [
+        "Upload a letter from your future landlord that gives explicit authorization for your intended cannabis activities .",
+        "For example, if you will be applying as a cultivator, your future landlord must give you authorization to grow cannabis at that address.",
+        "You also need the landowner’s legal name, phone number, email, and mailing address."
+      ]
+    },
+    {
+      "heading": "Currently own",
+      "paragraphs": [
+        "Upload a copy of your deed."
+      ]
+    },
+    {
+      "heading": "Will own",
+      "paragraphs": [
+        "Upload a signed letter from the current owner that says you intend to buy the property.",
+        "You also need the landowner’s legal name, phone number, email, and mailing address."
+      ]
+    }
+  ],
+  "fetched_at": "2026-11-09T18:44:49+00:00",
+  "content_hash": "b833cb51de829afe"
+}

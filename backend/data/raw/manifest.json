@@ -1,0 +1,1935 @@
+{
+  "crawled_at": "2026-11-09T18:49:20+00:00",
+  "source": "https://www.sf.gov/sitemap.xml",
+  "urls_selected": 145,
+  "stats": {
+    "saved": 145,
+    "unchanged": 0,
+    "skipped_empty": 0,
+    "skipped_robots": 0,
+    "failed": 0
+  },
+  "pages_per_category": {
+    "permits": 76,
+    "parking": 4,
+    "business": 61,
+    "planning": 2,
+    "public_works": 2
+  },
+  "pdf_stats": {
+    "saved": 77,
+    "unchanged": 0,
+    "skipped_empty": 8,
+    "skipped_robots": 18,
+    "skipped_too_large": 9,
+    "failed": 15
+  },
+  "failures": [
+    "https://media.api.sf.gov/documents/19_ApplicationForBuildingPermit_4-7_0524_ko.pdf: 403 Client Error: Forbidden for url: https://media.api.sf.gov/documents/19_ApplicationForBuildingPermit_4-7_0524_ko.pdf",
+    "https://media.api.sf.gov/documents/Special_Inspection_and_Structural_Observation_Form_2025.pdf: 403 Client Error: Forbidden for url: https://media.api.sf.gov/documents/Special_Inspection_and_Structural_Observation_Form_2025.pdf",
+    "https://sf.gov/sites/default/files/2022-06/Memo%20-%20One%20Time%20Outdoor%20Events%20with%20Extended%20Hours%20Criteria%20-%20FINAL%20VOTED%20120721_signed.pdf: 404 Client Error: Not Found for url: https://www.sf.gov/sites/default/files/2022-06/Memo%20-%20One%20Time%20Outdoor%20Events%20with%20Extended%20Hours%20Criteria%20-%20FINAL%20VOTED%20120721_signed.pdf",
+    "https://sf.gov/sites/default/files/2022-08/IS%20M-03.pdf: 428 Client Error:  for url: https://sf.gov/sites/default/files/2022-08/IS%20M-03.pdf",
+    "https://sf.gov/sites/default/files/2022-08/IS%20M-06.pdf: 428 Client Error:  for url: https://sf.gov/sites/default/files/2022-08/IS%20M-06.pdf",
+    "https://sf.gov/sites/default/files/2022-08/Shared%20Spaces%20Application%20Checklist.pdf: 428 Client Error:  for url: https://sf.gov/sites/default/files/2022-08/Shared%20Spaces%20Application%20Checklist.pdf",
+    "https://sf.gov/sites/default/files/2022-09/910%20Temp.%20Severance%20of%20Housing%20Services%20during%20Mandatory%20Seismic%20Retrofit%20Ch.%2065A.pdf: 428 Client Error:  for url: https://sf.gov/sites/default/files/2022-09/910%20Temp.%20Severance%20of%20Housing%20Services%20during%20Mandatory%20Seismic%20Retrofit%20Ch.%2065A.pdf",
+    "https://sf.gov/sites/default/files/2022-11/TIDG_TICD_CommunityMeetingPresentationOctober2022.pdf: 428 Client Error:  for url: https://sf.gov/sites/default/files/2022-11/TIDG_TICD_CommunityMeetingPresentationOctober2022.pdf",
+    "https://sf.gov/sites/default/files/2023-01/IS%20M-08.pdf: 428 Client Error:  for url: https://sf.gov/sites/default/files/2023-01/IS%20M-08.pdf",
+    "https://sf.gov/sites/default/files/2023-03/2023%20Local%20Hiring%20Policy%20Annual%20Report.pdf: 428 Client Error:  for url: https://sf.gov/sites/default/files/2023-03/2023%20Local%20Hiring%20Policy%20Annual%20Report.pdf",
+    "https://sf.gov/sites/default/files/2023-10/CravenAllowance.pdf: 428 Client Error:  for url: https://sf.gov/sites/default/files/2023-10/CravenAllowance.pdf",
+    "https://sf.gov/sites/default/files/2023-10/Solar%20APP%20PV%2BST%20Eligibility%20Chinese.pdf: 428 Client Error:  for url: https://sf.gov/sites/default/files/2023-10/Solar%20APP%20PV%2BST%20Eligibility%20Chinese.pdf",
+    "https://sf.gov/sites/default/files/2023-10/Solar%20APP%20PV%2BST%20Eligibility%20Spanish.pdf: 428 Client Error:  for url: https://sf.gov/sites/default/files/2023-10/Solar%20APP%20PV%2BST%20Eligibility%20Spanish.pdf",
+    "https://sf.gov/sites/default/files/2023-10/Solar%20APP%20PV%2BST%20Eligibility%20Tagalog.pdf: 428 Client Error:  for url: https://sf.gov/sites/default/files/2023-10/Solar%20APP%20PV%2BST%20Eligibility%20Tagalog.pdf",
+    "https://www.sf.gov/documents/40905/Film_SF_Use_Agreement_August_2026.pdf: cryptography>=3.1 is required for AES algorithm"
+  ],
+  "pages": {
+    "https://www.sf.gov/departments--city-administrator--permit-center": {
+      "file": "departments-city-administrator-permit-center__6da66648.json",
+      "category": "permits",
+      "etag": "\"qmp58ghj0q5mkr\"",
+      "last_modified": null,
+      "content_hash": "c762b7242fb6d630",
+      "pdf_links": []
+    },
+    "https://www.sf.gov/departments--city-administrator--public-works": {
+      "file": "departments-city-administrator-public-works__b096cbac.json",
+      "category": "public_works",
+      "etag": null,
+      "last_modified": null,
+      "content_hash": "a30a40369bed4711",
+      "pdf_links": []
+    },
+    "https://www.sf.gov/departments--department-building-inspection": {
+      "file": "departments-department-building-inspection__c6bdc324.json",
+      "category": "permits",
+      "etag": "\"n243f5d9j1653p\"",
+      "last_modified": null,
+      "content_hash": "ec9b629b9507eee7",
+      "pdf_links": [
+        "https://www.sf.gov/documents/9650/DBI_Staff_Directory.pdf"
+      ]
+    },
+    "https://www.sf.gov/departments--department-building-inspection--about": {
+      "file": "departments-department-building-inspection-about__7a01e146.json",
+      "category": "permits",
+      "etag": "\"jiex0dvrkw4wdh\"",
+      "last_modified": null,
+      "content_hash": "2adb842e10544e43",
+      "pdf_links": [
+        "https://www.sf.gov/documents/10100/DBI_Organizational_Chart.pdf",
+        "https://www.sf.gov/documents/9650/DBI_Staff_Directory.pdf",
+        "https://media.api.sf.gov/documents/DBI_Strategic_Plan_2025_Update_Final.pdf",
+        "https://www.sf.gov/sites/default/files/2024-08/DBI%20Strategic%20Plan%202024.pdf",
+        "https://media.api.sf.gov/documents/Internal_Audit_Final_Report_and_Appendices_Final.pdf"
+      ]
+    },
+    "https://www.sf.gov/departments--department-building-inspection--code-enforcement-dbi": {
+      "file": "departments-department-building-inspection-code-enforcement-dbi__cf24cf46.json",
+      "category": "permits",
+      "etag": "\"8ttzy6a9ix4o5n\"",
+      "last_modified": null,
+      "content_hash": "e95809192b27cc9e",
+      "pdf_links": [
+        "https://www.sf.gov/documents/9650/DBI_Staff_Directory.pdf",
+        "https://www.sf.gov/documents/37797/Code_Enforcement_Organizational_Chart-101326.pdf"
+      ]
+    },
+    "https://www.sf.gov/departments--department-building-inspection--inspection-services-dbi": {
+      "file": "departments-department-building-inspection-inspection-services-dbi__38a5f35b.json",
+      "category": "permits",
+      "etag": "\"e9c4bdgrdn52hw\"",
+      "last_modified": null,
+      "content_hash": "351a7204f73f5e90",
+      "pdf_links": [
+        "https://www.sf.gov/documents/9650/DBI_Staff_Directory.pdf"
+      ]
+    },
+    "https://www.sf.gov/departments--department-building-inspection--inspection-services-dbi--about": {
+      "file": "departments-department-building-inspection-inspection-services-dbi-about__6ffd8265.json",
+      "category": "permits",
+      "etag": "\"8zbhtab13f467z\"",
+      "last_modified": null,
+      "content_hash": "9cbe75eace6ab9d2",
+      "pdf_links": []
+    },
+    "https://www.sf.gov/departments--department-building-inspection--permit-services-dbi": {
+      "file": "departments-department-building-inspection-permit-services-dbi__7192c187.json",
+      "category": "permits",
+      "etag": "\"10n0frhazma5zlo\"",
+      "last_modified": null,
+      "content_hash": "5e0d3e23481674ca",
+      "pdf_links": [
+        "https://www.sf.gov/documents/9650/DBI_Staff_Directory.pdf"
+      ]
+    },
+    "https://www.sf.gov/departments--department-building-inspection--records-management-dbi": {
+      "file": "departments-department-building-inspection-records-management-dbi__d990dd99.json",
+      "category": "permits",
+      "etag": "\"ctakwjbgst4cqn\"",
+      "last_modified": null,
+      "content_hash": "f459151b3aaf6c33",
+      "pdf_links": [
+        "https://www.sf.gov/documents/9650/DBI_Staff_Directory.pdf"
+      ]
+    },
+    "https://www.sf.gov/departments--dph-business-office-contract-compliance-bocc": {
+      "file": "departments-dph-business-office-contract-compliance-bocc__81244072.json",
+      "category": "business",
+      "etag": "\"186tlatqyl54jol\"",
+      "last_modified": null,
+      "content_hash": "23c281ed05cf4550",
+      "pdf_links": []
+    },
+    "https://www.sf.gov/departments--office-economic-and-workforce-development--business-development": {
+      "file": "departments-office-economic-and-workforce-development-business-development__bbb68fe5.json",
+      "category": "business",
+      "etag": "\"75uk9y9lcl5e3h\"",
+      "last_modified": null,
+      "content_hash": "291b919f0cbabcf3",
+      "pdf_links": []
+    },
+    "https://www.sf.gov/departments--office-economic-and-workforce-development--office-small-business": {
+      "file": "departments-office-economic-and-workforce-development-office-small-business__a7c4db10.json",
+      "category": "business",
+      "etag": "\"7za40vfy1r760m\"",
+      "last_modified": null,
+      "content_hash": "ca66b51e06bdbdf9",
+      "pdf_links": []
+    },
+    "https://www.sf.gov/departments--office-economic-and-workforce-development--office-small-business--about": {
+      "file": "departments-office-economic-and-workforce-development-office-small-business-about__be1c477a.json",
+      "category": "business",
+      "etag": "\"vtnvn5d3wz47sg\"",
+      "last_modified": null,
+      "content_hash": "ed35c6a5452d3bd8",
+      "pdf_links": [
+        "https://media.api.sf.gov/documents/SBC_RESO_001-2022_Affirming_the_Commissions_Commitment_to_Racial_Equity_rv7tQ4B.pdf"
+      ]
+    },
+    "https://www.sf.gov/departments--sf-planning": {
+      "file": "departments-sf-planning__979de83a.json",
+      "category": "planning",
+      "etag": "W/\"1794247954\"",
+      "last_modified": "Mon, 09 Nov 2026 18:12:34 GMT",
+      "content_hash": "98026e484123df2f",
+      "pdf_links": []
+    },
+    "https://www.sf.gov/information--about-routine-housing-inspections": {
+      "file": "information-about-routine-housing-inspections__f7661cbe.json",
+      "category": "permits",
+      "etag": "\"go8n8ioc0e411u\"",
+      "last_modified": null,
+      "content_hash": "5ddd2d67ce04c744",
+      "pdf_links": []
+    },
+    "https://www.sf.gov/information--accessory-dwelling-units-adus": {
+      "file": "information-accessory-dwelling-units-adus__6fc17040.json",
+      "category": "permits",
+      "etag": "\"16ws0lsf65l4cf8\"",
+      "last_modified": null,
+      "content_hash": "c10803169716b9aa",
+      "pdf_links": [
+        "https://www.sf.gov/documents/7768/1020_LL_Declaration_re_ADU_Construction_3.25.pdf",
+        "https://www.sf.gov/documents/7730/1021_T_Request_for_ADU_Hearing_3.25.pdf"
+      ]
+    },
+    "https://www.sf.gov/information--ada-compliance-business": {
+      "file": "information-ada-compliance-business__ff72a15a.json",
+      "category": "business",
+      "etag": "\"y2tv0z3df24t99\"",
+      "last_modified": null,
+      "content_hash": "bc7b2b4bbf869810",
+      "pdf_links": []
+    },
+    "https://www.sf.gov/information--add-adu-details-your-plan-set": {
+      "file": "information-add-adu-details-your-plan-set__1efca8a8.json",
+      "category": "permits",
+      "etag": "\"1868nu1lfnz4k88\"",
+      "last_modified": null,
+      "content_hash": "ce91adf1b1dd5893",
+      "pdf_links": []
+    },
+    "https://www.sf.gov/information--adjusted-median-income-small-business-grants": {
+      "file": "information-adjusted-median-income-small-business-grants__3469a601.json",
+      "category": "business",
+      "etag": "\"26m1caftfj44vo\"",
+      "last_modified": null,
+      "content_hash": "fcba3b301ecdda35",
+      "pdf_links": []
+    },
+    "https://www.sf.gov/information--adjusted-median-income-small-business-storefront-grant": {
+      "file": "information-adjusted-median-income-small-business-storefront-grant__f3b7a368.json",
+      "category": "business",
+      "etag": "\"hyszxs8hdo44ur\"",
+      "last_modified": null,
+      "content_hash": "84d59eb4fa8dfc95",
+      "pdf_links": []
+    },
+    "https://www.sf.gov/information--benefits-being-legacy-business": {
+      "file": "information-benefits-being-legacy-business__ee860a68.json",
+      "category": "business",
+      "etag": "\"unxcqhh52q459m\"",
+      "last_modified": null,
+      "content_hash": "34b759458713ab9a",
+      "pdf_links": []
+    },
+    "https://www.sf.gov/information--building-construction-type-definitions": {
+      "file": "information-building-construction-type-definitions__e445813e.json",
+      "category": "permits",
+      "etag": "\"ttdtm92yx946qa\"",
+      "last_modified": null,
+      "content_hash": "3f9ef35a2f2658b6",
+      "pdf_links": []
+    },
+    "https://www.sf.gov/information--building-permits-business": {
+      "file": "information-building-permits-business__0b32c001.json",
+      "category": "permits",
+      "etag": "\"hiblwjczca4d9w\"",
+      "last_modified": null,
+      "content_hash": "d7853a1968f8e17a",
+      "pdf_links": []
+    },
+    "https://www.sf.gov/information--building-project-plans-full-permits": {
+      "file": "information-building-project-plans-full-permits__cbeedeee.json",
+      "category": "permits",
+      "etag": "\"tt6tvyilak4m7w\"",
+      "last_modified": null,
+      "content_hash": "fa99c7c8740fd63a",
+      "pdf_links": []
+    },
+    "https://www.sf.gov/information--business-personal-property-frequently-asked-questions": {
+      "file": "information-business-personal-property-frequently-asked-questions__a57a05d0.json",
+      "category": "business",
+      "etag": "\"79og0nmr074y3q\"",
+      "last_modified": null,
+      "content_hash": "7b5fe17f31f0eb15",
+      "pdf_links": []
+    },
+    "https://www.sf.gov/information--business-registration": {
+      "file": "information-business-registration__b8bd5d2e.json",
+      "category": "business",
+      "etag": "\"42ydq49vn14kr8\"",
+      "last_modified": null,
+      "content_hash": "7822456df978670a",
+      "pdf_links": []
+    },
+    "https://www.sf.gov/information--business-stabilization-grant": {
+      "file": "information-business-stabilization-grant__bad1568e.json",
+      "category": "business",
+      "etag": "\"106vakk7xmr45bq\"",
+      "last_modified": null,
+      "content_hash": "58a4caa48169a9fb",
+      "pdf_links": []
+    },
+    "https://www.sf.gov/information--business-structures": {
+      "file": "information-business-structures__79cb81ab.json",
+      "category": "business",
+      "etag": "\"9d678vcpaw4ii6\"",
+      "last_modified": null,
+      "content_hash": "2fadf965a702d9d9",
+      "pdf_links": []
+    },
+    "https://www.sf.gov/information--buy-existing-business": {
+      "file": "information-buy-existing-business__18fe39a9.json",
+      "category": "business",
+      "etag": "\"srrpkgnwnk4k38\"",
+      "last_modified": null,
+      "content_hash": "75913603b63ff767",
+      "pdf_links": []
+    },
+    "https://www.sf.gov/information--california-state-business-registration": {
+      "file": "information-california-state-business-registration__e4c22d80.json",
+      "category": "business",
+      "etag": "\"3qfjn32ltg45mw\"",
+      "last_modified": null,
+      "content_hash": "dc907410558fd80e",
+      "pdf_links": []
+    },
+    "https://www.sf.gov/information--cannabis-business-permit-types": {
+      "file": "information-cannabis-business-permit-types__f78a70a8.json",
+      "category": "permits",
+      "etag": "\"3i3k6t0xun4dbf\"",
+      "last_modified": null,
+      "content_hash": "09f4197d9ccc39e2",
+      "pdf_links": []
+    },
+    "https://www.sf.gov/information--cannabis-cultivation-business-operations": {
+      "file": "information-cannabis-cultivation-business-operations__ff710b89.json",
+      "category": "business",
+      "etag": "\"i5nlmuvm004588\"",
+      "last_modified": null,
+      "content_hash": "111c82e5bc35d4ee",
+      "pdf_links": []
+    },
+    "https://www.sf.gov/information--cannabis-distribution-business-operations": {
+      "file": "information-cannabis-distribution-business-operations__e227dc8a.json",
+      "category": "business",
+      "etag": "\"11cg3mmqxcg42x2\"",
+      "last_modified": null,
+      "content_hash": "4f92417eb57f6158",
+      "pdf_links": []
+    },
+    "https://www.sf.gov/information--cannabis-manufacturing-business-operations": {
+      "file": "information-cannabis-manufacturing-business-operations__33885bcc.json",
+      "category": "business",
+      "etag": "\"p0eu2t97zk44nb\"",
+      "last_modified": null,
+      "content_hash": "5a85c2508e49e644",
+      "pdf_links": []
+    },
+    "https://www.sf.gov/information--cases-where-your-permit-free-or-you-dont-need-one": {
+      "file": "information-cases-where-your-permit-free-or-you-dont-need-one__08defd52.json",
+      "category": "permits",
+      "etag": "\"qewr5vvgq94h7w\"",
+      "last_modified": null,
+      "content_hash": "b97c6bd86eda08c1",
+      "pdf_links": [
+        "https://sf.gov/sites/default/files/2023-10/CravenAllowance.pdf"
+      ]
+    },
+    "https://www.sf.gov/information--check-commercial-construction-requirements": {
+      "file": "information-check-commercial-construction-requirements__2c100f2e.json",
+      "category": "permits",
+      "etag": "\"folsleydd74hbl\"",
+      "last_modified": null,
+      "content_hash": "32f1212d8c462262",
+      "pdf_links": []
+    },
+    "https://www.sf.gov/information--check-if-you-need-permit-your-sign": {
+      "file": "information-check-if-you-need-permit-your-sign__fad51f00.json",
+      "category": "permits",
+      "etag": "\"ards9skq3g48cm\"",
+      "last_modified": null,
+      "content_hash": "428cc8ce89732600",
+      "pdf_links": []
+    },
+    "https://www.sf.gov/information--check-if-your-building-permit-needs-plans": {
+      "file": "information-check-if-your-building-permit-needs-plans__7a90e13c.json",
+      "category": "permits",
+      "etag": "\"cepp5rmdxa45t4\"",
+      "last_modified": null,
+      "content_hash": "8e07343dc0af8dd0",
+      "pdf_links": []
+    },
+    "https://www.sf.gov/information--check-if-your-construction-project-needs-permit": {
+      "file": "information-check-if-your-construction-project-needs-permit__23f66e36.json",
+      "category": "permits",
+      "etag": "\"wche8t3nit476z\"",
+      "last_modified": null,
+      "content_hash": "6518a41994b00be6",
+      "pdf_links": [
+        "https://www.sf.gov/documents/37042/Frequently_Asked_Questions_FAQs_-_Storage_Sheds_Exempt_from_Building_Permit.pdf"
+      ]
+    },
+    "https://www.sf.gov/information--check-rules-adding-adu-building-using-local-program": {
+      "file": "information-check-rules-adding-adu-building-using-local-program__042b3bf4.json",
+      "category": "permits",
+      "etag": "\"xtziltnh524713\"",
+      "last_modified": null,
+      "content_hash": "2058648b20b524cf",
+      "pdf_links": []
+    },
+    "https://www.sf.gov/information--check-what-you-need-apply-building-permit": {
+      "file": "information-check-what-you-need-apply-building-permit__eb245e1e.json",
+      "category": "permits",
+      "etag": "\"w40668wtwo47r9\"",
+      "last_modified": null,
+      "content_hash": "ce14df76dcc42291",
+      "pdf_links": []
+    },
+    "https://www.sf.gov/information--code-conduct-permit-center": {
+      "file": "information-code-conduct-permit-center__b98dbc30.json",
+      "category": "permits",
+      "etag": "\"h1ny4ckq4473w\"",
+      "last_modified": null,
+      "content_hash": "9140a1ac7eb0e786",
+      "pdf_links": []
+    },
+    "https://www.sf.gov/information--common-violations-food-inspections": {
+      "file": "information-common-violations-food-inspections__f7c4ef1e.json",
+      "category": "permits",
+      "etag": "\"12mquv27f1w4i43\"",
+      "last_modified": null,
+      "content_hash": "40ae4a170d5e9b82",
+      "pdf_links": []
+    },
+    "https://www.sf.gov/information--copy-permit-center-construction-services": {
+      "file": "information-copy-permit-center-construction-services__1130a1e6.json",
+      "category": "permits",
+      "etag": "\"2iomsbuepb4jil\"",
+      "last_modified": null,
+      "content_hash": "780976ff2c1624e6",
+      "pdf_links": []
+    },
+    "https://www.sf.gov/information--current-island-construction-impacts": {
+      "file": "information-current-island-construction-impacts__4dc574bd.json",
+      "category": "permits",
+      "etag": "\"nzfjzvs5cc44t4\"",
+      "last_modified": null,
+      "content_hash": "991fee3eaff92119",
+      "pdf_links": []
+    },
+    "https://www.sf.gov/information--damaged-building-notice": {
+      "file": "information-damaged-building-notice__5e9237b6.json",
+      "category": "permits",
+      "etag": "\"5j4yivyo554bgt\"",
+      "last_modified": null,
+      "content_hash": "fbe90a649c701944",
+      "pdf_links": []
+    },
+    "https://www.sf.gov/information--design-your-parking-or-curbside-lane-shared-space": {
+      "file": "information-design-your-parking-or-curbside-lane-shared-space__b74d49ee.json",
+      "category": "parking",
+      "etag": "\"yrlbh9irm649yf\"",
+      "last_modified": null,
+      "content_hash": "cc3cc9bea6974ef8",
+      "pdf_links": [
+        "https://media.api.sf.gov/documents/Shared_Spaces_Manual_-_June_2026_Version_-_Final_1.pdf"
+      ]
+    },
+    "https://www.sf.gov/information--design-your-sidewalk-shared-space": {
+      "file": "information-design-your-sidewalk-shared-space__264cd236.json",
+      "category": "public_works",
+      "etag": "\"lmqz4bfiud4dki\"",
+      "last_modified": null,
+      "content_hash": "8886db0f018eaec8",
+      "pdf_links": []
+    },
+    "https://www.sf.gov/information--development-construction-regulations-treasure-island": {
+      "file": "information-development-construction-regulations-treasure-island__cb5ddcf3.json",
+      "category": "permits",
+      "etag": "\"1133dze0p524aen\"",
+      "last_modified": null,
+      "content_hash": "e9d9b7bf6e34815f",
+      "pdf_links": []
+    },
+    "https://www.sf.gov/information--documents-you-need-request-official-building-plans": {
+      "file": "information-documents-you-need-request-official-building-plans__47cbd2ae.json",
+      "category": "permits",
+      "etag": "\"omd759mnyo494s\"",
+      "last_modified": null,
+      "content_hash": "6b49aa3c7d6d352b",
+      "pdf_links": []
+    },
+    "https://www.sf.gov/information--export-and-expand-your-business-globally": {
+      "file": "information-export-and-expand-your-business-globally__861a18ed.json",
+      "category": "business",
+      "etag": "\"h6lolnpytr4ma3\"",
+      "last_modified": null,
+      "content_hash": "8e0ef765d8d663a1",
+      "pdf_links": []
+    },
+    "https://www.sf.gov/information--federal-business-registration": {
+      "file": "information-federal-business-registration__aa013ba2.json",
+      "category": "business",
+      "etag": "\"17j6c1uajua467i\"",
+      "last_modified": null,
+      "content_hash": "59f5e6f54c260892",
+      "pdf_links": []
+    },
+    "https://www.sf.gov/information--federal-business-taxes": {
+      "file": "information-federal-business-taxes__b61ccfec.json",
+      "category": "business",
+      "etag": "\"riqg4jwi7v44dc\"",
+      "last_modified": null,
+      "content_hash": "e5518ed4d3415830",
+      "pdf_links": []
+    },
+    "https://www.sf.gov/information--fictitious-business-name-fbn-filing-requirements": {
+      "file": "information-fictitious-business-name-fbn-filing-requirements__ca5b686c.json",
+      "category": "business",
+      "etag": "\"i845u799bt42sn\"",
+      "last_modified": null,
+      "content_hash": "ff3f74b31585551c",
+      "pdf_links": []
+    },
+    "https://www.sf.gov/information--find-grant-your-small-business": {
+      "file": "information-find-grant-your-small-business__69a1d6d0.json",
+      "category": "business",
+      "etag": "\"bfgoez4bbz4opi\"",
+      "last_modified": null,
+      "content_hash": "81537b084b20ab3c",
+      "pdf_links": []
+    },
+    "https://www.sf.gov/information--find-out-what-type-permit-you-need-medical-waste": {
+      "file": "information-find-out-what-type-permit-you-need-medical-waste__fdf831b2.json",
+      "category": "permits",
+      "etag": "\"rgh1uh7oot48sx\"",
+      "last_modified": null,
+      "content_hash": "dabbc72dc0465624",
+      "pdf_links": []
+    },
+    "https://www.sf.gov/information--find-small-business-legal-services": {
+      "file": "information-find-small-business-legal-services__0f7f71c7.json",
+      "category": "business",
+      "etag": "\"p05yrlahtb49a8\"",
+      "last_modified": null,
+      "content_hash": "5947a594c8a92bfd",
+      "pdf_links": []
+    },
+    "https://www.sf.gov/information--find-tax-credits-and-incentives-your-business": {
+      "file": "information-find-tax-credits-and-incentives-your-business__c1c29db2.json",
+      "category": "business",
+      "etag": "\"9w0kwevbvq4hnn\"",
+      "last_modified": null,
+      "content_hash": "e07acaa66b129cec",
+      "pdf_links": []
+    },
+    "https://www.sf.gov/information--general-cannabis-business-operations": {
+      "file": "information-general-cannabis-business-operations__a7781604.json",
+      "category": "business",
+      "etag": "\"12l9lv03fqj4czk\"",
+      "last_modified": null,
+      "content_hash": "65209a92760ca930",
+      "pdf_links": []
+    },
+    "https://www.sf.gov/information--get-information-about-your-cannabis-business-owners": {
+      "file": "information-get-information-about-your-cannabis-business-owners__fb139bef.json",
+      "category": "business",
+      "etag": "\"9krgcsx7f44907\"",
+      "last_modified": null,
+      "content_hash": "acf8605fcce69beb",
+      "pdf_links": []
+    },
+    "https://www.sf.gov/information--get-proof-you-can-operate-cannabis-business-your-location": {
+      "file": "information-get-proof-you-can-operate-cannabis-business-your-location__5a57f252.json",
+      "category": "business",
+      "etag": "\"r9wpc3baxp43d1\"",
+      "last_modified": null,
+      "content_hash": "b833cb51de829afe",
+      "pdf_links": []
+    },
+    "https://www.sf.gov/information--get-specialized-help-key-business-industries": {
+      "file": "information-get-specialized-help-key-business-industries__04cbbbc2.json",
+      "category": "business",
+      "etag": "\"edi2nkn1i14c2j\"",
+      "last_modified": null,
+      "content_hash": "c90a7bbdc94fd3a7",
+      "pdf_links": []
+    },
+    "https://www.sf.gov/information--give-feedback-how-shared-spaces-helps-your-business": {
+      "file": "information-give-feedback-how-shared-spaces-helps-your-business__a428689f.json",
+      "category": "business",
+      "etag": "\"p2ko54sluc41ua\"",
+      "last_modified": null,
+      "content_hash": "5ef6d72badb68017",
+      "pdf_links": []
+    },
+    "https://www.sf.gov/information--giving-feedback-about-department-building-inspection-dbi": {
+      "file": "information-giving-feedback-about-department-building-inspection-dbi__f7916c44.json",
+      "category": "permits",
+      "etag": "\"5td7fatu084332\"",
+      "last_modified": null,
+      "content_hash": "7c52980489f8235c",
+      "pdf_links": []
+    },
+    "https://www.sf.gov/information--green-your-business": {
+      "file": "information-green-your-business__047d8c10.json",
+      "category": "business",
+      "etag": "\"1hy4m0mih445cx\"",
+      "last_modified": null,
+      "content_hash": "351c632b7aaac7a4",
+      "pdf_links": []
+    },
+    "https://www.sf.gov/information--healthy-housing-inspection-programs": {
+      "file": "information-healthy-housing-inspection-programs__2373ea6a.json",
+      "category": "permits",
+      "etag": "\"va0ypb4wvc4929\"",
+      "last_modified": null,
+      "content_hash": "a69b50e217c592db",
+      "pdf_links": []
+    },
+    "https://www.sf.gov/information--if-you-get-filming-notice-or-survey-your-home-or-business": {
+      "file": "information-if-you-get-filming-notice-or-survey-your-home-or-business__ac96222d.json",
+      "category": "business",
+      "etag": "\"nl7axs687y490x\"",
+      "last_modified": null,
+      "content_hash": "b351a4321bc365fc",
+      "pdf_links": []
+    },
+    "https://www.sf.gov/information--inspection-codes-voice-inspection-scheduling-system": {
+      "file": "information-inspection-codes-voice-inspection-scheduling-system__a3ab24fd.json",
+      "category": "permits",
+      "etag": "\"m1sakv8j0s4ctx\"",
+      "last_modified": null,
+      "content_hash": "8b5979c9b52c497d",
+      "pdf_links": []
+    },
+    "https://www.sf.gov/information--instructions-completing-film-permit-application": {
+      "file": "information-instructions-completing-film-permit-application__7f3da283.json",
+      "category": "permits",
+      "etag": "\"30i5fmgbae4c2m\"",
+      "last_modified": null,
+      "content_hash": "033c24f73a1435ae",
+      "pdf_links": [
+        "https://www.sf.gov/documents/40905/Film_SF_Use_Agreement_August_2026.pdf",
+        "https://media.api.sf.gov/documents/Parking_Diagram_Example.pdf"
+      ]
+    },
+    "https://www.sf.gov/information--insurance-small-business": {
+      "file": "information-insurance-small-business__a9569819.json",
+      "category": "business",
+      "etag": "\"qjpijb5ywd48mm\"",
+      "last_modified": null,
+      "content_hash": "e18e82bf97fc8736",
+      "pdf_links": []
+    },
+    "https://www.sf.gov/information--keeping-your-building-free-vermin": {
+      "file": "information-keeping-your-building-free-vermin__13ed6b08.json",
+      "category": "permits",
+      "etag": "\"foi49ncx064l5a\"",
+      "last_modified": null,
+      "content_hash": "a35d5fcc943f75bb",
+      "pdf_links": []
+    },
+    "https://www.sf.gov/information--know-your-rights-place-entertainment-poe-permit-holder": {
+      "file": "information-know-your-rights-place-entertainment-poe-permit-holder__3d8e7026.json",
+      "category": "permits",
+      "etag": "\"u4b5gtv64y46b5\"",
+      "last_modified": null,
+      "content_hash": "378c9c5d94901b6f",
+      "pdf_links": []
+    },
+    "https://www.sf.gov/information--labor-requirements-business": {
+      "file": "information-labor-requirements-business__3aca228a.json",
+      "category": "business",
+      "etag": "\"objokimtij4ucv\"",
+      "last_modified": null,
+      "content_hash": "6045e1ee4ef318fd",
+      "pdf_links": []
+    },
+    "https://www.sf.gov/information--learn-about-business-personal-property": {
+      "file": "information-learn-about-business-personal-property__dd5bb84d.json",
+      "category": "business",
+      "etag": "\"lxqrg2imp74k13\"",
+      "last_modified": null,
+      "content_hash": "6b48c7caa8a613a5",
+      "pdf_links": [
+        "https://www.sf.gov/sites/default/files/2024-07/2024%20Vessel%20Factored%20Table.pdf"
+      ]
+    },
+    "https://www.sf.gov/information--learn-about-new-construction-remodel-and-repair": {
+      "file": "information-learn-about-new-construction-remodel-and-repair__f6051328.json",
+      "category": "permits",
+      "etag": "\"qbd9l0oy3z4iv1\"",
+      "last_modified": null,
+      "content_hash": "987b4776d7861d01",
+      "pdf_links": [
+        "https://www.sf.gov/documents/49122/Lien_Date_2026_First_Notice_Spanish.docx.pdf",
+        "https://www.sf.gov/documents/49129/Lien_Date_2026_First_Notice_Chinese.pdf",
+        "https://www.sf.gov/documents/49123/2026_Lien_Date_New_Construction_Form_Filipino.pdf",
+        "https://www.sf.gov/documents/49124/2026_Lien_Date_New_Construction_Form_English.pdf",
+        "https://media.api.sf.gov/documents/ASR_Factsheet_NewConstruction_English_2025.pdf",
+        "https://media.api.sf.gov/documents/ASR_Factsheet_NewConstruction_Chinese_2025.pdf",
+        "https://media.api.sf.gov/documents/ASR_Factsheet_NewConstruction_Spanish_2025.pdf",
+        "https://media.api.sf.gov/documents/ASR_Factsheet_NewConstruction_Filipino_2025.pdf",
+        "https://media.api.sf.gov/documents/ASR_Factsheet_NewConstruction_Vietnamese_2025.pdf",
+        "https://media.api.sf.gov/documents/ASR_Factsheet_NewConstruction_Russian_2025.pdf",
+        "https://media.api.sf.gov/documents/ASR_Factsheet_NewConstruction_Korean_2025.pdf"
+      ]
+    },
+    "https://www.sf.gov/information--learn-about-permit-review-roundtable": {
+      "file": "information-learn-about-permit-review-roundtable__17cd4e0b.json",
+      "category": "permits",
+      "etag": "\"bx2e1kubxl445t\"",
+      "last_modified": null,
+      "content_hash": "5e89a12b556ea1bd",
+      "pdf_links": []
+    },
+    "https://www.sf.gov/information--learn-about-type-90-liquor-licenses-music-venues": {
+      "file": "information-learn-about-type-90-liquor-licenses-music-venues__ce2f6c02.json",
+      "category": "business",
+      "etag": "\"2xaxa9lioq4jtc\"",
+      "last_modified": null,
+      "content_hash": "a1f42c521042b08d",
+      "pdf_links": []
+    },
+    "https://www.sf.gov/information--learn-how-port-street-vendor-lottery-works": {
+      "file": "information-learn-how-port-street-vendor-lottery-works__f76d0ef3.json",
+      "category": "business",
+      "etag": "\"cbmvxdmb2j459u\"",
+      "last_modified": null,
+      "content_hash": "91df066e3eb1c4aa",
+      "pdf_links": []
+    },
+    "https://www.sf.gov/information--legacy-business-programs-nationwide": {
+      "file": "information-legacy-business-programs-nationwide__75c8339a.json",
+      "category": "business",
+      "etag": "\"135lx60qkby4coe\"",
+      "last_modified": null,
+      "content_hash": "595a7813d08b9711",
+      "pdf_links": [
+        "https://media.api.sf.gov/documents/Legacy_Business_Preservation_Study_FINAL_Feb2026.pdf"
+      ]
+    },
+    "https://www.sf.gov/information--loans-and-borrowing-money-your-business": {
+      "file": "information-loans-and-borrowing-money-your-business__1897ac2f.json",
+      "category": "business",
+      "etag": "\"11wsaigwo3e4hwz\"",
+      "last_modified": null,
+      "content_hash": "9442681f32402785",
+      "pdf_links": []
+    },
+    "https://www.sf.gov/information--local-hire-construction": {
+      "file": "information-local-hire-construction__e5c4cbc1.json",
+      "category": "permits",
+      "etag": "\"186evrp5lfy47q3\"",
+      "last_modified": null,
+      "content_hash": "001452358614633e",
+      "pdf_links": [
+        "https://media.api.sf.gov/documents/2026_Local_Hire_for_Construction_Annual_Report_1.pdf",
+        "https://media.api.sf.gov/documents/2025_Local_Hiring_Policy_Annual_Report_published_04.01.25.pdf",
+        "https://www.sf.gov/sites/default/files/2024-04/2024%20LOCAL%20HIRE%20ANNUAL%20REPORT.pdf",
+        "https://sf.gov/sites/default/files/2023-03/2023%20Local%20Hiring%20Policy%20Annual%20Report.pdf"
+      ]
+    },
+    "https://www.sf.gov/information--methods-doing-business": {
+      "file": "information-methods-doing-business__a4d6f40c.json",
+      "category": "business",
+      "etag": "\"9l92xz1knw49qw\"",
+      "last_modified": null,
+      "content_hash": "1de4d484352128e4",
+      "pdf_links": []
+    },
+    "https://www.sf.gov/information--mohcd-vendors-and-contractors-solicitations": {
+      "file": "information-mohcd-vendors-and-contractors-solicitations__8061872e.json",
+      "category": "business",
+      "etag": "\"e5t1nd6hfg47v3\"",
+      "last_modified": null,
+      "content_hash": "d4d3195071e1565c",
+      "pdf_links": [
+        "https://www.sf.gov/documents/64829/Housing_Authority_Integration_Technical_Assistance.pdf",
+        "https://www.sf.gov/documents/64825/Attachment_2_HCAO_Declaration_10_1_18_dPSClM8.pdf",
+        "https://www.sf.gov/documents/64826/Attachment_3_MCO_Declaration_10_1_18_rRFZdc4.pdf",
+        "https://www.sf.gov/documents/64827/Attachment_4_First_Source_Hiring.pdf",
+        "https://www.sf.gov/documents/64828/Attachment_5_Form126f4_v2018-12-07_9jhzKFj.pdf"
+      ]
+    },
+    "https://www.sf.gov/information--new-business-owners": {
+      "file": "information-new-business-owners__b3f772d8.json",
+      "category": "business",
+      "etag": "\"q6v2yp4bsk4eta\"",
+      "last_modified": null,
+      "content_hash": "15b311a5871318aa",
+      "pdf_links": []
+    },
+    "https://www.sf.gov/information--parking-and-storage-spaces-housing-services": {
+      "file": "information-parking-and-storage-spaces-housing-services__2aed2bfe.json",
+      "category": "parking",
+      "etag": "\"qaf4vxb0uh4d0r\"",
+      "last_modified": null,
+      "content_hash": "d59ea93b2055de7a",
+      "pdf_links": [
+        "https://sf.gov/sites/default/files/2022-09/910%20Temp.%20Severance%20of%20Housing%20Services%20during%20Mandatory%20Seismic%20Retrofit%20Ch.%2065A.pdf"
+      ]
+    },
+    "https://www.sf.gov/information--permit-center-business-services": {
+      "file": "information-permit-center-business-services__aaafbbb4.json",
+      "category": "permits",
+      "etag": "\"c0wmwb735g42x2\"",
+      "last_modified": null,
+      "content_hash": "76fb8c2ae9da1585",
+      "pdf_links": []
+    },
+    "https://www.sf.gov/information--permit-center-printing-costs": {
+      "file": "information-permit-center-printing-costs__b533a04c.json",
+      "category": "permits",
+      "etag": "\"xpplwedyjm4470\"",
+      "last_modified": null,
+      "content_hash": "22b1b2cfa871ec03",
+      "pdf_links": []
+    },
+    "https://www.sf.gov/information--permit-center-services": {
+      "file": "information-permit-center-services__c11d76ed.json",
+      "category": "permits",
+      "etag": "\"uz4t718l9i52dt\"",
+      "last_modified": null,
+      "content_hash": "a11e2a08ed27ff65",
+      "pdf_links": []
+    },
+    "https://www.sf.gov/information--preparation-and-event-day-checklist-temporary-food-vendors": {
+      "file": "information-preparation-and-event-day-checklist-temporary-food-vendors__956c02b0.json",
+      "category": "business",
+      "etag": "\"115ypsynvex4lei\"",
+      "last_modified": null,
+      "content_hash": "e7346aef915afa66",
+      "pdf_links": []
+    },
+    "https://www.sf.gov/information--prevailing-wage-non-construction-workers": {
+      "file": "information-prevailing-wage-non-construction-workers__d0049027.json",
+      "category": "permits",
+      "etag": "\"f7mwqrpluu4ejp\"",
+      "last_modified": null,
+      "content_hash": "a9e1a2e38ee6e508",
+      "pdf_links": [
+        "https://media.api.sf.gov/documents/102.2_Janitors_Wage_Chart_FY25-26.pdf",
+        "https://media.api.sf.gov/documents/102.2_Window_Cleaner_Wage_Chart_FY25-26.pdf",
+        "https://media.api.sf.gov/documents/102_Wwv4GfT.3_Parking_Garage_Wage_Chart_FY25-26.pdf",
+        "https://media.api.sf.gov/documents/102_KG83x64.4_Theatrical_Wage_Chart_FY25-26.pdf",
+        "https://media.api.sf.gov/documents/102.5_Solid_Waste_Haulers_Wage_Chart_FY25-26.pdf",
+        "https://media.api.sf.gov/documents/102.6_Movers_Wage_Chart_FY_25-26.pdf",
+        "https://media.api.sf.gov/documents/102.7_Motorbus_Wage_Chart_FY25-26.pdf",
+        "https://media.api.sf.gov/documents/102.8_Trade_Show_Wage_Chart_FY25-26.pdf",
+        "https://media.api.sf.gov/documents/102.9_Broadcast_Services_Wage_Chart_FY_25-26.pdf",
+        "https://media.api.sf.gov/documents/102.10_Loading_and_Unloading_Wage_Chart_FY25-26.pdf",
+        "https://media.api.sf.gov/documents/102.11_Security_Employee_Wage_Chart_FY25-26.pdf"
+      ]
+    },
+    "https://www.sf.gov/information--professional-services-and-construction-opportunities": {
+      "file": "information-professional-services-and-construction-opportunities__4c085b18.json",
+      "category": "permits",
+      "etag": "\"vjfsicvaeg4eli\"",
+      "last_modified": null,
+      "content_hash": "ef18328443a1edb0",
+      "pdf_links": []
+    },
+    "https://www.sf.gov/information--property-inspection-and-repairs-policy-bmr-resales": {
+      "file": "information-property-inspection-and-repairs-policy-bmr-resales__a8afb562.json",
+      "category": "permits",
+      "etag": "\"grbfnkj2ri48d0\"",
+      "last_modified": null,
+      "content_hash": "40c4d3416f9f5042",
+      "pdf_links": [
+        "https://media.api.sf.gov/documents/Property_Inspection_and_Repairs_Policy_8.23.2019.pdf",
+        "https://api.sf.gov/documents/48802/Property_Inspection_and_Repairs_Policy_8.23.2019.pdf"
+      ]
+    },
+    "https://www.sf.gov/information--proposition-l-additional-business-tax-transportation-network-companies-and-autonomous": {
+      "file": "information-proposition-l-additional-business-tax-transportation-network-companies-and-autonomous__261f9718.json",
+      "category": "business",
+      "etag": "\"5etkd1cghu43as\"",
+      "last_modified": null,
+      "content_hash": "1f323f9715b7c1e4",
+      "pdf_links": [
+        "https://www.sf.gov/sites/default/files/2024-08/Final%20Digest%20-%20Additional%20Business%20Tax%20on%20Transportation%20Network%20Companies%20and%20Autonomous%20Vehicle%20Businesses%20PDF_0.pdf",
+        "https://www.sf.gov/sites/default/files/2024-08/legal%20text_2.pdf",
+        "https://www.sf.gov/sites/default/files/2024-08/Prop%20L%20-%20TNC%20Tax%20-%20CON%20VIP%20Letter%20-%20Signed.pdf",
+        "https://www.sf.gov/sites/default/files/2024-08/Reconsideration%20of%20Measure%20Title_%20%E2%80%9CAdditional%20Business%20Tax%20on%20Transportation%20Network%20Companies%20and%20Autonomous%20Vehicle%20Businesses.pdf",
+        "https://www.sf.gov/sites/default/files/2024-08/prop_l_-_official_pro_redacted.pdf",
+        "https://www.sf.gov/sites/default/files/2024-08/nov2024_propl_rebuttaltoopp_redacted.pdf",
+        "https://www.sf.gov/sites/default/files/2024-08/Nov2024_PaidYesL_Redacted_Revised.pdf",
+        "https://www.sf.gov/sites/default/files/2024-08/prop_l_-_official_opp_redacted.pdf",
+        "https://www.sf.gov/sites/default/files/2024-08/nov2024_propl_rebuttaltopro_redacted.pdf",
+        "https://www.sf.gov/sites/default/files/2024-08/nov2024_paidnol_redacted.pdf"
+      ]
+    },
+    "https://www.sf.gov/information--proposition-m-changes-business-taxes": {
+      "file": "information-proposition-m-changes-business-taxes__85a53d2f.json",
+      "category": "business",
+      "etag": "\"17nwodjlgng42oc\"",
+      "last_modified": null,
+      "content_hash": "2dde5e03f6b2ff06",
+      "pdf_links": [
+        "https://www.sf.gov/sites/default/files/2024-08/Final%20Digest%20-%20Changes%20to%20Business%20Taxes.pdf",
+        "https://www.sf.gov/sites/default/files/2024-08/Legal%20Text%20--%20Changes%20to%20Business%20Taxes.pdf",
+        "https://www.sf.gov/sites/default/files/2024-08/Prop%20M%20-%20Business%20Taxes%20-%20CON%20VIP%20Letter%20-%20Signed.pdf",
+        "https://www.sf.gov/sites/default/files/2024-08/prop_m_-_official_pro_redacted.pdf",
+        "https://www.sf.gov/sites/default/files/2024-08/nov2024_propm_rebuttaltoopp_redacted.pdf",
+        "https://www.sf.gov/sites/default/files/2024-08/nov2024_paidyesm_redacted.pdf",
+        "https://www.sf.gov/sites/default/files/2024-08/prop_m_-_official_opp_redacted.pdf",
+        "https://www.sf.gov/sites/default/files/2024-09/Marso_Opponent%20Argument%20Challenges.pdf",
+        "https://www.sf.gov/sites/default/files/2024-08/nov2024_propm_rebuttaltopro_redacted.pdf"
+      ]
+    },
+    "https://www.sf.gov/information--restaurant-health-inspection-posters-and-what-they-mean": {
+      "file": "information-restaurant-health-inspection-posters-and-what-they-mean__fba0510a.json",
+      "category": "permits",
+      "etag": "\"17m6jyfsqzn49eq\"",
+      "last_modified": null,
+      "content_hash": "92b9c5c8ca518607",
+      "pdf_links": []
+    },
+    "https://www.sf.gov/information--retail-delivery-cannabis-business-operations": {
+      "file": "information-retail-delivery-cannabis-business-operations__219b384f.json",
+      "category": "business",
+      "etag": "\"nbh1qp34n842zh\"",
+      "last_modified": null,
+      "content_hash": "497175c1c5f0e404",
+      "pdf_links": []
+    },
+    "https://www.sf.gov/information--retail-storefront-cannabis-business-operations": {
+      "file": "information-retail-storefront-cannabis-business-operations__36f29d80.json",
+      "category": "business",
+      "etag": "\"15e8swzzt3g41ub\"",
+      "last_modified": null,
+      "content_hash": "0e26d71a7db82950",
+      "pdf_links": []
+    },
+    "https://www.sf.gov/information--sample-house-review-permit-application-completeness-letter": {
+      "file": "information-sample-house-review-permit-application-completeness-letter__34f040b5.json",
+      "category": "permits",
+      "etag": "\"5bbpabag5e42w3\"",
+      "last_modified": null,
+      "content_hash": "0180428d8ef6b3e9",
+      "pdf_links": []
+    },
+    "https://www.sf.gov/information--sample-house-review-permit-incomplete-application-letter": {
+      "file": "information-sample-house-review-permit-incomplete-application-letter__bf72b303.json",
+      "category": "permits",
+      "etag": "\"16xm3bth4ss42zz\"",
+      "last_modified": null,
+      "content_hash": "f83d28e966a4e863",
+      "pdf_links": []
+    },
+    "https://www.sf.gov/information--sign-small-business-training": {
+      "file": "information-sign-small-business-training__5a1404c1.json",
+      "category": "business",
+      "etag": "\"xd2ii0fkso4g29\"",
+      "last_modified": null,
+      "content_hash": "f37b717df47f2d3c",
+      "pdf_links": []
+    },
+    "https://www.sf.gov/information--state-business-taxes": {
+      "file": "information-state-business-taxes__20dec0d2.json",
+      "category": "business",
+      "etag": "\"rt508fmvk448g6\"",
+      "last_modified": null,
+      "content_hash": "0e7f8ac9b5620e8f",
+      "pdf_links": []
+    },
+    "https://www.sf.gov/information--ticd-community-construction-meetings": {
+      "file": "information-ticd-community-construction-meetings__e0aeb6e3.json",
+      "category": "permits",
+      "etag": "\"p50kdlv2sr44v9\"",
+      "last_modified": null,
+      "content_hash": "a206b66d9b2f2c7e",
+      "pdf_links": [
+        "https://sf.gov/sites/default/files/2022-11/TIDG_TICD_CommunityMeetingPresentationOctober2022.pdf"
+      ]
+    },
+    "https://www.sf.gov/information--tiybi-small-business-enterprise-procedures-faqs": {
+      "file": "information-tiybi-small-business-enterprise-procedures-faqs__60574a96.json",
+      "category": "business",
+      "etag": "\"mufkyb0pxj4omf\"",
+      "last_modified": null,
+      "content_hash": "acbc34fce3cb1c64",
+      "pdf_links": []
+    },
+    "https://www.sf.gov/information--tiybi-small-business-enterprise-sbe-procedures": {
+      "file": "information-tiybi-small-business-enterprise-sbe-procedures__d5b6277e.json",
+      "category": "business",
+      "etag": "\"e27fuhith149h5\"",
+      "last_modified": null,
+      "content_hash": "b98868830e0079df",
+      "pdf_links": [
+        "https://sf.gov/sites/default/files/2022-11/Ex.%20P%20-%20Jobs%20EOP.pdf",
+        "https://sf.gov/sites/default/files/2022-05/041322_SBE_ProceduresRevised.pdf"
+      ]
+    },
+    "https://www.sf.gov/information--transitioning-your-jam-or-just-add-music-permit": {
+      "file": "information-transitioning-your-jam-or-just-add-music-permit__cc4b08ad.json",
+      "category": "permits",
+      "etag": "\"18bxyfl4q8v4j20\"",
+      "last_modified": null,
+      "content_hash": "719c41577ba3bd9a",
+      "pdf_links": [
+        "https://sf.gov/sites/default/files/2022-06/Memo%20-%20One%20Time%20Outdoor%20Events%20with%20Extended%20Hours%20Criteria%20-%20FINAL%20VOTED%20120721_signed.pdf"
+      ]
+    },
+    "https://www.sf.gov/information--treasure-island-parking": {
+      "file": "information-treasure-island-parking__38c5a4de.json",
+      "category": "parking",
+      "etag": "\"iquzp0bvkq452d\"",
+      "last_modified": null,
+      "content_hash": "8f5f807f894b7179",
+      "pdf_links": []
+    },
+    "https://www.sf.gov/information--vacant-building-requirements": {
+      "file": "information-vacant-building-requirements__4563411f.json",
+      "category": "permits",
+      "etag": "\"vv7vyb6ocw4bou\"",
+      "last_modified": null,
+      "content_hash": "5f823a21d4ebfdfa",
+      "pdf_links": []
+    },
+    "https://www.sf.gov/information--view-map-businesses-entertainment-permits": {
+      "file": "information-view-map-businesses-entertainment-permits__7406e7c3.json",
+      "category": "permits",
+      "etag": "\"pc67s10voz3zss\"",
+      "last_modified": null,
+      "content_hash": "4b8ffcb0d859858e",
+      "pdf_links": []
+    },
+    "https://www.sf.gov/information--what-expect-after-you-apply-use-sidewalk-or-parking-lane": {
+      "file": "information-what-expect-after-you-apply-use-sidewalk-or-parking-lane__4d15af3b.json",
+      "category": "parking",
+      "etag": "\"12h7eqwvdzt49f7\"",
+      "last_modified": null,
+      "content_hash": "65d74d1a63005b62",
+      "pdf_links": []
+    },
+    "https://www.sf.gov/information--what-expect-during-construction-your-neighborhood": {
+      "file": "information-what-expect-during-construction-your-neighborhood__16e26f85.json",
+      "category": "permits",
+      "etag": "\"dbx2ze1oaq478i\"",
+      "last_modified": null,
+      "content_hash": "d62d8871b81e899c",
+      "pdf_links": []
+    },
+    "https://www.sf.gov/information--zoning-businesses": {
+      "file": "information-zoning-businesses__449718c5.json",
+      "category": "planning",
+      "etag": "\"167vpxt1l2d4872\"",
+      "last_modified": null,
+      "content_hash": "95e3a0cafa562429",
+      "pdf_links": []
+    },
+    "https://www.sf.gov/location--san-francisco-permit-center": {
+      "file": "location-san-francisco-permit-center__0866cf85.json",
+      "category": "permits",
+      "etag": "\"7rq69x0txd4wb6\"",
+      "last_modified": null,
+      "content_hash": "1f3c24cce64dd063",
+      "pdf_links": []
+    },
+    "https://www.sf.gov/location--small-business-permitting-help": {
+      "file": "location-small-business-permitting-help__aadbf422.json",
+      "category": "business",
+      "etag": "\"117g7o9t8lg4n5g\"",
+      "last_modified": null,
+      "content_hash": "2adfdecac8ed1d60",
+      "pdf_links": []
+    },
+    "https://www.sf.gov/resource--fees-department-building-inspection": {
+      "file": "resource-fees-department-building-inspection__400a4bdc.json",
+      "category": "permits",
+      "etag": "\"lop0c6l2xj57y6\"",
+      "last_modified": null,
+      "content_hash": "b7b03a1fc2ecba7e",
+      "pdf_links": [
+        "https://api.sf.gov/documents/44096/Table_1A-A_-_Building_Permit_Fees_2026.pdf",
+        "https://api.sf.gov/documents/44099/Table_1A-B_-_Other_Building_Permit_and_Plan_Review_Fees_2026.pdf",
+        "https://api.sf.gov/documents/44100/Table_1A-C_-_Plumbing_Mechanical_2026.pdf",
+        "https://api.sf.gov/documents/44102/Table_1A-E_-_Electrical_Permit_Issuance_and_Inspection_2026.pdf",
+        "https://api.sf.gov/documents/44103/Table_1A-G_-_Inspection_Survey_and_Reports_2026.pdf",
+        "https://api.sf.gov/documents/44089/Table_1A-N_-_Energy_Conservation_2026.pdf",
+        "https://api.sf.gov/documents/44087/Table_1A-K_-_Penalities_Hearings_Code_Enforcement_Assessments_2026.pdf",
+        "https://api.sf.gov/documents/44090/Table_1A-P_Residential_Code_Enforcement_and_License_Fees_2026.pdf",
+        "https://api.sf.gov/documents/44088/Table_1A-L_-_Public_Information_2026.pdf",
+        "https://api.sf.gov/documents/44086/Table_1A-J_-_Miscellaneous_Fees_2026.pdf",
+        "https://api.sf.gov/documents/44092/Table_1A-R_-_Refunds_2026.pdf",
+        "https://api.sf.gov/documents/60521/Table_1A-D_-_Standard_Hourly_Rates_2026.pdf",
+        "https://api.sf.gov/documents/44091/Table_1A-Q_-_Hotel_Coversion_Ordinance_Fees_2026.pdf",
+        "https://api.sf.gov/documents/44093/Table_1A-S_-_UMB_2026.pdf",
+        "https://api.sf.gov/documents/11048/2022_DBI_Cost_Schedule.pdf",
+        "https://api.sf.gov/documents/7711/Request_for_Refund_and_Permit_Cancellation_Form.pdf"
+      ]
+    },
+    "https://www.sf.gov/step-by-step--apply-become-approved-vendor-alemany-flea-market": {
+      "file": "step-by-step-apply-become-approved-vendor-alemany-flea-market__29a56b7e.json",
+      "category": "business",
+      "etag": "\"3p8eidlqw24kra\"",
+      "last_modified": null,
+      "content_hash": "2c5c43acfa6b1439",
+      "pdf_links": [
+        "https://www.sf.gov/documents/43427/Alemany_Flea_Market_Rules_and_Regulations_2026.pdf",
+        "https://www.sf.gov/documents/43428/Alemany_Flea_Market_Vendor_Application_2026.pdf"
+      ]
+    },
+    "https://www.sf.gov/step-by-step--apply-get-copies-official-building-plans": {
+      "file": "step-by-step-apply-get-copies-official-building-plans__df22519f.json",
+      "category": "permits",
+      "etag": "\"aojteepnmr4bko\"",
+      "last_modified": null,
+      "content_hash": "575df705e66f7f7e",
+      "pdf_links": []
+    },
+    "https://www.sf.gov/step-by-step--apply-join-legacy-business-registry": {
+      "file": "step-by-step-apply-join-legacy-business-registry__9a35212b.json",
+      "category": "business",
+      "etag": "\"7mbbjmtihl4rln\"",
+      "last_modified": null,
+      "content_hash": "748d4dff11e67687",
+      "pdf_links": []
+    },
+    "https://www.sf.gov/step-by-step--business-associate-decision-tree": {
+      "file": "step-by-step-business-associate-decision-tree__12f93c5b.json",
+      "category": "business",
+      "etag": "\"1478txlmk2o4a8b\"",
+      "last_modified": null,
+      "content_hash": "8a9389abfc21d1e5",
+      "pdf_links": []
+    },
+    "https://www.sf.gov/step-by-step--contractors-vendors-volunteers-and-trainees": {
+      "file": "step-by-step-contractors-vendors-volunteers-and-trainees__ccef063f.json",
+      "category": "business",
+      "etag": "\"d8fzic8q4647x9\"",
+      "last_modified": null,
+      "content_hash": "0899ff3a56869b6f",
+      "pdf_links": [
+        "https://api.sf.gov/documents/34857/SFDPH_Onboarding_Calendar.pdf"
+      ]
+    },
+    "https://www.sf.gov/step-by-step--convert-your-over-counter-building-permit-application-house-review": {
+      "file": "step-by-step-convert-your-over-counter-building-permit-application-house-review__e751a001.json",
+      "category": "permits",
+      "etag": "\"7j77viw76143l7\"",
+      "last_modified": null,
+      "content_hash": "0ee7af178161f618",
+      "pdf_links": []
+    },
+    "https://www.sf.gov/step-by-step--convert-your-paper-house-review-building-permit-application-digital-format": {
+      "file": "step-by-step-convert-your-paper-house-review-building-permit-application-digital-format__719d40a2.json",
+      "category": "permits",
+      "etag": "\"1129arzbdvu460p\"",
+      "last_modified": null,
+      "content_hash": "f3e0359be50f6b3e",
+      "pdf_links": []
+    },
+    "https://www.sf.gov/step-by-step--decide-if-shared-spaces-permit-works-your-space": {
+      "file": "step-by-step-decide-if-shared-spaces-permit-works-your-space__c737e900.json",
+      "category": "permits",
+      "etag": "\"j0sikk36bi4fzj\"",
+      "last_modified": null,
+      "content_hash": "5336921c14c343e8",
+      "pdf_links": [
+        "https://media.api.sf.gov/documents/Shared_Spaces_Manual_-_June_2026_Version_-_Final_1.pdf"
+      ]
+    },
+    "https://www.sf.gov/step-by-step--file-fictitious-business-name-fbn": {
+      "file": "step-by-step-file-fictitious-business-name-fbn__a224a811.json",
+      "category": "business",
+      "etag": "\"m1z53of77s4f8t\"",
+      "last_modified": null,
+      "content_hash": "1d55b635a0a473a5",
+      "pdf_links": []
+    },
+    "https://www.sf.gov/step-by-step--fix-your-building-and-housing-code-violation": {
+      "file": "step-by-step-fix-your-building-and-housing-code-violation__13739e6d.json",
+      "category": "permits",
+      "etag": "\"2p6vn2tvih4qzo\"",
+      "last_modified": null,
+      "content_hash": "74924a1b43c53714",
+      "pdf_links": []
+    },
+    "https://www.sf.gov/step-by-step--get-building-permit-do-soft-story-retrofit": {
+      "file": "step-by-step-get-building-permit-do-soft-story-retrofit__9c7f1f82.json",
+      "category": "permits",
+      "etag": "\"cd1ctx647d4mmd\"",
+      "last_modified": null,
+      "content_hash": "cada72c240f07d2e",
+      "pdf_links": [
+        "https://media.api.sf.gov/documents/Who_Can_Obtain_A_Building_Permit_And_Property_Owner_Licensed_Contractor_Forms.pdf",
+        "https://media.api.sf.gov/documents/Claim_for_Seismic_Safety_Construction_Exclusion_from_Assessment.pdf"
+      ]
+    },
+    "https://www.sf.gov/step-by-step--get-building-permit-house-review": {
+      "file": "step-by-step-get-building-permit-house-review__73552e7a.json",
+      "category": "permits",
+      "etag": "\"11ruzhydjm6f9v\"",
+      "last_modified": null,
+      "content_hash": "984f56111f782daf",
+      "pdf_links": [
+        "https://media.api.sf.gov/documents/SCP_Review_ProcessDiagram_FEB251.pdf",
+        "https://www.sf.gov/sites/default/files/2022-08/IS%20S-04.pdf",
+        "https://media.api.sf.gov/documents/19_ApplicationForBuildingPermit_4-7_0524_ko.pdf",
+        "https://sf.gov/sites/default/files/2022-08/IS%20M-03.pdf",
+        "https://sf.gov/sites/default/files/2022-08/IS%20M-04.pdf",
+        "https://sf.gov/sites/default/files/2023-01/IS%20M-08.pdf",
+        "https://sf.gov/sites/default/files/2022-08/IS%20M-06.pdf",
+        "https://media.api.sf.gov/documents/Special_Inspection_and_Structural_Observation_Form_2025.pdf",
+        "https://www.sf.gov/sites/default/files/2022-09/Unit%20Legalization%20Screening%20Form%20and%20Checklist.pdf",
+        "https://www.sf.gov/sites/default/files/2022-08/IS%20G-17.pdf",
+        "https://www.sf.gov/sites/default/files/2022-11/IS%20DA-02.pdf",
+        "https://media.api.sf.gov/documents/Claim_for_Seismic_Safety_Construction_Exclusion_from_Assessment.pdf",
+        "https://media.api.sf.gov/documents/Tree_Planting_and_Protection_Frequently_Asked_Questions.pdf",
+        "https://www.sf.gov/sites/default/files/2022-07/Residential%20Pre-Plan%20Check%20Checklist.pdf",
+        "https://www.sf.gov/documents/5884/Licensed_Contractors_Statement.pdf",
+        "https://www.sf.gov/documents/5891/Property_Owner_Disclosure_Form_589lGbh.pdf",
+        "https://www.sf.gov/documents/37243/Final_Declaration_For_Permit_Issuance.pdf",
+        "https://www.sf.gov/documents/50426/Sign_Posting_Requirements_and_Applicant_Affidavit.pdf",
+        "https://www.sf.gov/sites/default/files/2024-05/Unissued%20Extension%20or%20Withdrawal%20Form%202024.Fillable.pdf"
+      ]
+    },
+    "https://www.sf.gov/step-by-step--get-help-finding-construction-work": {
+      "file": "step-by-step-get-help-finding-construction-work__6e2eb350.json",
+      "category": "permits",
+      "etag": "\"sl9634w4334bvv\"",
+      "last_modified": null,
+      "content_hash": "dd45a23e8a55e39a",
+      "pdf_links": [
+        "https://sf.gov/sites/default/files/2022-06/CityBuild%20Certification%20Form%207.22.2016.pdf"
+      ]
+    },
+    "https://www.sf.gov/step-by-step--get-help-your-business-layoff": {
+      "file": "step-by-step-get-help-your-business-layoff__01e57ff1.json",
+      "category": "business",
+      "etag": "\"189xtgnyl314cpj\"",
+      "last_modified": null,
+      "content_hash": "c8e40f6c7250b0cc",
+      "pdf_links": []
+    },
+    "https://www.sf.gov/step-by-step--get-otc-permit-your-commercial-project": {
+      "file": "step-by-step-get-otc-permit-your-commercial-project__af882c56.json",
+      "category": "permits",
+      "etag": "\"uvcqtode5s50uv\"",
+      "last_modified": null,
+      "content_hash": "91424ef61b14f9cf",
+      "pdf_links": [
+        "https://media.api.sf.gov/documents/Who_Can_Obtain_A_Building_Permit_And_Property_Owner_Licensed_Contractor_Forms.pdf",
+        "https://www.sf.gov/documents/5891/Property_Owner_Disclosure_Form_589lGbh.pdf",
+        "https://www.sf.gov/documents/5884/Licensed_Contractors_Statement.pdf"
+      ]
+    },
+    "https://www.sf.gov/step-by-step--get-otc-permit-your-exterior-residential-project": {
+      "file": "step-by-step-get-otc-permit-your-exterior-residential-project__bc8d41ea.json",
+      "category": "permits",
+      "etag": "\"510e5i11hu526o\"",
+      "last_modified": null,
+      "content_hash": "defcb0410ab1d117",
+      "pdf_links": [
+        "https://www.sf.gov/documents/5891/Property_Owner_Disclosure_Form_589lGbh.pdf",
+        "https://www.sf.gov/documents/5884/Licensed_Contractors_Statement.pdf",
+        "https://media.api.sf.gov/documents/Claim_for_Seismic_Safety_Construction_Exclusion_from_Assessment.pdf"
+      ]
+    },
+    "https://www.sf.gov/step-by-step--get-otc-permit-your-interior-residential-remodel": {
+      "file": "step-by-step-get-otc-permit-your-interior-residential-remodel__99102986.json",
+      "category": "permits",
+      "etag": "\"2v44u1geds54gt\"",
+      "last_modified": null,
+      "content_hash": "29882f2e99c2d59d",
+      "pdf_links": [
+        "https://media.api.sf.gov/documents/Who_Can_Obtain_A_Building_Permit_And_Property_Owner_Licensed_Contractor_Forms.pdf",
+        "https://www.sf.gov/documents/5891/Property_Owner_Disclosure_Form_589lGbh.pdf",
+        "https://www.sf.gov/documents/5884/Licensed_Contractors_Statement.pdf"
+      ]
+    },
+    "https://www.sf.gov/step-by-step--get-permit-film-san-francisco": {
+      "file": "step-by-step-get-permit-film-san-francisco__c6df2ea8.json",
+      "category": "permits",
+      "etag": "\"2lsfbdo7li4isw\"",
+      "last_modified": null,
+      "content_hash": "f7df103d53ddeac5",
+      "pdf_links": [
+        "https://www.sf.gov/documents/55903/Barricade_Guidelines.pdf",
+        "https://www.sf.gov/documents/40905/Film_SF_Use_Agreement_August_2026.pdf"
+      ]
+    },
+    "https://www.sf.gov/step-by-step--get-permit-install-sign-or-awning": {
+      "file": "step-by-step-get-permit-install-sign-or-awning__67ead5ca.json",
+      "category": "permits",
+      "etag": "\"7oqoxuga6c4st0\"",
+      "last_modified": null,
+      "content_hash": "c3be4e7528a4440c",
+      "pdf_links": [
+        "https://www.sf.gov/documents/5891/Property_Owner_Disclosure_Form_589lGbh.pdf",
+        "https://www.sf.gov/documents/5884/Licensed_Contractors_Statement.pdf",
+        "https://www.sf.gov/documents/61676/Information_Sheet_M-06_8.6.2026.pdf"
+      ]
+    },
+    "https://www.sf.gov/step-by-step--get-permit-solar-photovoltaic-system": {
+      "file": "step-by-step-get-permit-solar-photovoltaic-system__d6cb071b.json",
+      "category": "permits",
+      "etag": "\"gzydvngapr4u2o\"",
+      "last_modified": null,
+      "content_hash": "50a089ca4c0044e8",
+      "pdf_links": [
+        "https://www.sf.gov/sites/default/files/2024-02/Supplement%20-%20Protocol%20For%20PV%20Plans%20MJ.pdf",
+        "https://sf.gov/sites/default/files/2023-09/Solar%20APP%20PV%2BST%20Eligibility.pdf",
+        "https://sf.gov/sites/default/files/2023-10/Solar%20APP%20PV%2BST%20Eligibility%20Chinese.pdf",
+        "https://sf.gov/sites/default/files/2023-10/Solar%20APP%20PV%2BST%20Eligibility%20Spanish.pdf",
+        "https://sf.gov/sites/default/files/2023-10/Solar%20APP%20PV%2BST%20Eligibility%20Tagalog.pdf"
+      ]
+    },
+    "https://www.sf.gov/step-by-step--get-reimbursed-storefront-improvements": {
+      "file": "step-by-step-get-reimbursed-storefront-improvements__16a9795d.json",
+      "category": "business",
+      "etag": "\"3x5p93cii34cqp\"",
+      "last_modified": null,
+      "content_hash": "4ce453bb260779c8",
+      "pdf_links": []
+    },
+    "https://www.sf.gov/step-by-step--get-shared-spaces-permit-your-sidewalk-or-parking-lane": {
+      "file": "step-by-step-get-shared-spaces-permit-your-sidewalk-or-parking-lane__0ca5a4a5.json",
+      "category": "permits",
+      "etag": "\"12xuqrfymn4rjo\"",
+      "last_modified": null,
+      "content_hash": "8edcb96aa72cd767",
+      "pdf_links": [
+        "https://sf.gov/sites/default/files/2022-08/Shared%20Spaces%20Application%20Checklist.pdf"
+      ]
+    },
+    "https://www.sf.gov/step-by-step--get-street-vending-permit": {
+      "file": "step-by-step-get-street-vending-permit__13c11aba.json",
+      "category": "permits",
+      "etag": "\"uknj7wmtuv4i4u\"",
+      "last_modified": null,
+      "content_hash": "15a9293caa78946e",
+      "pdf_links": []
+    },
+    "https://www.sf.gov/step-by-step--get-your-small-business-permits-30-day-review": {
+      "file": "step-by-step-get-your-small-business-permits-30-day-review__cf8bda1a.json",
+      "category": "permits",
+      "etag": "\"mn1eeu1pfy4c93\"",
+      "last_modified": null,
+      "content_hash": "a553552091a475b9",
+      "pdf_links": []
+    },
+    "https://www.sf.gov/step-by-step--how-abandon-fictitious-business-name-fbn": {
+      "file": "step-by-step-how-abandon-fictitious-business-name-fbn__b0b3885a.json",
+      "category": "business",
+      "etag": "\"sc544j4mc24cyh\"",
+      "last_modified": null,
+      "content_hash": "4fae001f374b7ce5",
+      "pdf_links": []
+    },
+    "https://www.sf.gov/step-by-step--permit-process-existing-laundromat-alterations": {
+      "file": "step-by-step-permit-process-existing-laundromat-alterations__8cfdd836.json",
+      "category": "permits",
+      "etag": "\"dfacriex5b4n0p\"",
+      "last_modified": null,
+      "content_hash": "e88ad1f0f8fef111",
+      "pdf_links": [
+        "https://www.sf.gov/documents/39451/Who_Can_Obtain_A_Building_Permit_And_Property_Owner_Licensed_Contractor_Forms.pdf",
+        "https://www.sf.gov/documents/5891/Property_Owner_Disclosure_Form_589lGbh.pdf",
+        "https://www.sf.gov/documents/5884/Licensed_Contractors_Statement.pdf",
+        "https://www.sf.gov/documents/19542/Building_Permitting_of_Existing_Laundromat_Alterations.pdf",
+        "https://www.sf.gov/documents/19912/Permitting_of_Laundromat_Alterations_Chinese.pdf",
+        "https://www.sf.gov/documents/19913/Permitting_of_Laundromat_Alterations_Spanish.pdf",
+        "https://www.sf.gov/documents/20042/Permitting_of_Laundromat_Alterations_Filipino.pdf",
+        "https://www.sf.gov/documents/31879/Building_Permitting_of_Existing_Laundromat_Alterations_Vietnamese.pdf"
+      ]
+    },
+    "https://www.sf.gov/step-by-step--prepare-your-construction-project": {
+      "file": "step-by-step-prepare-your-construction-project__0a00885c.json",
+      "category": "permits",
+      "etag": "\"i6avwc7jx14ur9\"",
+      "last_modified": null,
+      "content_hash": "2808339caee9e3bf",
+      "pdf_links": []
+    },
+    "https://www.sf.gov/step-by-step--qualify-do-business-city": {
+      "file": "step-by-step-qualify-do-business-city__46313ff6.json",
+      "category": "business",
+      "etag": "\"i1r1d2g5nw4dl1\"",
+      "last_modified": null,
+      "content_hash": "ffd89103e34e4653",
+      "pdf_links": []
+    },
+    "https://www.sf.gov/step-by-step--shared-spaces-permit-transition-timeline": {
+      "file": "step-by-step-shared-spaces-permit-transition-timeline__c4ca121e.json",
+      "category": "permits",
+      "etag": "\"tcj9x9dlue4xzb\"",
+      "last_modified": null,
+      "content_hash": "8181cf9d15a10a94",
+      "pdf_links": []
+    },
+    "https://www.sf.gov/step-by-step--step-step-guide-starting-business-san-francisco": {
+      "file": "step-by-step-step-step-guide-starting-business-san-francisco__28e0c68e.json",
+      "category": "business",
+      "etag": "\"r4k50yfsxe4mj5\"",
+      "last_modified": null,
+      "content_hash": "a21ccd4732f1489b",
+      "pdf_links": []
+    },
+    "https://www.sf.gov/step-by-step--stop-construction-work-spreading-lead-paint-dust": {
+      "file": "step-by-step-stop-construction-work-spreading-lead-paint-dust__7ad8af22.json",
+      "category": "permits",
+      "etag": "\"ydijuxrsmj47j5\"",
+      "last_modified": null,
+      "content_hash": "42c4f0e8d28c12ca",
+      "pdf_links": []
+    }
+  },
+  "pdfs": {
+    "https://media.api.sf.gov/documents/102.10_Loading_and_Unloading_Wage_Chart_FY25-26.pdf": {
+      "file": "documents-102-10-loading-and-unloading-wage-chart-fy25-26-pdf__2c5a21f4.json",
+      "category": "permits",
+      "etag": "W/\"4d6a10a5ef76500593e60371272cdd82\"",
+      "last_modified": "Fri, 27 Feb 2026 16:50:20 GMT",
+      "content_hash": "84bc3d5377223773"
+    },
+    "https://media.api.sf.gov/documents/102.11_Security_Employee_Wage_Chart_FY25-26.pdf": {
+      "file": "documents-102-11-security-employee-wage-chart-fy25-26-pdf__5a17beb5.json",
+      "category": "permits",
+      "etag": "W/\"e435a099889b056ebb16af2020ab4825\"",
+      "last_modified": "Fri, 27 Feb 2026 16:50:21 GMT",
+      "content_hash": "8be93e060d9f7c49"
+    },
+    "https://media.api.sf.gov/documents/102.2_Janitors_Wage_Chart_FY25-26.pdf": {
+      "file": "documents-102-2-janitors-wage-chart-fy25-26-pdf__249590e8.json",
+      "category": "permits",
+      "etag": "W/\"8800a6eabffa38f2287a02b12a44475c\"",
+      "last_modified": "Fri, 27 Feb 2026 16:50:15 GMT",
+      "content_hash": "445c1c77f7545fbf"
+    },
+    "https://media.api.sf.gov/documents/102.2_Window_Cleaner_Wage_Chart_FY25-26.pdf": {
+      "file": "documents-102-2-window-cleaner-wage-chart-fy25-26-pdf__d94960c2.json",
+      "category": "permits",
+      "etag": "W/\"4ec99da137bbf02f6ada46357cb4470c\"",
+      "last_modified": "Fri, 27 Feb 2026 16:50:16 GMT",
+      "content_hash": "74ea8b2a1fd645c1"
+    },
+    "https://media.api.sf.gov/documents/102.5_Solid_Waste_Haulers_Wage_Chart_FY25-26.pdf": {
+      "file": "documents-102-5-solid-waste-haulers-wage-chart-fy25-26-pdf__a9f31aaa.json",
+      "category": "permits",
+      "etag": "W/\"12ee1e583fcde9f557e8ca01dfc318e5\"",
+      "last_modified": "Fri, 27 Feb 2026 16:50:18 GMT",
+      "content_hash": "e23fe657deb21d4e"
+    },
+    "https://media.api.sf.gov/documents/102.6_Movers_Wage_Chart_FY_25-26.pdf": {
+      "file": "documents-102-6-movers-wage-chart-fy-25-26-pdf__98d3c237.json",
+      "category": "permits",
+      "etag": "W/\"a745cf8884b08ed593c9b52fcc9a259b\"",
+      "last_modified": "Fri, 27 Feb 2026 16:50:18 GMT",
+      "content_hash": "491aa4df05a3f539"
+    },
+    "https://media.api.sf.gov/documents/102.7_Motorbus_Wage_Chart_FY25-26.pdf": {
+      "file": "documents-102-7-motorbus-wage-chart-fy25-26-pdf__d7935c71.json",
+      "category": "permits",
+      "etag": "W/\"7db1931b67886dcf2236b763f6414635\"",
+      "last_modified": "Fri, 27 Feb 2026 16:50:19 GMT",
+      "content_hash": "a4de70e4d0967d01"
+    },
+    "https://media.api.sf.gov/documents/102.8_Trade_Show_Wage_Chart_FY25-26.pdf": {
+      "file": "documents-102-8-trade-show-wage-chart-fy25-26-pdf__fccf37f8.json",
+      "category": "permits",
+      "etag": "W/\"45489ac6e0fad03ee871d6362f981f3d\"",
+      "last_modified": "Fri, 27 Feb 2026 16:50:19 GMT",
+      "content_hash": "f773bc8eb1144a85"
+    },
+    "https://media.api.sf.gov/documents/102.9_Broadcast_Services_Wage_Chart_FY_25-26.pdf": {
+      "file": "documents-102-9-broadcast-services-wage-chart-fy-25-26-pdf__d01b019a.json",
+      "category": "permits",
+      "etag": "W/\"6f86e496550e981ccd8eef54fdf390ba\"",
+      "last_modified": "Fri, 27 Feb 2026 16:50:20 GMT",
+      "content_hash": "3c91c73b0fd8b274"
+    },
+    "https://media.api.sf.gov/documents/102_KG83x64.4_Theatrical_Wage_Chart_FY25-26.pdf": {
+      "file": "documents-102-kg83x64-4-theatrical-wage-chart-fy25-26-pdf__bd5a523b.json",
+      "category": "permits",
+      "etag": "W/\"59427208be7f6d901178c80d9b0939bb\"",
+      "last_modified": "Fri, 27 Feb 2026 21:08:51 GMT",
+      "content_hash": "662c2b993f9e152f"
+    },
+    "https://media.api.sf.gov/documents/102_Wwv4GfT.3_Parking_Garage_Wage_Chart_FY25-26.pdf": {
+      "file": "documents-102-wwv4gft-3-parking-garage-wage-chart-fy25-26-pdf__2b005424.json",
+      "category": "permits",
+      "etag": "W/\"22c7042e132cecbcc8f59b54479f8149\"",
+      "last_modified": "Fri, 27 Feb 2026 21:55:35 GMT",
+      "content_hash": "d7893bca9d19c750"
+    },
+    "https://media.api.sf.gov/documents/2025_Local_Hiring_Policy_Annual_Report_published_04.01.25.pdf": {
+      "file": "documents-2025-local-hiring-policy-annual-report-published-04-01-25-pdf__9e7e125a.json",
+      "category": "permits",
+      "etag": "W/\"a45eee2c10871762b5c2aedd40035866\"",
+      "last_modified": "Wed, 02 Apr 2025 20:49:18 GMT",
+      "content_hash": "089d89e52b0d502f"
+    },
+    "https://media.api.sf.gov/documents/ASR_Factsheet_NewConstruction_Chinese_2025.pdf": {
+      "file": "documents-asr-factsheet-newconstruction-chinese-2025-pdf__2487637a.json",
+      "category": "permits",
+      "etag": "W/\"c6e65cc55e8424fc6a33e8fae33b5197\"",
+      "last_modified": "Tue, 25 Mar 2025 20:38:53 GMT",
+      "content_hash": "56c832990f790bec"
+    },
+    "https://media.api.sf.gov/documents/ASR_Factsheet_NewConstruction_English_2025.pdf": {
+      "file": "documents-asr-factsheet-newconstruction-english-2025-pdf__3a959227.json",
+      "category": "permits",
+      "etag": "W/\"c60753f27879ef31171e3ae50dd6853a\"",
+      "last_modified": "Tue, 25 Mar 2025 20:38:53 GMT",
+      "content_hash": "f6a1207f742ebc3b"
+    },
+    "https://media.api.sf.gov/documents/ASR_Factsheet_NewConstruction_Filipino_2025.pdf": {
+      "file": "documents-asr-factsheet-newconstruction-filipino-2025-pdf__6549d858.json",
+      "category": "permits",
+      "etag": "W/\"191899e642a8b90de982cf9c3f166e10\"",
+      "last_modified": "Tue, 25 Mar 2025 20:38:53 GMT",
+      "content_hash": "023add66848db369"
+    },
+    "https://media.api.sf.gov/documents/ASR_Factsheet_NewConstruction_Korean_2025.pdf": {
+      "file": "documents-asr-factsheet-newconstruction-korean-2025-pdf__dc2ca2b4.json",
+      "category": "permits",
+      "etag": "W/\"20f63c11f5397971b339441d49f94534\"",
+      "last_modified": "Tue, 25 Mar 2025 20:38:51 GMT",
+      "content_hash": "f7fb0adb03223576"
+    },
+    "https://media.api.sf.gov/documents/ASR_Factsheet_NewConstruction_Russian_2025.pdf": {
+      "file": "documents-asr-factsheet-newconstruction-russian-2025-pdf__d0279bf6.json",
+      "category": "permits",
+      "etag": "W/\"ed5c18b91a40b2a3654c985192f047ff\"",
+      "last_modified": "Tue, 25 Mar 2025 20:38:52 GMT",
+      "content_hash": "0e37ab5c11763f7b"
+    },
+    "https://media.api.sf.gov/documents/ASR_Factsheet_NewConstruction_Spanish_2025.pdf": {
+      "file": "documents-asr-factsheet-newconstruction-spanish-2025-pdf__b3a44c35.json",
+      "category": "permits",
+      "etag": "W/\"0276a8186381afd9391c2f7ef2dffd3f\"",
+      "last_modified": "Tue, 25 Mar 2025 20:38:52 GMT",
+      "content_hash": "942236d2eedc302a"
+    },
+    "https://media.api.sf.gov/documents/ASR_Factsheet_NewConstruction_Vietnamese_2025.pdf": {
+      "file": "documents-asr-factsheet-newconstruction-vietnamese-2025-pdf__e499c20d.json",
+      "category": "permits",
+      "etag": "W/\"540ffafd49a857708969661050dbe1aa\"",
+      "last_modified": "Tue, 25 Mar 2025 20:38:52 GMT",
+      "content_hash": "1d6a7b71f61a2e6d"
+    },
+    "https://media.api.sf.gov/documents/Claim_for_Seismic_Safety_Construction_Exclusion_from_Assessment.pdf": {
+      "file": "documents-claim-for-seismic-safety-construction-exclusion-from-assessment-pdf__a6828231.json",
+      "category": "permits",
+      "etag": "W/\"504bd581db3cad43a9d76f8670c6221d\"",
+      "last_modified": "Mon, 12 May 2025 22:10:49 GMT",
+      "content_hash": "398c2e5c42260c16"
+    },
+    "https://media.api.sf.gov/documents/DBI_Strategic_Plan_2025_Update_Final.pdf": {
+      "file": "documents-dbi-strategic-plan-2025-update-final-pdf__8bcdf803.json",
+      "category": "permits",
+      "etag": "W/\"484e736e384ac54de37fe78729d57905\"",
+      "last_modified": "Wed, 03 Sep 2025 19:16:31 GMT",
+      "content_hash": "41b14bb673fbd60e"
+    },
+    "https://media.api.sf.gov/documents/Internal_Audit_Final_Report_and_Appendices_Final.pdf": {
+      "file": "documents-internal-audit-final-report-and-appendices-final-pdf__58c37406.json",
+      "category": "permits",
+      "etag": "W/\"0cad5678892d8f194bb578506650482c\"",
+      "last_modified": "Thu, 03 Jul 2025 22:54:15 GMT",
+      "content_hash": "5d1942f05bc3eccd"
+    },
+    "https://media.api.sf.gov/documents/Legacy_Business_Preservation_Study_FINAL_Feb2026.pdf": {
+      "file": "documents-legacy-business-preservation-study-final-feb2026-pdf__f93505ce.json",
+      "category": "business",
+      "etag": "W/\"56f31fb7ddbd06755c00ac05a493ecd3\"",
+      "last_modified": "Wed, 18 Mar 2026 23:16:29 GMT",
+      "content_hash": "49ec36fda70fb3dc"
+    },
+    "https://media.api.sf.gov/documents/Parking_Diagram_Example.pdf": {
+      "file": "documents-parking-diagram-example-pdf__81cbfeaa.json",
+      "category": "permits",
+      "etag": "W/\"43812a0f0053380dc3393d80cc095d18\"",
+      "last_modified": "Fri, 20 Dec 2024 22:16:20 GMT",
+      "content_hash": "44fc5693e3f7bcf7"
+    },
+    "https://media.api.sf.gov/documents/Property_Inspection_and_Repairs_Policy_8.23.2019.pdf": {
+      "file": "documents-property-inspection-and-repairs-policy-8-23-2019-pdf__14d51250.json",
+      "category": "permits",
+      "etag": "W/\"9668d61d7f847f5f4362d4793129e451\"",
+      "last_modified": "Mon, 22 Dec 2025 21:15:34 GMT",
+      "content_hash": "046e81be429b6479"
+    },
+    "https://media.api.sf.gov/documents/SBC_RESO_001-2022_Affirming_the_Commissions_Commitment_to_Racial_Equity_rv7tQ4B.pdf": {
+      "file": "documents-sbc-reso-001-2022-affirming-the-commissions-commitment-to-racial-equity-rv7tq4b-pdf__e25b6b48.json",
+      "category": "business",
+      "etag": "W/\"0a12a83847617538175f67d8e65ae4f7\"",
+      "last_modified": "Thu, 04 Sep 2025 23:02:59 GMT",
+      "content_hash": "7ecfe53714906b1a"
+    },
+    "https://media.api.sf.gov/documents/SCP_Review_ProcessDiagram_FEB251.pdf": {
+      "file": "documents-scp-review-processdiagram-feb251-pdf__771df45b.json",
+      "category": "permits",
+      "etag": "W/\"8d628f7c0c37312207b6245c644d6b83\"",
+      "last_modified": "Wed, 12 Feb 2025 19:33:23 GMT",
+      "content_hash": "97815a7e19791c32"
+    },
+    "https://media.api.sf.gov/documents/Tree_Planting_and_Protection_Frequently_Asked_Questions.pdf": {
+      "file": "documents-tree-planting-and-protection-frequently-asked-questions-pdf__16cf5c3d.json",
+      "category": "permits",
+      "etag": "W/\"ed8261b2573642e04bdb57e91d61c1bd\"",
+      "last_modified": "Wed, 28 Oct 2026 17:06:56 GMT",
+      "content_hash": "d052ec557d0d27a9"
+    },
+    "https://media.api.sf.gov/documents/Who_Can_Obtain_A_Building_Permit_And_Property_Owner_Licensed_Contractor_Forms.pdf": {
+      "file": "documents-who-can-obtain-a-building-permit-and-property-owner-licensed-contractor-forms-pdf__4f4f104e.json",
+      "category": "permits",
+      "etag": "W/\"a51475a855d183fbb194eb6aaf68d00a\"",
+      "last_modified": "Sat, 21 Mar 2026 00:08:28 GMT",
+      "content_hash": "8196e8016371337d"
+    },
+    "https://sf.gov/sites/default/files/2022-05/041322_SBE_ProceduresRevised.pdf": {
+      "file": "sites-default-files-2022-05-041322-sbe-proceduresrevised-pdf__f336ed00.json",
+      "category": "business",
+      "etag": "W/\"af050b46254f2781e95e3b3e22882845\"",
+      "last_modified": "Fri, 20 Dec 2024 21:40:37 GMT",
+      "content_hash": "74c5aa35855d3997"
+    },
+    "https://sf.gov/sites/default/files/2022-06/CityBuild%20Certification%20Form%207.22.2016.pdf": {
+      "file": "sites-default-files-2022-06-citybuild-20certification-20form-207-22-2016-pdf__c1c636c5.json",
+      "category": "permits",
+      "etag": "W/\"fc9febb40d3e6f503453517c7ccc965d\"",
+      "last_modified": "Fri, 20 Dec 2024 21:57:12 GMT",
+      "content_hash": "a009665fa391b09f"
+    },
+    "https://sf.gov/sites/default/files/2022-08/IS%20M-04.pdf": {
+      "file": "sites-default-files-2022-08-is-20m-04-pdf__14661230.json",
+      "category": "permits",
+      "etag": "W/\"f92eaef7333759188252f471fd89f15b\"",
+      "last_modified": "Fri, 20 Dec 2024 22:09:40 GMT",
+      "content_hash": "ee99a5536dbbb00b"
+    },
+    "https://sf.gov/sites/default/files/2022-11/Ex.%20P%20-%20Jobs%20EOP.pdf": {
+      "file": "sites-default-files-2022-11-ex-20p-20-20jobs-20eop-pdf__636b2f6a.json",
+      "category": "business",
+      "etag": "W/\"a4b3e4b4b17e29a770f4fca86a2ac534\"",
+      "last_modified": "Fri, 20 Dec 2024 22:29:24 GMT",
+      "content_hash": "503faf9a1654ab4b"
+    },
+    "https://sf.gov/sites/default/files/2023-09/Solar%20APP%20PV%2BST%20Eligibility.pdf": {
+      "file": "sites-default-files-2023-09-solar-20app-20pv-2bst-20eligibility-pdf__8722befd.json",
+      "category": "permits",
+      "etag": "W/\"2dd240be3b796abe553cbfe2fa8908e8\"",
+      "last_modified": "Fri, 24 Apr 2026 19:08:32 GMT",
+      "content_hash": "8e38261ab2438967"
+    },
+    "https://www.sf.gov/documents/10100/DBI_Organizational_Chart.pdf": {
+      "file": "documents-10100-dbi-organizational-chart-pdf__682a5e3d.json",
+      "category": "permits",
+      "etag": "W/\"bcabfca3f01f688ce31e46d00df56d00\"",
+      "last_modified": "Mon, 09 Nov 2026 18:42:09 GMT",
+      "content_hash": "50ff4de28a30ab4f"
+    },
+    "https://www.sf.gov/documents/19542/Building_Permitting_of_Existing_Laundromat_Alterations.pdf": {
+      "file": "documents-19542-building-permitting-of-existing-laundromat-alterations-pdf__9dcb7adf.json",
+      "category": "permits",
+      "etag": "W/\"f601892f23ed18fb3013c16111ec24d1\"",
+      "last_modified": "Thu, 02 Apr 2026 18:37:51 GMT",
+      "content_hash": "c36e6641940021a7"
+    },
+    "https://www.sf.gov/documents/19912/Permitting_of_Laundromat_Alterations_Chinese.pdf": {
+      "file": "documents-19912-permitting-of-laundromat-alterations-chinese-pdf__4e465cfd.json",
+      "category": "permits",
+      "etag": "W/\"d73cd383d0e8db22c132ec34de12eab0\"",
+      "last_modified": "Thu, 02 Apr 2026 18:37:42 GMT",
+      "content_hash": "ebe4a53c9423c5b2"
+    },
+    "https://www.sf.gov/documents/19913/Permitting_of_Laundromat_Alterations_Spanish.pdf": {
+      "file": "documents-19913-permitting-of-laundromat-alterations-spanish-pdf__0f47dd37.json",
+      "category": "permits",
+      "etag": "W/\"e2668ee4a83fb6425d43e857a24c9057\"",
+      "last_modified": "Thu, 02 Apr 2026 18:37:36 GMT",
+      "content_hash": "e964a91a7ce09a62"
+    },
+    "https://www.sf.gov/documents/20042/Permitting_of_Laundromat_Alterations_Filipino.pdf": {
+      "file": "documents-20042-permitting-of-laundromat-alterations-filipino-pdf__008241a1.json",
+      "category": "permits",
+      "etag": "W/\"9e439b683dd153e108c0328e42d2bfb2\"",
+      "last_modified": "Thu, 02 Apr 2026 18:37:28 GMT",
+      "content_hash": "1e147df23c913250"
+    },
+    "https://www.sf.gov/documents/31879/Building_Permitting_of_Existing_Laundromat_Alterations_Vietnamese.pdf": {
+      "file": "documents-31879-building-permitting-of-existing-laundromat-alterations-vietnamese-pdf__291d5d51.json",
+      "category": "permits",
+      "etag": "W/\"93b5d62cdab4ca2fcb98df49fa922a7a\"",
+      "last_modified": "Thu, 02 Apr 2026 18:37:19 GMT",
+      "content_hash": "59eba0c15f67f020"
+    },
+    "https://www.sf.gov/documents/37042/Frequently_Asked_Questions_FAQs_-_Storage_Sheds_Exempt_from_Building_Permit.pdf": {
+      "file": "documents-37042-frequently-asked-questions-faqs-storage-sheds-exempt-from-building-permit-pdf__30cbec1b.json",
+      "category": "permits",
+      "etag": "W/\"fd4f5d8112298b29d9c04ac8b132670c\"",
+      "last_modified": "Wed, 03 Jun 2026 20:52:02 GMT",
+      "content_hash": "b2f3da5cfb89e2af"
+    },
+    "https://www.sf.gov/documents/37243/Final_Declaration_For_Permit_Issuance.pdf": {
+      "file": "documents-37243-final-declaration-for-permit-issuance-pdf__ac7ba8cf.json",
+      "category": "permits",
+      "etag": "W/\"33613a96f66bf79f8fa9ba1c85df0cea\"",
+      "last_modified": "Sat, 21 Mar 2026 00:05:06 GMT",
+      "content_hash": "1416b35d46bf893e"
+    },
+    "https://www.sf.gov/documents/37797/Code_Enforcement_Organizational_Chart-101326.pdf": {
+      "file": "documents-37797-code-enforcement-organizational-chart-101326-pdf__c042d53b.json",
+      "category": "permits",
+      "etag": "W/\"01fd46e74eac23efa7af6a3dcdbb6ccc\"",
+      "last_modified": "Tue, 13 Oct 2026 18:31:56 GMT",
+      "content_hash": "c4c073be0aee29c9"
+    },
+    "https://www.sf.gov/documents/39451/Who_Can_Obtain_A_Building_Permit_And_Property_Owner_Licensed_Contractor_Forms.pdf": {
+      "file": "documents-39451-who-can-obtain-a-building-permit-and-property-owner-licensed-contractor-forms-pdf__671dabe6.json",
+      "category": "permits",
+      "etag": "W/\"a51475a855d183fbb194eb6aaf68d00a\"",
+      "last_modified": "Sat, 21 Mar 2026 00:08:28 GMT",
+      "content_hash": "8196e8016371337d"
+    },
+    "https://www.sf.gov/documents/43427/Alemany_Flea_Market_Rules_and_Regulations_2026.pdf": {
+      "file": "documents-43427-alemany-flea-market-rules-and-regulations-2026-pdf__3932bade.json",
+      "category": "business",
+      "etag": "W/\"26172268c33a959d6a8c10fd20709d91\"",
+      "last_modified": "Mon, 20 Jul 2026 16:21:56 GMT",
+      "content_hash": "4555268d60ea5e20"
+    },
+    "https://www.sf.gov/documents/43428/Alemany_Flea_Market_Vendor_Application_2026.pdf": {
+      "file": "documents-43428-alemany-flea-market-vendor-application-2026-pdf__7d2eb5c4.json",
+      "category": "business",
+      "etag": "W/\"bffc397e8306cc9e5f1dc0e14cd9ae81\"",
+      "last_modified": "Thu, 16 Jul 2026 16:48:46 GMT",
+      "content_hash": "619a2fcf0a630565"
+    },
+    "https://www.sf.gov/documents/49122/Lien_Date_2026_First_Notice_Spanish.docx.pdf": {
+      "file": "documents-49122-lien-date-2026-first-notice-spanish-docx-pdf__6a8dfba9.json",
+      "category": "permits",
+      "etag": "W/\"a940dca0d5abf57429630fd13d4ec939\"",
+      "last_modified": "Sat, 03 Jan 2026 01:10:48 GMT",
+      "content_hash": "3c4ae10896481018"
+    },
+    "https://www.sf.gov/documents/49123/2026_Lien_Date_New_Construction_Form_Filipino.pdf": {
+      "file": "documents-49123-2026-lien-date-new-construction-form-filipino-pdf__46bf5f43.json",
+      "category": "permits",
+      "etag": "W/\"7b299cda8425dae238ff691312380586\"",
+      "last_modified": "Sat, 03 Jan 2026 01:10:48 GMT",
+      "content_hash": "9d4e320f8c586cc2"
+    },
+    "https://www.sf.gov/documents/49124/2026_Lien_Date_New_Construction_Form_English.pdf": {
+      "file": "documents-49124-2026-lien-date-new-construction-form-english-pdf__a9e728e9.json",
+      "category": "permits",
+      "etag": "W/\"664018c3210a36b4be3a116998f9b065\"",
+      "last_modified": "Sat, 03 Jan 2026 01:10:49 GMT",
+      "content_hash": "8d062dc3a6ff6ed3"
+    },
+    "https://www.sf.gov/documents/49129/Lien_Date_2026_First_Notice_Chinese.pdf": {
+      "file": "documents-49129-lien-date-2026-first-notice-chinese-pdf__8c0b8573.json",
+      "category": "permits",
+      "etag": "W/\"dcf7f1358c52b17ddf5ac2e012d9568b\"",
+      "last_modified": "Mon, 05 Jan 2026 18:20:38 GMT",
+      "content_hash": "85035dcbb1b2e3fa"
+    },
+    "https://www.sf.gov/documents/50426/Sign_Posting_Requirements_and_Applicant_Affidavit.pdf": {
+      "file": "documents-50426-sign-posting-requirements-and-applicant-affidavit-pdf__8b5ea11a.json",
+      "category": "permits",
+      "etag": "W/\"29b7f8f6cb039d3ecf2f60fc7e6e2458\"",
+      "last_modified": "Wed, 01 Apr 2026 23:32:55 GMT",
+      "content_hash": "5c7bac536db75f62"
+    },
+    "https://www.sf.gov/documents/55903/Barricade_Guidelines.pdf": {
+      "file": "documents-55903-barricade-guidelines-pdf__a044318f.json",
+      "category": "permits",
+      "etag": "W/\"cfaf7719679de9c2377c894f699cb3f5\"",
+      "last_modified": "Tue, 12 May 2026 19:51:30 GMT",
+      "content_hash": "8809636f1390c997"
+    },
+    "https://www.sf.gov/documents/5884/Licensed_Contractors_Statement.pdf": {
+      "file": "documents-5884-licensed-contractors-statement-pdf__9c0c3026.json",
+      "category": "permits",
+      "etag": "W/\"55e8f9694222931b57cff78687341c45\"",
+      "last_modified": "Sat, 21 Mar 2026 00:05:36 GMT",
+      "content_hash": "90e67674c3126864"
+    },
+    "https://www.sf.gov/documents/5891/Property_Owner_Disclosure_Form_589lGbh.pdf": {
+      "file": "documents-5891-property-owner-disclosure-form-589lgbh-pdf__e33a9ca6.json",
+      "category": "permits",
+      "etag": "W/\"2421405fa6f87185fb40f03ba7e94733\"",
+      "last_modified": "Wed, 01 Apr 2026 23:41:37 GMT",
+      "content_hash": "4d1f2becb0d9d2c1"
+    },
+    "https://www.sf.gov/documents/61676/Information_Sheet_M-06_8.6.2026.pdf": {
+      "file": "documents-61676-information-sheet-m-06-8-6-2026-pdf__cc020e9b.json",
+      "category": "permits",
+      "etag": "W/\"6a62a9a886ac18f1df3be1308e9a69b9\"",
+      "last_modified": "Thu, 06 Aug 2026 23:40:23 GMT",
+      "content_hash": "f278ea51de33a3e3"
+    },
+    "https://www.sf.gov/documents/64825/Attachment_2_HCAO_Declaration_10_1_18_dPSClM8.pdf": {
+      "file": "documents-64825-attachment-2-hcao-declaration-10-1-18-dpsclm8-pdf__ea739c1d.json",
+      "category": "business",
+      "etag": "W/\"87232a1e2db2a384335aa068075e4c2e\"",
+      "last_modified": "Wed, 21 Oct 2026 22:53:40 GMT",
+      "content_hash": "d7b236b8f8bae647"
+    },
+    "https://www.sf.gov/documents/64826/Attachment_3_MCO_Declaration_10_1_18_rRFZdc4.pdf": {
+      "file": "documents-64826-attachment-3-mco-declaration-10-1-18-rrfzdc4-pdf__4875f4df.json",
+      "category": "business",
+      "etag": "W/\"5b5ad28bfa51ddae7c3f24d87a018f5e\"",
+      "last_modified": "Wed, 21 Oct 2026 22:53:41 GMT",
+      "content_hash": "1ed971295bcf175c"
+    },
+    "https://www.sf.gov/documents/64828/Attachment_5_Form126f4_v2018-12-07_9jhzKFj.pdf": {
+      "file": "documents-64828-attachment-5-form126f4-v2018-12-07-9jhzkfj-pdf__178c6640.json",
+      "category": "business",
+      "etag": "W/\"4e9786f779985de07583ad307b7c22d7\"",
+      "last_modified": "Wed, 21 Oct 2026 22:53:41 GMT",
+      "content_hash": "581cd47ddcc449ba"
+    },
+    "https://www.sf.gov/documents/64829/Housing_Authority_Integration_Technical_Assistance.pdf": {
+      "file": "documents-64829-housing-authority-integration-technical-assistance-pdf__f7ecc9af.json",
+      "category": "business",
+      "etag": "W/\"3aef3a17bb4646416ec6f750d32acc2e\"",
+      "last_modified": "Wed, 21 Oct 2026 22:53:42 GMT",
+      "content_hash": "f98dbedb23ad3ecb"
+    },
+    "https://www.sf.gov/documents/7730/1021_T_Request_for_ADU_Hearing_3.25.pdf": {
+      "file": "documents-7730-1021-t-request-for-adu-hearing-3-25-pdf__a19040e2.json",
+      "category": "permits",
+      "etag": "W/\"5f9cb4a12a26a6575e45d890e5f06fef\"",
+      "last_modified": "Thu, 23 Apr 2026 23:59:45 GMT",
+      "content_hash": "8593f6cc370fcdfd"
+    },
+    "https://www.sf.gov/documents/7768/1020_LL_Declaration_re_ADU_Construction_3.25.pdf": {
+      "file": "documents-7768-1020-ll-declaration-re-adu-construction-3-25-pdf__bcca7da1.json",
+      "category": "permits",
+      "etag": "W/\"ba0567cb6bb2b660496cecce124da604\"",
+      "last_modified": "Thu, 23 Apr 2026 23:59:34 GMT",
+      "content_hash": "2a459eb87285e261"
+    },
+    "https://www.sf.gov/documents/9650/DBI_Staff_Directory.pdf": {
+      "file": "documents-9650-dbi-staff-directory-pdf__318c74c5.json",
+      "category": "permits",
+      "etag": "W/\"5ead2610f9291b1758762cf1da3a5f3d\"",
+      "last_modified": "Thu, 15 Oct 2026 19:54:13 GMT",
+      "content_hash": "4c31cd693a0f3bf6"
+    },
+    "https://www.sf.gov/sites/default/files/2022-07/Residential%20Pre-Plan%20Check%20Checklist.pdf": {
+      "file": "sites-default-files-2022-07-residential-20pre-plan-20check-20checklist-pdf__c99d190c.json",
+      "category": "permits",
+      "etag": "W/\"5fde1f847130170dbc83a5881a71ce0d\"",
+      "last_modified": "Wed, 16 Jul 2025 19:00:40 GMT",
+      "content_hash": "363c2c1988d001ad"
+    },
+    "https://www.sf.gov/sites/default/files/2022-08/IS%20G-17.pdf": {
+      "file": "sites-default-files-2022-08-is-20g-17-pdf__01d48f57.json",
+      "category": "permits",
+      "etag": "W/\"d2431e19eaae5de8f6830159a26f6950\"",
+      "last_modified": "Fri, 20 Dec 2024 22:09:33 GMT",
+      "content_hash": "e7d8c87118e53ccf"
+    },
+    "https://www.sf.gov/sites/default/files/2022-08/IS%20S-04.pdf": {
+      "file": "sites-default-files-2022-08-is-20s-04-pdf__48ffc72e.json",
+      "category": "permits",
+      "etag": "W/\"cc0e2df9c41f1f3093c60e100499e3a1\"",
+      "last_modified": "Fri, 20 Dec 2024 22:10:00 GMT",
+      "content_hash": "e08435f10c3952e9"
+    },
+    "https://www.sf.gov/sites/default/files/2022-09/Unit%20Legalization%20Screening%20Form%20and%20Checklist.pdf": {
+      "file": "sites-default-files-2022-09-unit-20legalization-20screening-20form-20and-20checklist-pdf__3b1354e3.json",
+      "category": "permits",
+      "etag": "W/\"1479c21c6c504e2ef41159aa6e80ebdc\"",
+      "last_modified": "Fri, 20 Mar 2026 23:59:46 GMT",
+      "content_hash": "1ab943d816fd30fd"
+    },
+    "https://www.sf.gov/sites/default/files/2022-11/IS%20DA-02.pdf": {
+      "file": "sites-default-files-2022-11-is-20da-02-pdf__32a0bdda.json",
+      "category": "permits",
+      "etag": "W/\"cf41a0231bb7447c9b0d7818d65c1e5c\"",
+      "last_modified": "Thu, 27 Mar 2025 18:27:13 GMT",
+      "content_hash": "cb6d13d5d9efc23c"
+    },
+    "https://www.sf.gov/sites/default/files/2024-02/Supplement%20-%20Protocol%20For%20PV%20Plans%20MJ.pdf": {
+      "file": "sites-default-files-2024-02-supplement-20-20protocol-20for-20pv-20plans-20mj-pdf__97d62b8f.json",
+      "category": "permits",
+      "etag": "W/\"77747e06951da973a0196d2891d09b2a\"",
+      "last_modified": "Sat, 21 Dec 2024 01:06:35 GMT",
+      "content_hash": "a89df9dbdcea6ef3"
+    },
+    "https://www.sf.gov/sites/default/files/2024-05/Unissued%20Extension%20or%20Withdrawal%20Form%202024.Fillable.pdf": {
+      "file": "sites-default-files-2024-05-unissued-20extension-20or-20withdrawal-20form-202024-fillable-pdf__2c001174.json",
+      "category": "permits",
+      "etag": "W/\"78e124609a9f55d39200e44897a4ef5f\"",
+      "last_modified": "Mon, 13 Jul 2026 20:16:27 GMT",
+      "content_hash": "72593a3e24ffcfde"
+    },
+    "https://www.sf.gov/sites/default/files/2024-07/2024%20Vessel%20Factored%20Table.pdf": {
+      "file": "sites-default-files-2024-07-2024-20vessel-20factored-20table-pdf__57161f89.json",
+      "category": "business",
+      "etag": "W/\"c979b4f2af9bab6921c3787116f3929a\"",
+      "last_modified": "Thu, 26 Mar 2026 21:14:37 GMT",
+      "content_hash": "c036ed022d2b65ad"
+    },
+    "https://www.sf.gov/sites/default/files/2024-08/DBI%20Strategic%20Plan%202024.pdf": {
+      "file": "sites-default-files-2024-08-dbi-20strategic-20plan-202024-pdf__634c2ec4.json",
+      "category": "permits",
+      "etag": "W/\"8ee9e0cabf6754e2dc008ad9af0d904a\"",
+      "last_modified": "Sat, 21 Dec 2024 02:10:50 GMT",
+      "content_hash": "82a828f1beb4b299"
+    },
+    "https://www.sf.gov/sites/default/files/2024-08/Final%20Digest%20-%20Additional%20Business%20Tax%20on%20Transportation%20Network%20Companies%20and%20Autonomous%20Vehicle%20Businesses%20PDF_0.pdf": {
+      "file": "sites-default-files-2024-08-final-20digest-20-20additional-20business-20tax-20on-20transportation-20network-20companies-__b87f8950.json",
+      "category": "business",
+      "etag": "W/\"b78c8f1c300c9dd3034b08872d3f9bdd\"",
+      "last_modified": "Sat, 21 Dec 2024 02:15:35 GMT",
+      "content_hash": "4b25c127c8ae4a7d"
+    },
+    "https://www.sf.gov/sites/default/files/2024-08/Final%20Digest%20-%20Changes%20to%20Business%20Taxes.pdf": {
+      "file": "sites-default-files-2024-08-final-20digest-20-20changes-20to-20business-20taxes-pdf__a0e29149.json",
+      "category": "business",
+      "etag": "W/\"af75943ee2ba67f1a9693df4f60e72b9\"",
+      "last_modified": "Sat, 21 Dec 2024 02:15:36 GMT",
+      "content_hash": "1390bff8c6e47632"
+    },
+    "https://www.sf.gov/sites/default/files/2024-08/Prop%20L%20-%20TNC%20Tax%20-%20CON%20VIP%20Letter%20-%20Signed.pdf": {
+      "file": "sites-default-files-2024-08-prop-20l-20-20tnc-20tax-20-20con-20vip-20letter-20-20signed-pdf__76b2a238.json",
+      "category": "business",
+      "etag": "W/\"958c8e30af1da4c5ff1581722428f6f2\"",
+      "last_modified": "Sat, 21 Dec 2024 02:15:47 GMT",
+      "content_hash": "3bc6c68f38d3e350"
+    },
+    "https://www.sf.gov/sites/default/files/2024-08/Prop%20M%20-%20Business%20Taxes%20-%20CON%20VIP%20Letter%20-%20Signed.pdf": {
+      "file": "sites-default-files-2024-08-prop-20m-20-20business-20taxes-20-20con-20vip-20letter-20-20signed-pdf__7d0ce53c.json",
+      "category": "business",
+      "etag": "W/\"68c89022b758c1fbfd0c405adf0a9ac5\"",
+      "last_modified": "Sat, 21 Dec 2024 02:15:48 GMT",
+      "content_hash": "426b4897e2b60914"
+    },
+    "https://www.sf.gov/sites/default/files/2024-08/Reconsideration%20of%20Measure%20Title_%20%E2%80%9CAdditional%20Business%20Tax%20on%20Transportation%20Network%20Companies%20and%20Autonomous%20Vehicle%20Businesses.pdf": {
+      "file": "sites-default-files-2024-08-reconsideration-20of-20measure-20title-20-e2-80-9cadditional-20business-20tax-20on-20transpo__1ed87a36.json",
+      "category": "business",
+      "etag": "W/\"81ea808945a868fc365da08d17745596\"",
+      "last_modified": "Sat, 21 Dec 2024 02:10:51 GMT",
+      "content_hash": "5632a71a4e39dca0"
+    },
+    "https://www.sf.gov/sites/default/files/2024-09/Marso_Opponent%20Argument%20Challenges.pdf": {
+      "file": "sites-default-files-2024-09-marso-opponent-20argument-20challenges-pdf__b4839f25.json",
+      "category": "business",
+      "etag": "W/\"39904224ed9d304cb9562569572afefe\"",
+      "last_modified": "Sat, 21 Dec 2024 02:26:07 GMT",
+      "content_hash": "3509b41370ee3ff9"
+    }
+  }
+}

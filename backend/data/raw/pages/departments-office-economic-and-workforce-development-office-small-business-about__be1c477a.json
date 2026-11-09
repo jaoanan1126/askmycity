@@ -1,0 +1,30 @@
+{
+  "url": "https://www.sf.gov/departments--office-economic-and-workforce-development--office-small-business--about",
+  "category": "business",
+  "title": "About Office of Small Business",
+  "sections": [
+    {
+      "heading": "",
+      "paragraphs": [
+        "About Us"
+      ]
+    },
+    {
+      "heading": "Our mission",
+      "paragraphs": [
+        "To equitably support, preserve and protect small businesses in San Francisco. We provide high quality direct services and programs, drive practical policy solutions, and serve as a champion for San Francisco’s diverse small business community."
+      ]
+    },
+    {
+      "heading": "Background",
+      "paragraphs": [
+        "The Small Business Commission and the Office of Small Business were established by two ballot measures supported by San Francisco voters: Proposition D in November 2003 and Proposition I in 2007.",
+        "Proposition D created a Chartered Small Business Commission to oversee the Office of Small Business and defined the functions and duties of the Office of Small Business.",
+        "Proposition I required the Office of Small Business to operate a Small Business Assistance Center to focus on the needs of San Francisco businesses with fewer than 100 employees.",
+        "See Chapter 2A Executive Branch, Article XVI of the Municipal Code of the City of San Francisco ."
+      ]
+    }
+  ],
+  "fetched_at": "2026-11-09T18:43:54+00:00",
+  "content_hash": "ed35c6a5452d3bd8"
+}

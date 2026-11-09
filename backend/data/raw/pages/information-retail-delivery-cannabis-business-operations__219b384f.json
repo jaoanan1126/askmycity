@@ -1,0 +1,49 @@
+{
+  "url": "https://www.sf.gov/information--retail-delivery-cannabis-business-operations",
+  "category": "business",
+  "title": "Retail delivery cannabis business operations",
+  "sections": [
+    {
+      "heading": "",
+      "paragraphs": [
+        "Info Page",
+        "If you deliver cannabis products to customers, you must tell us how you will run your business.",
+        "We will ask you for the following information on the delivery operations form of the cannabis business application."
+      ]
+    },
+    {
+      "heading": "Processing orders",
+      "paragraphs": [
+        "We will ask how you will process orders for delivery, including:",
+        "Information about your processing software",
+        "Who receives orders",
+        "How you will prepare orders",
+        "Delivery staff may not process orders while en route making deliveries."
+      ]
+    },
+    {
+      "heading": "Making deliveries",
+      "paragraphs": [
+        "We will ask how products are moved onto the vehicle, stored, and get to the customer. This includes:",
+        "What drivers will do before leaving to make deliveries",
+        "How you will store cannabis products in the vehicle",
+        "Navigation software drivers will use",
+        "What drivers will do before handing the product to the customer",
+        "What drivers will do when returning to the business after making deliveries",
+        "Your staff must use age verification technology before they hand the product to the customer."
+      ]
+    },
+    {
+      "heading": "Managing delivery staff",
+      "paragraphs": [
+        "We will ask how you will work with your drivers and delivery staff, including:",
+        "How they will communicate with your business while making deliveries",
+        "What staff are allowed to do while making deliveries (taking breaks and making stops)",
+        "How you will ensure the personal safety of your delivery staff",
+        "How you will train all delivery staff about cannabis laws"
+      ]
+    }
+  ],
+  "fetched_at": "2026-11-09T18:45:29+00:00",
+  "content_hash": "497175c1c5f0e404"
+}

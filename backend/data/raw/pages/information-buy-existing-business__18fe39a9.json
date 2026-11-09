@@ -1,0 +1,150 @@
+{
+  "url": "https://www.sf.gov/information--buy-existing-business",
+  "category": "business",
+  "title": "Buy an existing business",
+  "sections": [
+    {
+      "heading": "",
+      "paragraphs": [
+        "Info Page",
+        "Learn about buying an existing business or transferring ownership.",
+        "The Office of Small Business created this guide and our staff are here to help.",
+        "Consider reaching out to us before you begin, and again throughout your journey of buying a business.",
+        "We can direct you to advisors or workshops, connect you with staff from other city departments, and more.",
+        "Fill out this form and a member of our team will contact you."
+      ]
+    },
+    {
+      "heading": "Understand your options",
+      "paragraphs": [
+        "Identify your options and research different types of businesses that are for sale.",
+        "Contact a local business broker or use an online business broker site.",
+        "Once you have a list of businesses that you’re interested in, create a business plan to help you define your goals."
+      ]
+    },
+    {
+      "heading": "Research the business",
+      "paragraphs": [
+        "Once you’ve found a business you’re interested in buying, research that business before you sign anything."
+      ]
+    },
+    {
+      "heading": "Research the business › Review their finances",
+      "paragraphs": [
+        "Add the revenue and costs to your business plan. If the current owner doesn’t want to share this with you, you may want to reconsider.",
+        "Look at revenue and costs, by month and year. For example, if a restaurant, look at food and beverage sales, labor, and food costs. For any business, look at the cost of utilities, rent or mortgage, insurance, and taxes.",
+        "Consider requesting a Dun & Bradstreet credit report to double-check their accounting and help you understand their financial health."
+      ]
+    },
+    {
+      "heading": "Research the business › Ask for a “Due Diligence Package”",
+      "paragraphs": [
+        "This is paperwork from the business, such as tax returns, existing contracts, leases, and employee or contractor agreements.",
+        "It will also have legal documents, such as filings, articles of incorporation, and any past or pending lawsuits the company is involved in."
+      ]
+    },
+    {
+      "heading": "Research the business › Consider that business’ valuation",
+      "paragraphs": [
+        "Most industries have a standard method for calculating a business’s value based on the last year’s revenue.",
+        "If the business has a lot of equipment (a manufacturer, for example), the market value of the equipment is added.",
+        "Fast-growing businesses in attractive markets are usually valued higher, as future potential earning is factored into the valuation."
+      ]
+    },
+    {
+      "heading": "Research the business › Learn about their location",
+      "paragraphs": [
+        "Research the business’ neighborhood and exact location.",
+        "Check that the business is legally zoned to be there – even though it’s an existing business doesn’t mean it’s compliant. If it isn’t, this could lead to major issues when getting permits and licenses.",
+        "Consider things like visibility from the street, amount of foot traffic, and access to public transit and/or parking."
+      ]
+    },
+    {
+      "heading": "Research the business › Talk to the property owner",
+      "paragraphs": [
+        "Ask the property owner whether the lease and rent terms may change with ownership.",
+        "Ask about whether the location is compliant with the federal American’s with Disabilities Act (ADA) . If not, ask who is responsible for the costs to comply."
+      ]
+    },
+    {
+      "heading": "Transfer ownership",
+      "paragraphs": [
+        "The process is different depending on the type of business, its legal structure, and the permits and licenses you’ll need.",
+        "Here are common steps to follow:"
+      ]
+    },
+    {
+      "heading": "Transfer ownership › Negotiate the terms of the sale",
+      "paragraphs": [
+        "This includes the purchase price, the payment terms, and the transfer of assets and liabilities."
+      ]
+    },
+    {
+      "heading": "Transfer ownership › Sign a sales agreement",
+      "paragraphs": [
+        "This document will outline the terms of the sale and will be legally binding for both parties."
+      ]
+    },
+    {
+      "heading": "Transfer ownership › Transfer the assets of the business",
+      "paragraphs": [
+        "This includes things like inventory and equipment, as well as the intangible assets, like intellectual property and customer records."
+      ]
+    },
+    {
+      "heading": "Transfer ownership › Change the ownership on accounts",
+      "paragraphs": [
+        "This will include the business bank accounts, contracts, and licenses."
+      ]
+    },
+    {
+      "heading": "Transfer ownership › Update local, state, and federal government agencies",
+      "paragraphs": [
+        "This includes things like:",
+        "Adopt or change the name",
+        "If you plan to keep the same name, the prior owner will need to “abandon” the company’s Fictitious Business Name so that you can adopt the name under new ownership with the SF County Clerk.",
+        "Get permits and licenses",
+        "Most permits and licenses will need to be closed out by the prior owner and re-apply with the new owner’s information.",
+        "This includes Shared Spaces permits, health permits, seller’s permits, etc.",
+        "State alcohol licenses are the exception.",
+        "Get Business Tax Clearance",
+        "This could be the local, state, and/or federal tax agency.",
+        "Request a tax clearance certificate from each of the tax authorities. This document confirms that the business you are purchasing is free and clear of all tax obligations as of the date of the sale.",
+        "The requirements for obtaining a tax clearance certificate may be different for each tax authority.",
+        "If you don't get these clearances, you could be personally liable for unpaid taxes, penalties, and interest from the predecessor business, a concept known as successor liability."
+      ]
+    },
+    {
+      "heading": "Learn more based on business type",
+      "paragraphs": [
+        "Here are examples of how transferring ownership varies by the type of business entity:"
+      ]
+    },
+    {
+      "heading": "Learn more based on business type › Sole proprietorship",
+      "paragraphs": [
+        "A business is owned by a single individual. To transfer ownership, the individual would simply sell the assets of the business to the new owner."
+      ]
+    },
+    {
+      "heading": "Learn more based on business type › Partnership",
+      "paragraphs": [
+        "A business is owned by two or more people. To add or remove owners, the partnership agreement must be updated."
+      ]
+    },
+    {
+      "heading": "Learn more based on business type › Corporation",
+      "paragraphs": [
+        "The business is owned by shareholders. To transfer ownership, the shares of the corporation would need to be sold to the new owner."
+      ]
+    },
+    {
+      "heading": "Learn more based on business type › Limited liability company (LLC)",
+      "paragraphs": [
+        "An LLC is owned by members. To transfer ownership, the LLC's operating agreement must be updated."
+      ]
+    }
+  ],
+  "fetched_at": "2026-11-09T18:44:13+00:00",
+  "content_hash": "75913603b63ff767"
+}

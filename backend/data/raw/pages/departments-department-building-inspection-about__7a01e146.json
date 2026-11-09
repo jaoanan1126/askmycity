@@ -1,0 +1,82 @@
+{
+  "url": "https://www.sf.gov/departments--department-building-inspection--about",
+  "category": "permits",
+  "title": "About Department of Building Inspection",
+  "sections": [
+    {
+      "heading": "",
+      "paragraphs": [
+        "About Us"
+      ]
+    },
+    {
+      "heading": "Our vision",
+      "paragraphs": [
+        "Our dedicated and knowledgeable staff will provide professional, effective customer service using clear processes and consistent standards to build trust, provide accountability, and safeguard the public."
+      ]
+    },
+    {
+      "heading": "Our mission",
+      "paragraphs": [
+        "The Department of Building Inspection protects our community by ensuring code-compliant construction, building safety, resilience, and habitability, and by supporting economic development in San Francisco."
+      ]
+    },
+    {
+      "heading": "Our values & commitments",
+      "paragraphs": [
+        "Customer Focus",
+        "Be a customer-centric organization that provides timely, efficient, predictable, and consistent services to our customers; effectively communicates with them; and responds to their information needs.",
+        "Professionalism",
+        "Leverage our highly qualified and knowledgeable staff to deliver high quality services with competence and skill.",
+        "Integrity",
+        "Adhere to our ethical obligation to the public and protect the integrity of our services.",
+        "Supportive Work Environment",
+        "Maintain a desirable workplace that encourages organization-wide communication and collaboration, empowerment of our managers & supervisors, and professional development and training of personnel at all levels of our department.",
+        "Diversity, Equity, Inclusion & Belonging",
+        "Foster a culture of respect, inclusion and belonging and promote diversity and equity at all levels of the organization.",
+        "Transparency & Accountability",
+        "Be a data-driven organization that establishes and utilizes relevant metrics and measures our performance; communicate the results (favorable or unfavorable) to internal and external stakeholders."
+      ]
+    },
+    {
+      "heading": "Background",
+      "paragraphs": [
+        "DBI was created by voter referendum under Proposition G in 1994. The charter amendment established the body known as the Building Inspection Commission (BIC) which was designed to provide representation for the various communities which interact with the Building Department."
+      ]
+    },
+    {
+      "heading": "Organization",
+      "paragraphs": [
+        "The Building Inspection Commission provides policy direction to the Department of Building Inspection.",
+        "DBI is managed by Interim Director David Kane, who reports to the Building Inspection Commission.",
+        "Interim Director Kane is supported by Christine Gasparac, Assistant Director; Matthew Greene, Deputy Director of Inspection Services; Jimmy Cheung, Interim Deputy Director of Permit Services; and Alex Koskinen, Deputy Director of Administrative Services.",
+        "DBI Organizational Chart and our DBI Staff Directory ."
+      ]
+    },
+    {
+      "heading": "Sections and divisions › Permit services",
+      "paragraphs": [
+        "Permit Services is responsible for all steps of permit issuance. Our services ensure that proposed construction meets all safety requirements in a timely professional manner.",
+        "Plan Review Services is responsible for review and approval of all permit applications to ensure that proposed construction work meets accessibility, life and structural safety requirements of the code.",
+        "Technical Services focuses on code interpretation, code and policy review and development, major emergency response planning and representation at the Board of Appeals, the Code Advisory Committee and other official bodies."
+      ]
+    },
+    {
+      "heading": "Sections and divisions › Inspection services",
+      "paragraphs": [
+        "Inspection Services inspects buildings for compliance with code requirements, permit scope, and responds to building complaints. Learn more about divisions within Inspection Services .",
+        "Code Enforcement investigates complaints of building code violations and compels building owners to fix the violations."
+      ]
+    },
+    {
+      "heading": "Sections and divisions › Administration services",
+      "paragraphs": [
+        "Records Management stores, maintains, and makes available records of buildings, including plans, permit applications, and job cards.",
+        "Management Information Services' functions are to archive and safeguard DBI's data; to manage network access to files and data; to scan, digitize and store plans, documents and drawings on the network; to develop and maintain an extensive client-server database to support the permitting functions and related complaint and inspection tracking functions; to supply software for common office applications, including: word processing, spreadsheet, database, presentation, telecommunications, and desktop layout; to install, repair, upgrade and maintain desktop computer equipment and peripherals, including printers, plotters, scanners; to provide daily HelpDesk support for computer-related problems, to assist end-users in graphic projects; provide in-house training; research technical issues; and to provide custom reports both for the public and DBI management.",
+        "Finance services provide support to the Department in the areas of fiscal management, purchasing, and business analysis. This consists of budget preparation and reconciliation; revenue management; controlling labor and non-labor expenditures, capital expenditures and work order expenditures; accounts payable; performing internal audits, and employee claims management. In the area of purchasing, the division is involved in procuring materials and supplies; vendor identification and interfacing; and contract administration. The division also provides needs and operations analysis, revenue/expenditure analysis, and develops office policies and procedures."
+      ]
+    }
+  ],
+  "fetched_at": "2026-11-09T18:43:44+00:00",
+  "content_hash": "2adb842e10544e43"
+}

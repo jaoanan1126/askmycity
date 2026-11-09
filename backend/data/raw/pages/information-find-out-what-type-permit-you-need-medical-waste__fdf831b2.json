@@ -1,0 +1,55 @@
+{
+  "url": "https://www.sf.gov/information--find-out-what-type-permit-you-need-medical-waste",
+  "category": "permits",
+  "title": "Find out what type of permit you need for medical waste",
+  "sections": [
+    {
+      "heading": "",
+      "paragraphs": [
+        "Info Page",
+        "You fall under regulations if you generate a certain amount of medical waste each month or treat waste onsite.",
+        "To see if your business is regulated by the Hazardous Materials and Waste Program, calculate how much medical waste your business makes each month. Also, think about whether you treat waste onsite or handle waste for others.",
+        "We'll work with you on the steps to get the right permits or registration."
+      ]
+    },
+    {
+      "heading": "If you: › Create less than 200 pounds of medical waste monthly",
+      "paragraphs": [
+        "Register as a Small Quality Generator (SQG)"
+      ]
+    },
+    {
+      "heading": "If you: › Create more than 200 pounds of medical waste monthly for 12 months",
+      "paragraphs": [
+        "Get a Large Quality Generator (LGQ) permit"
+      ]
+    },
+    {
+      "heading": "If you: › Treat medical waste onsite",
+      "paragraphs": [
+        "Get a treatment permit"
+      ]
+    },
+    {
+      "heading": "If you: › Collect and arrange for the disposal of small amounts of daily medical waste",
+      "paragraphs": [
+        "Get a Common Storage Facility (CSF) permit"
+      ]
+    },
+    {
+      "heading": "If you: › Transport your own small amount of medical waste to a transfer station or common storage facility",
+      "paragraphs": [
+        "Get a Limited Quantity Hauling Exemption (LQHE) permit",
+        "You'll be limited to no more than 20 pounds per week. You cannot transport more than 20 pounds at a time."
+      ]
+    },
+    {
+      "heading": "What to do",
+      "paragraphs": [
+        "Register or get your medical waste permit through the Hazardous Materials and Waste Program ."
+      ]
+    }
+  ],
+  "fetched_at": "2026-11-09T18:44:44+00:00",
+  "content_hash": "dabbc72dc0465624"
+}

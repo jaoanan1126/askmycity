@@ -1,0 +1,94 @@
+{
+  "url": "https://www.sf.gov/information--building-construction-type-definitions",
+  "category": "permits",
+  "title": "Building construction type definitions",
+  "sections": [
+    {
+      "heading": "",
+      "paragraphs": [
+        "Info Page"
+      ]
+    },
+    {
+      "heading": "Type I-A: Fire Resistive Non-combustible",
+      "paragraphs": [
+        "Commonly found in high-rise buildings and Group I occupancies",
+        "3 Hr. Exterior Walls*",
+        "3 Hr. Structural Frame",
+        "2 Hr. Floor/Ceiling Assembly",
+        "1 1⁄2 Hr. Roof Protection"
+      ]
+    },
+    {
+      "heading": "Type I-B: Fire Resistive Non-Combustible",
+      "paragraphs": [
+        "Commonly found in mid-rise office & Group R buildings",
+        "2 Hr. Exterior Walls*",
+        "2 Hr. Structural Frame",
+        "2 Hr. Ceiling/Floor Separation",
+        "1 Hr. Ceiling/Roof Assembly"
+      ]
+    },
+    {
+      "heading": "Type II-A: Protected Non-Combustible",
+      "paragraphs": [
+        "Commonly found in newer school buildings",
+        "1 Hr. Exterior Walls",
+        "1 Hr. Structural Frame",
+        "1 Hr. Floor/Ceiling/Roof Protection"
+      ]
+    },
+    {
+      "heading": "Type II-B: Unprotected Non-Combustible",
+      "paragraphs": [
+        "Most common type of non-combustible construction used in commercial buildings.",
+        "Building constructed of non-combustible materials but these materials have no fire resistance."
+      ]
+    },
+    {
+      "heading": "Type III-A: Protected Combustible",
+      "paragraphs": [
+        "Also known as \"ordinary\" construction with brick or block walls and a wooden roof or floor assembly which is 1 hour fire protected.",
+        "2 Hr. Exterior Walls*",
+        "1 Hr. Structural Frame",
+        "1 Hr. Floor/Ceiling/Roof Protection"
+      ]
+    },
+    {
+      "heading": "Type III-B: Unprotected Combustible",
+      "paragraphs": [
+        "Also known as \"ordinary\" construction; has brick or block walls with a wooden roof or floor assembly which is not protected against fire. These buildings are frequently found in \"warehouse\" districts of older cities.",
+        "2 Hr. Exterior Walls*",
+        "No fire resistance for structural frame, floors, ceilings, or roofs."
+      ]
+    },
+    {
+      "heading": "Type IV: Heavy Timber",
+      "paragraphs": [
+        "Also known as \"mill\" construction; to qualify all wooden members must have a minimum nominal dimension of 8 inches.",
+        "2 Hr. Exterior Walls*",
+        "1 Hr. Structural Frame or Heavy Timber",
+        "Heavy Timber Floor/Ceiling/Roof Assemblies"
+      ]
+    },
+    {
+      "heading": "Type V-A: Protected Wood Frame",
+      "paragraphs": [
+        "Commonly used in the construction of newer apartment buildings; there is no exposed wood visible.",
+        "1 Hr. Exterior Walls",
+        "1 Hr. Structural Frame",
+        "1 Hr. Floor/Ceiling/Roof"
+      ]
+    },
+    {
+      "heading": "Type V-B: Unprotected Wood Frame",
+      "paragraphs": [
+        "Examples of Type V-B construction are single family homes and garages.",
+        "They often have exposed wood so there is no fire resistance.",
+        "* Note exceptions in the building code for fire resistance ratings of exterior walls and opening protection."
+      ]
+    }
+  ],
+  "fetched_at": "2026-11-09T18:44:06+00:00",
+  "content_hash": "3f9ef35a2f2658b6"
+}

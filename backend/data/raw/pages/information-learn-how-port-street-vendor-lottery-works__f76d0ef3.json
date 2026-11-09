@@ -1,0 +1,56 @@
+{
+  "url": "https://www.sf.gov/information--learn-how-port-street-vendor-lottery-works",
+  "category": "business",
+  "title": "Learn how the Port Street Vendor lottery works",
+  "sections": [
+    {
+      "heading": "",
+      "paragraphs": [
+        "Info Page",
+        "You can apply for the monthly lottery after you have been approved as a vendor on Port property.",
+        "Certain Port locations are only available to venders via a monthly lottery. Learn about how the lottery works."
+      ]
+    },
+    {
+      "heading": "Who can enter the lottery",
+      "paragraphs": [
+        "Vendors that have submitted all documents required to vend at the Port will receive a link to enter the lottery each month."
+      ]
+    },
+    {
+      "heading": "How we conduct the lottery",
+      "paragraphs": [
+        "Public Works staff will perform the lottery drawings for each location in the following order:",
+        "From the location with the greatest number of entries",
+        "To the location with the least number of entries"
+      ]
+    },
+    {
+      "heading": "After we conduct the lottery",
+      "paragraphs": [
+        "After the lottery drawing, we will notify you of the results and let you know if you were selected.",
+        "If you are selected",
+        "You may vend at the location indicated in the lottery results.",
+        "Please note: To vend at these locations, the vendor must be the selected winner for that specific day. If the selected vendor does not appear, the spot will not be reassigned or made available to other vendors.",
+        "If you are not selected",
+        "You may enter future lotteries for another chance to vend at your selected location.",
+        "Locations that are subject to a lottery",
+        "The following locations are subject to a daily lottery that will occur monthly:",
+        "Pier 45 (A-1, A-2)",
+        "Pier 43 (B-1, B-2, B-3)",
+        "Powell & The Embarcadero (C-1, C-2)",
+        "Pier 27 (E-1, E-2)",
+        "Pier 9 (F-1, F-2)",
+        "Pier 7 (G-1, G-2)",
+        "Pier .5 (H-1, H-2)",
+        "The following locations are subject to a lottery according to the Giants Home Game schedule :",
+        "Pier 26 (I-1, I-2)",
+        "Pier 32 (J-1, J-2, J-3)",
+        "Brannan St Wharf (K-1, JK-2)",
+        "Pier 48.5 (L-1, L-2)"
+      ]
+    }
+  ],
+  "fetched_at": "2026-11-09T18:45:09+00:00",
+  "content_hash": "91df066e3eb1c4aa"
+}

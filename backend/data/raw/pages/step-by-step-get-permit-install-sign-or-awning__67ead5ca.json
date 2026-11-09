@@ -1,0 +1,106 @@
+{
+  "url": "https://www.sf.gov/step-by-step--get-permit-install-sign-or-awning",
+  "category": "permits",
+  "title": "Get a permit to install a sign or an awning",
+  "sections": [
+    {
+      "heading": "",
+      "paragraphs": [
+        "Step-by-step",
+        "Check your zoning, prepare your plans, and apply online",
+        "You can now apply online for permits to install new signs or awnings.",
+        "If you have questions about applying online, email PermitSF@sfgov.org .",
+        "If you've received a notice of violation or code complaint against an existing sign or awning, you can follow the legalization steps ."
+      ]
+    },
+    {
+      "heading": "Check the sign rules in your zoning district",
+      "paragraphs": [
+        "Most signs and awnings have zoning requirements based on their location. Check the sign rules in your zoning district .",
+        "The following signs are not subject to these zoning requirements:",
+        "Interior advertisement signs (like inside a mall)",
+        "Fire evacuation maps",
+        "Parking lot signs"
+      ]
+    },
+    {
+      "heading": "Determine if you need a permit for your sign or awning",
+      "paragraphs": [
+        "Most exterior business signs and all awnings require a permit.",
+        "If you aren’t sure if you need a sign permit, check our list of signs that don’t need a permit .",
+        "Who can be issued a permit to install a new sign or awning:",
+        "C-45 contractors can install all types of signs and awnings, including illuminated electrical signs",
+        "D-42 contractors can install non-electrical signs and awnings"
+      ]
+    },
+    {
+      "heading": "Draft construction drawings",
+      "paragraphs": [
+        "To get a permit for your sign or awning, you will need to submit construction drawings with your permit application.",
+        "Construction drawings can be created by a contractor, awning installer, architect or engineer.",
+        "Drawings must include:",
+        "Area of the sign or awning, including dimensions",
+        "Height, as measured from the ground to the bottom of the sign or awning",
+        "Projection as measured from the building face to the end of the sign or awning",
+        "Dimensions of any lettering"
+      ]
+    },
+    {
+      "heading": "Complete the online sign or awning permit form",
+      "paragraphs": [
+        "We will ask you about:",
+        "Sign and awning types",
+        "How far off the ground is the bottom of each sign or awning (in feet)",
+        "Sign or awning measurements",
+        "Weight of each sign or awning, in lbs",
+        "How far the sign or awning will project from the building, in feet",
+        "If any awnings, canopies, or marquees have support structures (such as poles) in the sidewalk",
+        "How each sign or awning is attached to the building or the ground",
+        "Illumination type , if applicable",
+        "Information about the building, including occupancy class , existing use , and construction type",
+        "A Planning Approval Letter, if you are installing a sign or awning on a landmark historic building",
+        "Contractor information, including license number and Business Account Number (BAN)",
+        "Information about the business the work is for, including BAN",
+        "Valuation of the work, including all materials and labor",
+        "Plans, as a PDF upload",
+        "If you are applying on behalf of a property owner , we will also ask you to upload:",
+        "The property owner's drivers' license, as a JPEG or JPG",
+        "A completed last section of a Property Owner Disclosure Form",
+        "If you are applying on behalf of a licensed contractor and are not authorized in PermitSF , we will also ask you to upload:",
+        "The licensed contractor's drivers' license, as a JPEG or JPG",
+        "A completed last section of an Licensed Contractor Statement Form"
+      ]
+    },
+    {
+      "heading": "Get your plans reviewed and upload revisions if needed",
+      "paragraphs": [
+        "Once all the required reviewers have checked your plans, you will get an email notifying you if they are approved or if corrections are needed. You will be able to find any markups or correction notes in the Attachment section of your application.",
+        "If corrections are needed, only the primary applicant can upload revised plans, using the Update Application button in the alert on top of the Attachments section. Delete the existing attachment first, then upload the new one. Revisions will not work if uploaded as a new attachment. Refer to screenshots of instructions for uploading revised plans .",
+        "Once new plan PDFs are uploaded, another round of reviews will start."
+      ]
+    },
+    {
+      "heading": "Get related permits",
+      "paragraphs": [
+        "During your permit review process, you may also need to:",
+        "Get an electrical permit from the Department of Building Inspection, if you will have illuminated signs or awnings",
+        "Get a street space permit from Public Works if you will use the street or sidewalk during construction"
+      ]
+    },
+    {
+      "heading": "Get your permit issued",
+      "paragraphs": [
+        "You will need to pay for your permit before it can be issued. You can pay online from your PermitSF portal, or with cash or check at the payment kiosk at the Permit Center."
+      ]
+    },
+    {
+      "heading": "Get your sign or awning inspected",
+      "paragraphs": [
+        "You must get a final inspection of your installed sign or awning to complete the work. Once your permit is issued, you will be able to request inspections online in your PermitSF dashboard under your account .",
+        "A separate electrical inspection is also required if you have taken out an electrical permit for an illuminated sign. Before the electrical inspection, you must also upload a completed Title 24 Compliance Affidavit to your application."
+      ]
+    }
+  ],
+  "fetched_at": "2026-11-09T18:46:11+00:00",
+  "content_hash": "c3be4e7528a4440c"
+}

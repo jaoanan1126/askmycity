@@ -1,0 +1,57 @@
+{
+  "url": "https://www.sf.gov/information--legacy-business-programs-nationwide",
+  "category": "business",
+  "title": "Legacy Business programs nationwide",
+  "sections": [
+    {
+      "heading": "",
+      "paragraphs": [
+        "Info Page",
+        "San Francisco's Legacy Business Program is the first-of-its-kind program in the United States and is pioneering a new take on government's involvement in maintaining and promoting the small business community. Now, over 30 cities and counties have their own programs."
+      ]
+    },
+    {
+      "heading": "Legacy Business Programs in the United States",
+      "paragraphs": [
+        "Arlington, VA",
+        "Atlanta, GA",
+        "Austin, TX (Legacy Business Month - October 2024)",
+        "Baltimore, MD",
+        "Bartlett, IL",
+        "Birmingham, AL",
+        "Boston, MA",
+        "Cambridge, MA",
+        "Chicago, IL",
+        "Daly City, CA",
+        "Delray Beach, FL",
+        "Denver, CO",
+        "Detroit, MI",
+        "Durham, NC",
+        "Evanston, IL",
+        "Hollywood, FL",
+        "Iowa City, IA",
+        "Long Beach, CA",
+        "Los Angeles, CA (City of Los Angeles)",
+        "Los Angeles, CA (Los Angeles Conservancy)",
+        "Missoula, MT",
+        "Napa County, CA",
+        "Pasadena, CA",
+        "Phoenix, AZ",
+        "Porterville, CA",
+        "Portland, ME",
+        "Portland, OR (Under study; Report: Legacy Business Preservation Study )",
+        "San Antonio, TX",
+        "San Marcos, TX",
+        "Sarasota, FL",
+        "St. Petersburg, FL",
+        "Stafford County, VA",
+        "Steamboat Springs, CO",
+        "Tucson, AZ",
+        "Washington, DC",
+        "Worcester, MA"
+      ]
+    }
+  ],
+  "fetched_at": "2026-11-09T18:45:10+00:00",
+  "content_hash": "595a7813d08b9711"
+}

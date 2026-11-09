@@ -12,6 +12,8 @@ How it works
    the previous ETag/Last-Modified, so unchanged pages come back as
    304 Not Modified and are reused instead of re-downloaded.
 4. Save each page as JSON with its URL, title and heading-based sections.
+   PDFs linked from those pages are fetched too (one section per PDF
+   page), when robots.txt allows it on every host along the redirect chain.
 5. Write everything to a fresh staging directory and only replace
    data/raw/ if the crawl looks healthy. Otherwise exit with an error and
    keep the previous data untouched.
@@ -27,6 +29,7 @@ Output layout (data/raw/):
 from __future__ import annotations
 
 import hashlib
+import io
 import json
 import re
 import shutil
@@ -36,11 +39,12 @@ import xml.etree.ElementTree as ET
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Optional
-from urllib.parse import urlparse
+from urllib.parse import unquote, urljoin, urlparse
 from urllib.robotparser import RobotFileParser
 
 import requests
 from bs4 import BeautifulSoup, Tag
+from pypdf import PdfReader
 
 # ---------------------------------------------------------------------------
 # Configuration
@@ -52,7 +56,12 @@ RAW_DIR = DATA_DIR / "raw"
 
 SITE = "https://www.sf.gov"
 SITEMAP_URL = f"{SITE}/sitemap.xml"
-ROBOTS_URL = f"{SITE}/robots.txt"
+
+# PDFs linked from crawled pages are fetched from these hosts only.
+# robots.txt is still checked per host (api.sf.gov currently disallows all).
+PDF_HOSTS = {"www.sf.gov", "sf.gov", "api.sf.gov", "media.api.sf.gov"}
+MAX_PDF_BYTES = 10_000_000
+MAX_REDIRECTS = 3
 
 USER_AGENT = "AskMyCityBot/1.0 (educational RAG project)"
 HEADERS = {"User-Agent": USER_AGENT}
@@ -148,13 +157,43 @@ def discover_urls(session: requests.Session) -> dict[str, str]:
     return dict(sorted(selected.items()))
 
 
-def load_robots() -> RobotFileParser:
-    """Load robots.txt. Raises if it can't be read (we never crawl blind)."""
-    response = requests.get(ROBOTS_URL, headers=HEADERS, timeout=REQUEST_TIMEOUT_SECONDS)
-    response.raise_for_status()
-    robots = RobotFileParser()
-    robots.parse(response.text.splitlines())
-    return robots
+class Robots:
+    """
+    robots.txt rules per host, loaded on first use.
+
+    Follows RFC 9309: a 4xx response (other than 429) means the site has
+    no robots.txt, so nothing is disallowed. Network errors, 429 and 5xx
+    raise, because we never crawl blind. A failed lookup is remembered, so
+    a struggling host isn't asked again for every URL.
+    """
+
+    def __init__(self, session: requests.Session):
+        self.session = session
+        self._rules: dict[str, RobotFileParser] = {}
+        self._failures: dict[str, str] = {}
+
+    def allows(self, url: str) -> bool:
+        host = urlparse(url).netloc
+        if host in self._failures:
+            raise RuntimeError(self._failures[host])
+        if host not in self._rules:
+            try:
+                response = self.session.get(f"https://{host}/robots.txt",
+                                            timeout=REQUEST_TIMEOUT_SECONDS)
+            except requests.RequestException as e:
+                self._failures[host] = f"robots.txt for {host} unavailable ({e})"
+                raise RuntimeError(self._failures[host]) from e
+            rules = RobotFileParser()
+            if response.status_code == 200:
+                rules.parse(response.text.splitlines())
+            elif 400 <= response.status_code < 500 and response.status_code != 429:
+                rules.parse([])
+            else:
+                self._failures[host] = (f"robots.txt for {host} unavailable "
+                                        f"(HTTP {response.status_code})")
+                raise RuntimeError(self._failures[host])
+            self._rules[host] = rules
+        return self._rules[host].can_fetch(USER_AGENT, url)
 
 
 # ---------------------------------------------------------------------------
@@ -177,11 +216,12 @@ def _has_block_ancestor(el: Tag, root: Tag) -> bool:
     return False
 
 
-def parse_page(html: bytes) -> dict:
+def parse_page(html: bytes, base_url: str = SITE) -> dict:
     """
-    Extract the title and heading-based sections from an sf.gov page.
+    Extract the title, heading-based sections and PDF links from an sf.gov page.
 
-    Returns {"title": str, "sections": [{"heading": str, "paragraphs": [str]}]}
+    Returns {"title": str, "sections": [{"heading": str, "paragraphs": [str]}],
+             "pdf_links": [str]}
     where heading is "" for text before the first <h2>, "H2" or "H2 › H3".
     """
     soup = BeautifulSoup(html, "html.parser")
@@ -212,7 +252,101 @@ def parse_page(html: bytes) -> dict:
                 sections[-1]["paragraphs"].append(text)
 
     sections = [s for s in sections if s["paragraphs"]]
-    return {"title": title, "sections": sections}
+    return {"title": title, "sections": sections,
+            "pdf_links": extract_pdf_links(main, base_url)}
+
+
+def normalize_pdf_url(url: str) -> str:
+    """One spelling per file: sf.gov -> www.sf.gov, no query or fragment."""
+    parsed = urlparse(url)
+    host = "www.sf.gov" if parsed.netloc == "sf.gov" else parsed.netloc
+    return parsed._replace(netloc=host, query="", fragment="").geturl()
+
+
+def extract_pdf_links(main: Tag, base_url: str) -> list[str]:
+    """Absolute URLs of PDFs linked from the page's main content."""
+    links = []
+    for a in main.find_all("a", href=True):
+        url = normalize_pdf_url(urljoin(base_url, a["href"].strip()))
+        parsed = urlparse(url)
+        if parsed.path.lower().endswith(".pdf") and parsed.netloc in PDF_HOSTS \
+                and url not in links:
+            links.append(url)
+    return links
+
+
+def _is_random_suffix(part: str) -> bool:
+    """
+    sf.gov appends a random 7-character suffix to some file names
+    (_l3tFiXs, _589lGbh). Real name parts like Rev2024, Phase2A or
+    1234567 must be kept.
+    """
+    return (len(part) == 7 and part.isalnum()
+            and any(c.isdigit() for c in part) and not part.isdigit()
+            and any(c.islower() for c in part)
+            and not re.match(r"[A-Z][a-z]{2}", part))
+
+
+def pdf_title(url: str) -> str:
+    """'.../Table_1A-A_-_Building_Permit_Fees_2026.pdf' -> 'Table 1A-A - Building Permit Fees 2026'"""
+    name = unquote(Path(urlparse(url).path).name)
+    name = re.sub(r"\.pdf$", "", name, flags=re.IGNORECASE)
+    stem, _, last = name.rpartition("_")
+    if stem and _is_random_suffix(last):
+        name = stem
+    return _clean(name.replace("_", " "))
+
+
+def parse_pdf(content: bytes) -> list[dict]:
+    """One section per PDF page; each text line is a paragraph."""
+    reader = PdfReader(io.BytesIO(content))
+    multi_page = len(reader.pages) > 1
+    sections = []
+    for number, page in enumerate(reader.pages, 1):
+        try:
+            text = page.extract_text() or ""
+        except Exception:
+            continue  # unreadable page; keep the rest of the document
+        lines = [_clean(line) for line in text.splitlines()]
+        lines = [line for line in lines if line]
+        if lines:
+            sections.append({"heading": f"Page {number}" if multi_page else "",
+                             "paragraphs": lines})
+    return sections
+
+
+def _get_allowed(session: requests.Session, robots: Robots, url: str,
+                 headers: dict) -> Optional[requests.Response]:
+    """
+    Streaming GET that checks robots.txt on every redirect hop and never
+    leaves PDF_HOSTS. None if robots.txt disallows the URL.
+    Waits REQUEST_DELAY_SECONDS before each request actually sent.
+    """
+    for _ in range(MAX_REDIRECTS + 1):
+        if urlparse(url).netloc not in PDF_HOSTS:
+            raise RuntimeError(f"redirected outside allowed hosts: {url}")
+        if not robots.allows(url):
+            return None
+        time.sleep(REQUEST_DELAY_SECONDS)
+        response = session.get(url, headers=headers, timeout=REQUEST_TIMEOUT_SECONDS,
+                               allow_redirects=False, stream=True)
+        if response.status_code in (301, 302, 303, 307, 308):
+            url = urljoin(url, response.headers["Location"])
+            continue
+        return response
+    raise RuntimeError(f"more than {MAX_REDIRECTS} redirects")
+
+
+def _read_capped(response: requests.Response, max_bytes: int) -> Optional[bytes]:
+    """Body of a streamed response, or None as soon as it exceeds max_bytes."""
+    if int(response.headers.get("Content-Length") or 0) > max_bytes:
+        return None
+    content = bytearray()
+    for block in response.iter_content(chunk_size=64 * 1024):
+        content.extend(block)
+        if len(content) > max_bytes:
+            return None
+    return bytes(content)
 
 
 def _word_count(page: dict) -> int:
@@ -237,40 +371,47 @@ def url_to_filename(url: str) -> str:
 def _load_previous_manifest(raw_dir: Path) -> dict:
     manifest_file = raw_dir / "manifest.json"
     if manifest_file.exists():
-        return json.loads(manifest_file.read_text(encoding="utf-8")).get("pages", {})
+        return json.loads(manifest_file.read_text(encoding="utf-8"))
     return {}
 
 
+def _conditional_headers(prev: Optional[dict], prev_file: Optional[Path]) -> dict:
+    headers = {}
+    if prev and prev_file and prev_file.exists():
+        if prev.get("etag"):
+            headers["If-None-Match"] = prev["etag"]
+        if prev.get("last_modified"):
+            headers["If-Modified-Since"] = prev["last_modified"]
+    return headers
+
+
 def crawl(urls: dict[str, str], out_dir: Path, previous_dir: Optional[Path]) -> dict:
-    """Fetch every URL into out_dir/pages. Returns the manifest dict."""
+    """Fetch every URL (and the PDFs they link) into out_dir/pages. Returns the manifest."""
     pages_dir = out_dir / "pages"
     pages_dir.mkdir(parents=True, exist_ok=True)
 
-    robots = load_robots()
-    previous = _load_previous_manifest(previous_dir) if previous_dir else {}
     session = requests.Session()
     session.headers.update(HEADERS)
+    robots = Robots(session)
+    previous_manifest = _load_previous_manifest(previous_dir) if previous_dir else {}
+    previous = previous_manifest.get("pages", {})
 
     manifest_pages: dict[str, dict] = {}
     stats = {"saved": 0, "unchanged": 0, "skipped_empty": 0,
              "skipped_robots": 0, "failed": 0}
     failures: list[str] = []
+    pdf_links: dict[str, str] = {}  # pdf url -> category of the first page linking it
 
     for i, (url, category) in enumerate(urls.items(), 1):
         prefix = f"[{i}/{len(urls)}]"
-        if not robots.can_fetch(USER_AGENT, url):
+        if not robots.allows(url):
             stats["skipped_robots"] += 1
             print(f"{prefix} • robots.txt disallows {url}")
             continue
 
         prev = previous.get(url)
         prev_file = (previous_dir / "pages" / prev["file"]) if prev and previous_dir else None
-        conditional = {}
-        if prev and prev_file and prev_file.exists():
-            if prev.get("etag"):
-                conditional["If-None-Match"] = prev["etag"]
-            if prev.get("last_modified"):
-                conditional["If-Modified-Since"] = prev["last_modified"]
+        conditional = _conditional_headers(prev, prev_file)
 
         time.sleep(REQUEST_DELAY_SECONDS)
         try:
@@ -279,6 +420,8 @@ def crawl(urls: dict[str, str], out_dir: Path, previous_dir: Optional[Path]) -> 
             if response.status_code == 304 and prev_file:
                 shutil.copy2(prev_file, pages_dir / prev["file"])
                 manifest_pages[url] = prev
+                for pdf in prev.get("pdf_links", []):
+                    pdf_links.setdefault(normalize_pdf_url(pdf), category)
                 stats["unchanged"] += 1
                 print(f"{prefix} = unchanged  {url}")
                 continue
@@ -289,7 +432,7 @@ def crawl(urls: dict[str, str], out_dir: Path, previous_dir: Optional[Path]) -> 
                 print(f"{prefix} • not HTML  {url}")
                 continue
 
-            parsed = parse_page(response.content)
+            parsed = parse_page(response.content, url)
             if _word_count(parsed) < MIN_SECTION_WORDS_PER_PAGE:
                 stats["skipped_empty"] += 1
                 print(f"{prefix} • too little text  {url}")
@@ -307,6 +450,10 @@ def crawl(urls: dict[str, str], out_dir: Path, previous_dir: Optional[Path]) -> 
             (pages_dir / filename).write_text(
                 json.dumps(page, indent=2, ensure_ascii=False), encoding="utf-8")
 
+            links = parsed["pdf_links"]
+            for pdf in links:
+                pdf_links.setdefault(pdf, category)
+
             changed = not prev or prev.get("content_hash") != page["content_hash"]
             manifest_pages[url] = {
                 "file": filename,
@@ -314,6 +461,7 @@ def crawl(urls: dict[str, str], out_dir: Path, previous_dir: Optional[Path]) -> 
                 "etag": response.headers.get("ETag"),
                 "last_modified": response.headers.get("Last-Modified"),
                 "content_hash": page["content_hash"],
+                "pdf_links": links,
             }
             stats["saved" if changed else "unchanged"] += 1
             print(f"{prefix} {'✓ saved    ' if changed else '= unchanged'} {url} "
@@ -323,6 +471,10 @@ def crawl(urls: dict[str, str], out_dir: Path, previous_dir: Optional[Path]) -> 
             stats["failed"] += 1
             failures.append(f"{url}: {e}")
             print(f"{prefix} ✗ {url}: {e}")
+
+    manifest_pdfs, pdf_stats = crawl_pdfs(
+        pdf_links, session, robots, pages_dir,
+        previous_manifest.get("pdfs", {}), previous_dir, failures)
 
     per_category: dict[str, int] = {topic: 0 for topic in TOPICS}
     for entry in manifest_pages.values():
@@ -334,11 +486,88 @@ def crawl(urls: dict[str, str], out_dir: Path, previous_dir: Optional[Path]) -> 
         "urls_selected": len(urls),
         "stats": stats,
         "pages_per_category": per_category,
+        "pdf_stats": pdf_stats,
         "failures": failures,
         "pages": manifest_pages,
+        "pdfs": manifest_pdfs,
     }
     (out_dir / "manifest.json").write_text(json.dumps(manifest, indent=2), encoding="utf-8")
     return manifest
+
+
+def crawl_pdfs(pdf_links: dict[str, str], session: requests.Session, robots: Robots,
+               pages_dir: Path, previous: dict, previous_dir: Optional[Path],
+               failures: list[str]) -> tuple[dict, dict]:
+    """Fetch linked PDFs into pages_dir. PDF failures are reported, not fatal."""
+    manifest_pdfs: dict[str, dict] = {}
+    stats = {"saved": 0, "unchanged": 0, "skipped_empty": 0,
+             "skipped_robots": 0, "skipped_too_large": 0, "failed": 0}
+
+    for i, (url, category) in enumerate(sorted(pdf_links.items()), 1):
+        prefix = f"[PDF {i}/{len(pdf_links)}]"
+        prev = previous.get(url)
+        prev_file = (previous_dir / "pages" / prev["file"]) if prev and previous_dir else None
+
+        try:
+            response = _get_allowed(session, robots, url,
+                                    _conditional_headers(prev, prev_file))
+            if response is None:
+                stats["skipped_robots"] += 1
+                print(f"{prefix} • robots.txt disallows {url}")
+                continue
+            if response.status_code == 304 and prev_file:
+                shutil.copy2(prev_file, pages_dir / prev["file"])
+                manifest_pdfs[url] = prev
+                stats["unchanged"] += 1
+                print(f"{prefix} = unchanged  {url}")
+                continue
+            response.raise_for_status()
+
+            # Stop downloading as soon as the file passes the size limit
+            content = _read_capped(response, MAX_PDF_BYTES)
+            response.close()
+            if content is None:
+                stats["skipped_too_large"] += 1
+                print(f"{prefix} • too large (over {MAX_PDF_BYTES:,} bytes)  {url}")
+                continue
+            if not content.startswith(b"%PDF"):
+                stats["skipped_empty"] += 1
+                print(f"{prefix} • not a PDF  {url}")
+                continue
+
+            page = {
+                "url": url,
+                "category": category,
+                "title": pdf_title(url),
+                "sections": parse_pdf(content),
+                "doc_type": "pdf",
+                "fetched_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
+            }
+            if _word_count(page) < MIN_SECTION_WORDS_PER_PAGE:
+                stats["skipped_empty"] += 1  # usually a scanned PDF without a text layer
+                print(f"{prefix} • too little text  {url}")
+                continue
+
+            page["content_hash"] = _content_hash(page)
+            filename = url_to_filename(url)
+            (pages_dir / filename).write_text(
+                json.dumps(page, indent=2, ensure_ascii=False), encoding="utf-8")
+            manifest_pdfs[url] = {
+                "file": filename,
+                "category": category,
+                "etag": response.headers.get("ETag"),
+                "last_modified": response.headers.get("Last-Modified"),
+                "content_hash": page["content_hash"],
+            }
+            stats["saved"] += 1
+            print(f"{prefix} ✓ saved     {url} ({_word_count(page)} words)")
+
+        except Exception as e:
+            stats["failed"] += 1
+            failures.append(f"{url}: {e}")
+            print(f"{prefix} ✗ {url}: {e}")
+
+    return manifest_pdfs, stats
 
 
 def check_health(manifest: dict) -> list[str]:
@@ -388,6 +617,7 @@ def main() -> int:
     print("\n" + "=" * 70)
     print(f"Stats: {manifest['stats']}")
     print(f"Pages per topic: {manifest['pages_per_category']}")
+    print(f"PDFs: {manifest['pdf_stats']}")
 
     problems = check_health(manifest)
     if problems:
