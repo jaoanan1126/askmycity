@@ -3,6 +3,9 @@ export interface Source {
     category: string;
     chunk: number;
     relevance_score: number;
+    url?: string | null;
+    title?: string | null;
+    section?: string | null;
 }
 export interface Message {
   id: string;

@@ -281,17 +281,24 @@ class RAGService:
             # STEP 5: Build context
             context = ""
             sources = []
+            contexts = []  # raw chunk text, for evaluation (not sent to clients)
 
             for i, result in enumerate(final_results, 1):
                 doc = result['document']
                 meta = result['metadata']
 
-                context += f"[Document {i}]\n{doc}\n\n"
+                url_line = f"URL: {meta['url']}\n" if meta.get('url') else ""
+                context += f"[Document {i}]\n{url_line}{doc}\n\n"
+                contexts.append(doc)
                 sources.append({
                     "source": meta['source'],
                     "category": meta['category'],
                     "chunk": meta['chunk'],
-                    "relevance_score": round(self._relevance(result), 3)
+                    "relevance_score": round(self._relevance(result), 3),
+                    # Present only in indexes built by build_index.py
+                    "url": meta.get('url'),
+                    "title": meta.get('title'),
+                    "section": meta.get('section'),
                 })
 
             logger.info(f"📚 Built context from {len(sources)} sources")
@@ -434,6 +441,7 @@ class RAGService:
                 "question": question,
                 "answer": full_response,
                 "sources": sources,
+                "contexts": contexts,
                 "conversation_id": conversation_id,
                 "response_time_ms": round(
                     response_time_ms,

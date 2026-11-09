@@ -171,6 +171,7 @@ class EvaluationService:
         """
         answer = response.get('answer', '')
         sources = response.get('sources', [])
+        contexts = response.get('contexts', [])
         
         # Check if answer addresses expected topics
         expected_topics = test_case.get('expected_topics', [])
@@ -181,7 +182,7 @@ class EvaluationService:
         topic_coverage = len(topics_covered) / len(expected_topics) if expected_topics else 0
         
         # Check for hallucination indicators
-        hallucination_score = self._check_hallucination_indicators(answer, sources)
+        hallucination_score = self._check_hallucination_indicators(answer, contexts)
         
         # Check source quality
         source_quality = self._assess_source_quality(sources)
@@ -204,53 +205,63 @@ class EvaluationService:
             "source_quality": round(source_quality, 3),
             "quality_score": round(quality_score, 3),
             "sources_count": len(sources),
+            "contexts": contexts,
             "response_time_ms": response.get('response_time_ms', 0)
         }
     
+    # Hedging language: suspicious whether or not it appears in the sources.
+    HEDGING_PATTERNS = [
+        (r"(?i)\b(i think|i believe|probably|maybe|might be)\b", 0.3),
+        (r"(?i)\b(approximately|roughly|around) \$[\d,]+", 0.2),
+        (r"(?i)\b(typically|usually|generally|often) (?!according to)", 0.2),
+    ]
+    # Specific facts: only suspicious if they are NOT in the retrieved text.
+    FACT_PATTERNS = [
+        (r"\$[\d,]+(?:\.\d{2})?", 0.4),                                   # dollar amounts
+        (r"\(?\d{3}\)?[-. ]?\d{3}-\d{4}", 0.5),                            # phone numbers
+        (r"\b\d+ [A-Z][a-z]+ (?:Street|St|Avenue|Ave|Road|Boulevard|Blvd|Place|Pl)\b", 0.4),  # addresses
+    ]
+
+    @staticmethod
+    def _normalize_for_match(text: str) -> str:
+        import re
+        return re.sub(r"\s+", " ", text).lower()
+
     def _check_hallucination_indicators(
         self,
         answer: str,
-        sources: List[Dict[str, Any]]
+        contexts: List[str]
     ) -> float:
         """
         Detect hallucination indicators
-        
+
+        - Hedging phrases always add to the score.
+        - Each specific fact (dollar amount, phone number, address) adds to
+          the score only if it does NOT appear in the retrieved documents.
+          Each pattern counts once, however many facts it misses.
+
         Returns:
             Score 0-1 (0 = no hallucination, 1 = likely hallucination)
         """
         import re
-        
-        hallucination_patterns = [
-            # Suspicious phrases
-            (r"(?i)(i think|i believe|probably|maybe|might be)", 0.3),
-            (r"(?i)(approximately|roughly|around) \$[\d,]+", 0.2),
-            (r"(?i)(typically|usually|generally|often) (?!according to)", 0.2),
-            
-            # Specific claims without citation
-            (r"\$[\d,]+\.\d{2}", 0.4),  # Exact dollar amounts
-            (r"\d{3}-\d{3}-\d{4}", 0.5),  # Phone numbers
-            (r"\d+ [A-Z][a-z]+ (Street|Avenue|Road|Boulevard)", 0.4),  # Addresses
-        ]
-        
+
+        source_text = self._normalize_for_match(" ".join(contexts))
         hallucination_score = 0.0
-        
-        for pattern, weight in hallucination_patterns:
-            matches = re.findall(pattern, answer)
-            if matches:
-                # Check if matched text appears in sources
-                found_in_sources = False
-                for match in matches:
-                    for source in sources:
-                        source_text = source.get('content', '')
-                        if match in source_text or str(match) in source_text:
-                            found_in_sources = True
-                            break
-                    if found_in_sources:
-                        break
-                
-                if not found_in_sources:
-                    hallucination_score += weight
-        
+
+        for pattern, weight in self.HEDGING_PATTERNS:
+            if re.search(pattern, answer):
+                hallucination_score += weight
+
+        for pattern, weight in self.FACT_PATTERNS:
+            # finditer + group(0): the FULL match ("$76.00"), not a capture group
+            facts = [m.group(0) for m in re.finditer(pattern, answer)]
+            unsupported = [
+                f for f in facts
+                if self._normalize_for_match(f) not in source_text
+            ]
+            if unsupported:
+                hallucination_score += weight
+
         return min(hallucination_score, 1.0)
     
     def _assess_source_quality(self, sources: List[Dict[str, Any]]) -> float:
@@ -340,7 +351,7 @@ class EvaluationService:
                 
                 data["question"].append(response['question'])
                 data["answer"].append(response['answer'])
-                data["contexts"].append([])  # RAGAS expects list of context strings
+                data["contexts"].append(response.get('contexts', []))  # retrieved chunk texts
                 data["ground_truth"].append(response.get('ground_truth', ''))
             
             # Create dataset

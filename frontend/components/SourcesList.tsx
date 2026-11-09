@@ -13,11 +13,31 @@ export default function SourcesList({ sources }: SourcesListProps) {
         Sources
       </div>
       <div className="space-y-1">
-        {sources.map((source, idx) => (
-          <div key={idx} className="text-gray-700 text-xs">
-            📄 {source.source} ({source.category}) - {Math.round(source.relevance_score * 100)}% relevant
-          </div>
-        ))}
+        {sources.map((source, idx) => {
+          const name = source.title
+            ? source.section
+              ? `${source.title} › ${source.section}`
+              : source.title
+            : source.source;
+          return (
+            <div key={idx} className="text-gray-700 text-xs">
+              📄{' '}
+              {source.url ? (
+                <a
+                  href={source.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-700 underline hover:text-blue-900"
+                >
+                  {name}
+                </a>
+              ) : (
+                name
+              )}{' '}
+              ({source.category}) - {Math.round(source.relevance_score * 100)}% relevant
+            </div>
+          );
+        })}
       </div>
     </div>
   );

@@ -282,9 +282,10 @@ class AdvancedRAGService:
         if len(sources) > 0 and "Sources:" not in enhanced:
             enhanced += "\n\nSources:"
             for i, source in enumerate(sources, 1):
-                source_name = source.get('source', 'Unknown')
+                source_name = source.get('title') or source.get('source', 'Unknown')
                 relevance = source.get('relevance_score', 0)
-                enhanced += f"\n[{i}] {source_name} (relevance: {relevance:.2%})"
+                url = f" {source['url']}" if source.get('url') else ""
+                enhanced += f"\n[{i}] {source_name}{url} (relevance: {relevance:.2%})"
         
         return enhanced
     

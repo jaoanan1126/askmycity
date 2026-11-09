@@ -55,6 +55,9 @@ class Source(BaseModel):
     category: str       # e.g., "permits"
     chunk: int          # e.g., 0 (which chunk)
     relevance_score: Optional[float] = None  # How relevant (0-1)
+    url: Optional[str] = None     # page URL (indexes built by build_index.py)
+    title: Optional[str] = None   # page title
+    section: Optional[str] = None # heading the chunk came from
 
 class AskResponse(BaseModel):
     """
