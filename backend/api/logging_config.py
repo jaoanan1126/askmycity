@@ -120,7 +120,7 @@ def set_request_context(
     if ip_address:
         context['ip_address'] = ip_address
     
-    context.update({k: v for k, v in kwargs.items() if v is not None})
+    context.update(kwargs)
     request_context.set(context)
 
 def clear_request_context():

@@ -28,7 +28,6 @@ class CostTracker:
             "output": 15.0  # $15 per 1M output tokens
         }
     }
-    DEFAULT_MODEL = "claude-haiku-4-5-20251001"
     
     def __init__(self, data_file: str = "cost_data.json"):
         """Initialize cost tracker"""
@@ -76,11 +75,7 @@ class CostTracker:
                 "total_cost": 0.0135
             }
         """
-        pricing = self.PRICING.get(model)
-        if pricing is None:
-            logger.warning(
-                f"No pricing for model '{model}', using {self.DEFAULT_MODEL} rates")
-            pricing = self.PRICING[self.DEFAULT_MODEL]
+        pricing = self.PRICING.get(model, self.PRICING["claude-3-5-sonnet-20241022"])
         
         input_cost = (input_tokens / 1_000_000) * pricing["input"]
         output_cost = (output_tokens / 1_000_000) * pricing["output"]

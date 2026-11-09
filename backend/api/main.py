@@ -467,7 +467,6 @@ async def ask_question(request: Request, ask_request: AskRequest):
                     response_time_ms=round((time.time() - lookup_start) * 1000, 2),
                     trace_id=None,
                     tokens=None,  # no tokens spent on a cache hit
-                    cached=True,
                 )
                 # Record the turn so follow-up questions have context
                 rag_service.save_conversation_turn(
@@ -481,13 +480,15 @@ async def ask_question(request: Request, ask_request: AskRequest):
                     response_time_ms=cached_response["response_time_ms"]
                 )
 
-                analytics_service.track_query(
-                    question=ask_request.question,
-                    response_time_ms=cached_response["response_time_ms"],
-                    sources_count=len(cached_response["sources"]),
-                    conversation_id=conversation_id,
-                    cached=True
-                )
+                # Track analytics (cached)
+                if 'analytics_service' in globals():
+                    analytics_service.track_query(
+                        question=ask_request.question,
+                        response_time_ms=cached_response["response_time_ms"],
+                        sources_count=len(cached_response["sources"]),
+                        conversation_id=conversation_id,
+                        cached=True
+                    )
 
                 return AskResponse(**cached_response)
 
@@ -515,13 +516,15 @@ async def ask_question(request: Request, ask_request: AskRequest):
             await asyncio.to_thread(
                 cache.set, ask_request.question, result, ask_request.max_results)
 
-        analytics_service.track_query(
-            question=ask_request.question,
-            response_time_ms=result["response_time_ms"],
-            sources_count=len(result["sources"]),
-            conversation_id=result["conversation_id"],
-            cached=False
-        )
+        # Track analytics (if analytics_service exists)
+        if 'analytics_service' in globals():
+            analytics_service.track_query(
+                question=ask_request.question,
+                response_time_ms=result["response_time_ms"],
+                sources_count=len(result["sources"]),
+                conversation_id=result["conversation_id"],
+                cached=False
+            )
         
         log_with_context(
             logger,

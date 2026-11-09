@@ -15,6 +15,7 @@ from langfuse import get_client, propagate_attributes
 import os
 import logging
 from typing import Optional, Dict, Any, List
+from contextlib import contextmanager
 from dotenv import load_dotenv
 
 # Load environment variables FIRST
@@ -52,6 +53,45 @@ class ObservabilityService:
             logger.warning(f"⚠️  Langfuse initialization failed: {e}")
             self.enabled = False
             self.langfuse = None
+
+    @contextmanager
+    def trace_request(
+        self,
+        name: str,
+        session_id: Optional[str] = None,
+        user_id: Optional[str] = None,
+        metadata: Optional[Dict[str, Any]] = None
+    ):
+        """
+        Context manager to create a Langfuse trace (root span)
+
+        Usage:
+            with observability.trace_request("ask_question", session_id="123") as trace:
+                # Your code here
+                pass
+        """
+        if not self.enabled:
+            yield None
+            return
+
+        try:
+            # Create root span with Langfuse trace attributes
+            with self.langfuse.start_as_current_observation(
+                as_type="span",
+                name=name
+            ) as trace:
+                # Set trace-level attributes
+                if session_id:
+                    trace.update_trace(session_id=session_id)
+                if user_id:
+                    trace.update_trace(user_id=user_id)
+                if metadata:
+                    trace.update_trace(metadata=metadata)
+
+                yield trace
+        except Exception as e:
+            logger.error(f"Failed to create trace: {e}", exc_info=True)
+            yield None
 
     def create_trace(
         self,

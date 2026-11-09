@@ -81,7 +81,6 @@ class AskResponse(BaseModel):
     # Optional extras (dropped silently by FastAPI unless declared here)
     trace_id: Optional[str] = None
     tokens: Optional[Dict[str, int]] = None
-    cached: bool = False
     validation: Optional[Dict[str, Any]] = None
     advanced_features_used: Optional[List[str]] = None
 

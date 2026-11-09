@@ -33,7 +33,7 @@ export function describeError(err: unknown): string {
   return 'Sorry, the server had a problem answering that question. Please try again in a moment.';
 }
 
-async function request<T>(url: string, init?: RequestInit): Promise<T> {
+async function fetchJSON<T>(url: string, init?: RequestInit): Promise<T> {
   let response: Response;
   try {
     response = await fetch(url, init);
@@ -56,22 +56,34 @@ export class APIClient {
     this.baseURL = baseURL;
   }
 
-  async ask(body: AskRequest): Promise<AskResponse> {
-    return request<AskResponse>(`${this.baseURL}/api/ask`, {
+  async ask(request: AskRequest): Promise<AskResponse> {
+    return fetchJSON<AskResponse>(`${this.baseURL}/api/ask`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
       },
-      body: JSON.stringify(body),
+      body: JSON.stringify(request),
     });
   }
 
-  async getHealth(): Promise<unknown> {
-    return request(`${this.baseURL}/health`);
+  async getHealth(): Promise<any> {
+    const response = await fetch(`${this.baseURL}/health`);
+
+    if (!response.ok) {
+      throw new Error('API health check failed');
+    }
+
+    return response.json();
   }
 
-  async getStats(): Promise<unknown> {
-    return request(`${this.baseURL}/stats`);
+  async getStats(): Promise<any> {
+    const response = await fetch(`${this.baseURL}/stats`);
+
+    if (!response.ok) {
+      throw new Error('Failed to fetch stats');
+    }
+
+    return response.json();
   }
 }
 

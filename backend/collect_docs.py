@@ -18,9 +18,7 @@ How it works
 
 Usage
 -----
-    python collect_docs.py                 # full crawl, replaces data/raw on success
-    python collect_docs.py --dry-run       # list the URLs that would be crawled
-    python collect_docs.py --limit 5 --out /tmp/crawl-test   # small test crawl
+    python collect_docs.py      # full crawl, replaces data/raw on success
 
 Output layout (data/raw/):
     manifest.json          crawl summary + per-URL ETag/hash for re-crawls
@@ -28,7 +26,6 @@ Output layout (data/raw/):
 """
 from __future__ import annotations
 
-import argparse
 import hashlib
 import json
 import re
@@ -61,7 +58,6 @@ USER_AGENT = "AskMyCityBot/1.0 (educational RAG project)"
 HEADERS = {"User-Agent": USER_AGENT}
 REQUEST_DELAY_SECONDS = 1.0
 REQUEST_TIMEOUT_SECONDS = 20
-MAX_ATTEMPTS = 2
 
 # sf.gov URL slugs start with the page type, e.g. "information--...".
 # Skipped on purpose: meeting--, news--, events--, profile--, reports--, data--
@@ -136,25 +132,16 @@ def categorize(url: str) -> Optional[str]:
     return None
 
 
-def _fetch_sitemap_urls(sitemap_url: str, session: requests.Session) -> list[str]:
-    """Return all <loc> URLs, following sitemap index files."""
-    response = session.get(sitemap_url, timeout=60)
+def discover_urls(session: requests.Session) -> dict[str, str]:
+    """Return {url: category} for every sitemap page we want."""
+    response = session.get(SITEMAP_URL, timeout=60)
     response.raise_for_status()
     root = ET.fromstring(response.content)
     ns = {"sm": "http://www.sitemaps.org/schemas/sitemap/0.9"}
+    sitemap_urls = [loc.text.strip() for loc in root.findall("sm:url/sm:loc", ns) if loc.text]
 
-    if root.tag.endswith("sitemapindex"):
-        urls: list[str] = []
-        for loc in root.findall("sm:sitemap/sm:loc", ns):
-            urls.extend(_fetch_sitemap_urls(loc.text.strip(), session))
-        return urls
-    return [loc.text.strip() for loc in root.findall("sm:url/sm:loc", ns) if loc.text]
-
-
-def discover_urls(session: requests.Session) -> dict[str, str]:
-    """Return {url: category} for every sitemap page we want."""
     selected: dict[str, str] = {}
-    for url in _fetch_sitemap_urls(SITEMAP_URL, session):
+    for url in sitemap_urls:
         category = categorize(url)
         if category:
             selected[url.rstrip("/")] = category
@@ -254,20 +241,6 @@ def _load_previous_manifest(raw_dir: Path) -> dict:
     return {}
 
 
-def _get(session: requests.Session, url: str, headers: dict) -> requests.Response:
-    """GET with one retry on network errors and 5xx responses."""
-    for attempt in range(1, MAX_ATTEMPTS + 1):
-        try:
-            response = session.get(url, headers=headers, timeout=REQUEST_TIMEOUT_SECONDS)
-            if response.status_code < 500 or attempt == MAX_ATTEMPTS:
-                return response
-        except requests.RequestException:
-            if attempt == MAX_ATTEMPTS:
-                raise
-        time.sleep(REQUEST_DELAY_SECONDS * 2)
-    raise RuntimeError("unreachable")
-
-
 def crawl(urls: dict[str, str], out_dir: Path, previous_dir: Optional[Path]) -> dict:
     """Fetch every URL into out_dir/pages. Returns the manifest dict."""
     pages_dir = out_dir / "pages"
@@ -301,7 +274,7 @@ def crawl(urls: dict[str, str], out_dir: Path, previous_dir: Optional[Path]) -> 
 
         time.sleep(REQUEST_DELAY_SECONDS)
         try:
-            response = _get(session, url, conditional)
+            response = session.get(url, headers=conditional, timeout=REQUEST_TIMEOUT_SECONDS)
 
             if response.status_code == 304 and prev_file:
                 shutil.copy2(prev_file, pages_dir / prev["file"])
@@ -397,19 +370,6 @@ def swap_into_place(staging: Path, target: Path) -> None:
 # ---------------------------------------------------------------------------
 
 def main() -> int:
-    parser = argparse.ArgumentParser(description=__doc__,
-                                     formatter_class=argparse.RawDescriptionHelpFormatter)
-    parser.add_argument("--dry-run", action="store_true",
-                        help="only list the URLs that would be crawled")
-    parser.add_argument("--limit", type=int, default=None,
-                        help="crawl at most N URLs (for testing; requires --out)")
-    parser.add_argument("--out", type=Path, default=None,
-                        help="write here instead of replacing data/raw")
-    args = parser.parse_args()
-
-    if args.limit and not args.out:
-        parser.error("--limit needs --out, so a partial crawl never replaces data/raw")
-
     print("=" * 70)
     print("📚 COLLECTING SF.GOV PAGES (sitemap-based)")
     print("=" * 70)
@@ -421,22 +381,6 @@ def main() -> int:
     for category in urls.values():
         per_topic[category] = per_topic.get(category, 0) + 1
     print(f"Selected {len(urls)} pages from the sitemap: {per_topic}\n")
-
-    if args.dry_run:
-        for url, category in urls.items():
-            print(f"{category:13} {url}")
-        return 0
-
-    if args.limit:
-        urls = dict(list(urls.items())[: args.limit])
-
-    if args.out:
-        out_dir = args.out
-        if out_dir.exists():
-            shutil.rmtree(out_dir)
-        manifest = crawl(urls, out_dir, previous_dir=RAW_DIR if RAW_DIR.exists() else None)
-        print(f"\nStats: {manifest['stats']}\nWrote {out_dir}")
-        return 0
 
     staging = DATA_DIR / f"raw_staging_{datetime.now():%Y%m%d_%H%M%S}"
     manifest = crawl(urls, staging, previous_dir=RAW_DIR if RAW_DIR.exists() else None)
