@@ -14,6 +14,7 @@ from slowapi.util import get_remote_address
 from slowapi.errors import RateLimitExceeded
 from .analytics import analytics_service
 from .logging_config import setup_logging, set_request_context, clear_request_context, log_with_context
+import asyncio
 import uuid
 import os
 import time
@@ -291,14 +292,14 @@ async def get_stats():
     Returns usage metrics
     """
     try:
-        rag_stats = rag_service.get_stats()
-        cache_stats = cache.get_stats()
-        analytics_summary = analytics_service.get_analytics_summary()
-         # Merge all stats
+        # Top level: this server process (in-memory, since startup).
+        # analytics: all-time numbers persisted in analytics.json.
+        # Nested so overlapping keys (total_queries, average_response_time_ms)
+        # don't overwrite each other.
         return {
-            **rag_stats,
-            **cache_stats,
-            **analytics_summary
+            **rag_service.get_stats(),
+            "cache": cache.get_stats(),
+            "analytics": analytics_service.get_analytics_summary(),
         }
     except Exception as e:
         logger.error(f"❌ Failed to get stats: {e}")
@@ -443,14 +444,34 @@ async def ask_question(request: Request, ask_request: AskRequest):
                 detail="Question cannot be empty"
             )
         
-        # Check cache (if you have cache_service)
-        try:
-            cached_response = cache_service.get(
-                ask_request.question,
-                ask_request.max_results
-            )
-            
+        # Only use the cache for the FIRST question of a conversation.
+        # Follow-up questions depend on conversation history, so a cached
+        # answer to a similar standalone question could be wrong for them.
+        use_cache = not rag_service.get_conversation_history(
+            ask_request.conversation_id or "")
+
+        if use_cache:
+            lookup_start = time.time()
+            cached_response = await asyncio.to_thread(
+                cache.get, ask_request.question, ask_request.max_results)
+
             if cached_response:
+                # Re-bind the cached answer to THIS request: its own
+                # question, conversation ID and timing (never another
+                # user's conversation_id).
+                conversation_id = (
+                    ask_request.conversation_id or f"conv_{uuid.uuid4().hex[:8]}")
+                cached_response.update(
+                    question=ask_request.question,
+                    conversation_id=conversation_id,
+                    response_time_ms=round((time.time() - lookup_start) * 1000, 2),
+                    trace_id=None,
+                    tokens=None,  # no tokens spent on a cache hit
+                )
+                # Record the turn so follow-up questions have context
+                rag_service.save_conversation_turn(
+                    conversation_id, ask_request.question, cached_response["answer"])
+
                 log_with_context(
                     logger,
                     "info",
@@ -458,22 +479,19 @@ async def ask_question(request: Request, ask_request: AskRequest):
                     cache_hit=True,
                     response_time_ms=cached_response["response_time_ms"]
                 )
-                
+
                 # Track analytics (cached)
                 if 'analytics_service' in globals():
                     analytics_service.track_query(
                         question=ask_request.question,
                         response_time_ms=cached_response["response_time_ms"],
                         sources_count=len(cached_response["sources"]),
-                        conversation_id=cached_response["conversation_id"],
+                        conversation_id=conversation_id,
                         cached=True
                     )
-                
+
                 return AskResponse(**cached_response)
-        except NameError:
-            # cache_service not defined - skip caching
-            pass
-        
+
         # Cache miss - call RAG service
         log_with_context(
             logger,
@@ -493,17 +511,11 @@ async def ask_question(request: Request, ask_request: AskRequest):
             max_results=ask_request.max_results
         )
         
-        # Cache the response (if cache_service exists)
-        try:
-            cache_service.set(
-                ask_request.question,
-                result,
-                ask_request.max_results
-            )
-        except NameError:
-            # cache_service not defined - skip caching
-            pass
-        
+        # Cache standalone (first-turn) answers only
+        if use_cache:
+            await asyncio.to_thread(
+                cache.set, ask_request.question, result, ask_request.max_results)
+
         # Track analytics (if analytics_service exists)
         if 'analytics_service' in globals():
             analytics_service.track_query(

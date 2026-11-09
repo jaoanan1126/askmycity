@@ -30,6 +30,10 @@ backend/cost_data.json
 backend/evaluation_results.json
 backend/notes/
 
+# Crawl staging/backup dirs (collect_docs.py)
+backend/data/raw_staging_*/
+backend/data/raw_prev/
+
 # Node / Next
 node_modules/
 .next/

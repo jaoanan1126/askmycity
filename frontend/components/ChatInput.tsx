@@ -2,6 +2,7 @@
 
 import { useState, FormEvent } from 'react';
 import { Send } from 'lucide-react';
+import { MAX_QUESTION_LENGTH } from '@/lib/api';
 
 interface ChatInputProps {
   onSendMessage: (message: string) => void;
@@ -30,6 +31,7 @@ export default function ChatInput({ onSendMessage, disabled = false }: ChatInput
           className="flex-1 px-4 py-3 border-2 border-gray-200/50 rounded-full text-[15px] bg-white/80 backdrop-blur-sm outline-none focus:border-primary-500 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
           disabled={disabled}
           autoComplete="off"
+          maxLength={MAX_QUESTION_LENGTH}
         />
         <button
           type="submit"

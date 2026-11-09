@@ -6,6 +6,7 @@ import numpy as np
 from typing import Optional, Dict, Any, Tuple
 from datetime import datetime, timedelta
 import logging
+import threading
 
 logger = logging.getLogger(__name__)
 
@@ -24,7 +25,9 @@ class SemanticCache:
         self.model = SentenceTransformer('all-MiniLM-L6-v2')
         self.similarity_threshold = similarity_threshold
         self.ttl_seconds = ttl_seconds
-        
+        # get/set run in worker threads (see main.py); guard the dicts
+        self._lock = threading.Lock()
+
         self.stats = {
             "exact_hits": 0,
             "semantic_hits": 0,
@@ -39,17 +42,19 @@ class SemanticCache:
     
     def _find_similar(self, question: str) -> Optional[Tuple[str, float]]:
         """Find most similar cached question"""
-        if not self.embeddings:
-            return None
-        
-        # Get embedding for query
+        with self._lock:
+            if not self.embeddings:
+                return None
+            snapshot = list(self.embeddings.items())
+
+        # Get embedding for query (slow; done outside the lock)
         query_embedding = self.model.encode(question)
-        
+
         best_match = None
         best_score = 0.0
-        
+
         # Compare with all cached embeddings
-        for cached_q, cached_emb in self.embeddings.items():
+        for cached_q, cached_emb in snapshot:
             # Cosine similarity
             similarity = float(np.dot(query_embedding, cached_emb) / (
                 np.linalg.norm(query_embedding) * np.linalg.norm(cached_emb)
@@ -70,29 +75,30 @@ class SemanticCache:
         cache_key = f"{normalized}:{max_results}"
         
         # Try exact match first
-        if cache_key in self.cache:
-            cached = self.cache[cache_key]
-            if datetime.utcnow() < cached["expires_at"]:
-                self.stats["exact_hits"] += 1
-                logger.info(f"⚡ Exact cache hit")
-                return cached["data"]
-            else:
+        with self._lock:
+            cached = self.cache.get(cache_key)
+            if cached:
+                if datetime.utcnow() < cached["expires_at"]:
+                    self.stats["exact_hits"] += 1
+                    logger.info(f"⚡ Exact cache hit")
+                    return dict(cached["data"])
                 del self.cache[cache_key]
-        
+
         # Try semantic match
         similar = self._find_similar(question)
         if similar:
             cached_q, score = similar
             cached_key = f"{cached_q}:{max_results}"
-            
-            if cached_key in self.cache:
-                cached = self.cache[cached_key]
-                if datetime.utcnow() < cached["expires_at"]:
+
+            with self._lock:
+                cached = self.cache.get(cached_key)
+                if cached and datetime.utcnow() < cached["expires_at"]:
                     self.stats["semantic_hits"] += 1
                     logger.info(f"🎯 Semantic cache hit (similarity: {score:.2%})")
-                    return cached["data"]
-        
-        self.stats["misses"] += 1
+                    return dict(cached["data"])
+
+        with self._lock:
+            self.stats["misses"] += 1
         return None
     
     def set(self, question: str, response: Dict[str, Any], max_results: int = 3) -> None:
@@ -100,15 +106,16 @@ class SemanticCache:
         normalized = self._normalize(question)
         cache_key = f"{normalized}:{max_results}"
         
-        # Store response
-        self.cache[cache_key] = {
-            "data": response,
-            "expires_at": datetime.utcnow() + timedelta(seconds=self.ttl_seconds)
-        }
-        
-        # Store embedding
-        self.embeddings[normalized] = self.model.encode(question)
-        
+        embedding = self.model.encode(question)
+
+        with self._lock:
+            # Store a copy so later changes by the caller don't leak in
+            self.cache[cache_key] = {
+                "data": dict(response),
+                "expires_at": datetime.utcnow() + timedelta(seconds=self.ttl_seconds)
+            }
+            self.embeddings[normalized] = embedding
+
         logger.info(f"✓ Cached with embedding")
     
     def get_stats(self) -> Dict[str, Any]:

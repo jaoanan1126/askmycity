@@ -171,6 +171,7 @@ class EvaluationService:
         """
         answer = response.get('answer', '')
         sources = response.get('sources', [])
+        contexts = response.get('contexts', [])
         
         # Check if answer addresses expected topics
         expected_topics = test_case.get('expected_topics', [])
@@ -181,7 +182,7 @@ class EvaluationService:
         topic_coverage = len(topics_covered) / len(expected_topics) if expected_topics else 0
         
         # Check for hallucination indicators
-        hallucination_score = self._check_hallucination_indicators(answer, sources)
+        hallucination_score = self._check_hallucination_indicators(answer, contexts)
         
         # Check source quality
         source_quality = self._assess_source_quality(sources)
@@ -204,16 +205,20 @@ class EvaluationService:
             "source_quality": round(source_quality, 3),
             "quality_score": round(quality_score, 3),
             "sources_count": len(sources),
+            "contexts": contexts,
             "response_time_ms": response.get('response_time_ms', 0)
         }
     
     def _check_hallucination_indicators(
         self,
         answer: str,
-        sources: List[Dict[str, Any]]
+        contexts: List[str]
     ) -> float:
         """
         Detect hallucination indicators
+        
+        Args:
+            contexts: text of the retrieved documents the answer was based on
         
         Returns:
             Score 0-1 (0 = no hallucination, 1 = likely hallucination)
@@ -235,14 +240,15 @@ class EvaluationService:
         hallucination_score = 0.0
         
         for pattern, weight in hallucination_patterns:
-            matches = re.findall(pattern, answer)
+            # finditer + group(0) gives the full match ("100 Larkin Street");
+            # findall would return only the capture group ("Street").
+            matches = [m.group(0) for m in re.finditer(pattern, answer)]
             if matches:
-                # Check if matched text appears in sources
+                # Check if matched text appears in the retrieved documents
                 found_in_sources = False
                 for match in matches:
-                    for source in sources:
-                        source_text = source.get('content', '')
-                        if match in source_text or str(match) in source_text:
+                    for source_text in contexts:
+                        if match in source_text:
                             found_in_sources = True
                             break
                     if found_in_sources:
@@ -340,7 +346,7 @@ class EvaluationService:
                 
                 data["question"].append(response['question'])
                 data["answer"].append(response['answer'])
-                data["contexts"].append([])  # RAGAS expects list of context strings
+                data["contexts"].append(response.get('contexts', []))  # retrieved chunk texts
                 data["ground_truth"].append(response.get('ground_truth', ''))
             
             # Create dataset
