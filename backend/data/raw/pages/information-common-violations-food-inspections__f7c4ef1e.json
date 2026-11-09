@@ -1,0 +1,138 @@
+{
+  "url": "https://www.sf.gov/information--common-violations-food-inspections",
+  "category": "permits",
+  "title": "Common violations in food inspections",
+  "sections": [
+    {
+      "heading": "",
+      "paragraphs": [
+        "Info Page",
+        "View issues that are considered food safety violations when the City inspects a food facility.",
+        "We follow the California Health and Safety code for retail food ."
+      ]
+    },
+    {
+      "heading": "What we check",
+      "paragraphs": [
+        "Environmental Health inspectors check every facility that serves food to the public in San Francisco.",
+        "After an inspection, we will give the facility a green, yellow, or red poster based on different levels of food safety violations we may have seen. They need to display this where you can see it.",
+        "If there are major violations, restaurants need to close or fix the issue right away.",
+        "Learn more about the inspection signage .",
+        "Search for a facility's health inspection results ."
+      ]
+    },
+    {
+      "heading": "Common risks to food safety › Sick food workers (\"communicable disease\")",
+      "paragraphs": [
+        "People who are sick (with a spreadable, or \"communicable\" illness) should stay home. They should not be at the food facility or involved in the making of food while ill.",
+        "If someone has cuts or rashes, they should wear gloves.",
+        "Nobody should do anything that would make any food or utensils dirty or contaminated."
+      ]
+    },
+    {
+      "heading": "Common risks to food safety › Not washing hands",
+      "paragraphs": [
+        "Employees must wash their hands often, especially when:",
+        "starting work",
+        "switching tasks (including between raw and ready-to-eat food)",
+        "before handling utensils or equipment",
+        "after using the restroom",
+        "during food prep and food washing",
+        "after touching their face or other parts of the body"
+      ]
+    },
+    {
+      "heading": "Common risks to food safety › Improper hot and cold holding temperatures",
+      "paragraphs": [
+        "Food must be held or stored at temperature that keeps that specific item safe."
+      ]
+    },
+    {
+      "heading": "Common risks to food safety › Not following \"time\" as a public health control",
+      "paragraphs": [
+        "Rules about how long food can be at certain temperatures and methods to maintain these \"time controls\" must be known and followed by staff."
+      ]
+    },
+    {
+      "heading": "Common risks to food safety › Improper food cooling methods",
+      "paragraphs": [
+        "All potentially hazardous food must be rapidly cooled from 135 degrees Fahrenheit to 70 degrees Fahrenheit within 2 hours. Then, from 70 degrees Fahrenheit to 41 degrees Fahrenheit within 4 hours.",
+        "Food can be cooled by one or more of the following methods:",
+        "in shallow containers",
+        "separating food into smaller portions",
+        "adding ice as an ingredient",
+        "using an ice bath, stirring frequently",
+        "using rapid cooling equipment",
+        "using containers that facilitate heat transfer"
+      ]
+    },
+    {
+      "heading": "Common risks to food safety › Improperly cooked food",
+      "paragraphs": [
+        "Food must be cooked to temperatures required by the California Health and Safety Code.",
+        "Meat that is \"comminuted\" (pulvirized or powdered), or any food containing comminuted meat, must be heated to 155 degrees Fahrenheit.",
+        "Eggs and foods containing raw eggs, and single pieces of meat (including beef, veal, lamb, pork and approved game meat) must be heated to 145 degrees Fahrenheit.",
+        "Poultry, comminuted poultry, stuffed fish, and stuffed meat or poultry must be heated to 165 degrees Fahrenheit."
+      ]
+    },
+    {
+      "heading": "Common risks to food safety › Improperly reheating food",
+      "paragraphs": [
+        "Food needs to reach 165 degrees Fahrenheit if it is:",
+        "heated again for hot holding",
+        "served after being cooked and cooled"
+      ]
+    },
+    {
+      "heading": "Common risks to food safety › Unsafe or bad food",
+      "paragraphs": [
+        "Any food that has or has gotten mixed with substances that could poison or harm someone is considered \"adulterated.\"",
+        "It must be thrown out."
+      ]
+    },
+    {
+      "heading": "Common risks to food safety › Uncleanliness",
+      "paragraphs": [
+        "Regularly clean and sanitize any utensils or surfaces that touch food.",
+        "A sanitizer must:",
+        "be provided in the 3-compartment sink at the food facility, or",
+        "with a final rinse of the dishwasher."
+      ]
+    },
+    {
+      "heading": "Common risks to food safety › Unapproved food sources",
+      "paragraphs": [
+        "All the food used in the facility should come from safe and approved sources."
+      ]
+    },
+    {
+      "heading": "Common risks to food safety › Risky foods for sensitive populations",
+      "paragraphs": [
+        "In places like schools and health care facilities, you can't serve food that poses a health risk, such as raw or under-cooked items like unpasteurized juice or under-cooked meat."
+      ]
+    },
+    {
+      "heading": "Common risks to food safety › No water or no hot water",
+      "paragraphs": [
+        "A food facility need to have both hot (at least 120 degrees Fahrenheit) and cold water available.",
+        "The water supply must be adequate, protected, pressurized, and potable."
+      ]
+    },
+    {
+      "heading": "Common risks to food safety › Sewage and wastewater issues",
+      "paragraphs": [
+        "If there's a problem with the sewage system, you can't operate.",
+        "This includes if sewage backs up into the facility, if a grease trap overflows or clogs, or when there are no working toilets.",
+        "All liquid waste must drain to an approved fully functioning sewage disposal system."
+      ]
+    },
+    {
+      "heading": "Common risks to food safety › Pests",
+      "paragraphs": [
+        "Food locations should be free from pests like rodents, roaches, flies, and other vermin."
+      ]
+    }
+  ],
+  "fetched_at": "2026-11-09T18:44:29+00:00",
+  "content_hash": "40ae4a170d5e9b82"
+}

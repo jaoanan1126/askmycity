@@ -1,0 +1,20 @@
+{
+  "url": "https://www.sf.gov/information--view-map-businesses-entertainment-permits",
+  "category": "permits",
+  "title": "View a map of businesses with entertainment permits",
+  "sections": [
+    {
+      "heading": "",
+      "paragraphs": [
+        "Info Page",
+        "Check which business establishments in SF have a permit to host entertainment on a regular basis.",
+        "Check the map .",
+        "You can filter by the type of entertainment permit.",
+        "Types of permits that allow a business to host indoor entertainment on a regular basis: Place of Entertainment (POE) permit, Limited Live Performance (LLP) permit, and Extended Hours Premises (EHP) permit.",
+        "Map is updated every 3 months."
+      ]
+    }
+  ],
+  "fetched_at": "2026-11-09T18:45:43+00:00",
+  "content_hash": "4b8ffcb0d859858e"
+}

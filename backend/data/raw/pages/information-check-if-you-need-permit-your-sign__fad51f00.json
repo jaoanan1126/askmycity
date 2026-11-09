@@ -1,0 +1,38 @@
+{
+  "url": "https://www.sf.gov/information--check-if-you-need-permit-your-sign",
+  "category": "permits",
+  "title": "Check if you need a permit for your sign",
+  "sections": [
+    {
+      "heading": "",
+      "paragraphs": [
+        "Info Page",
+        "A list of commercial sign types that do not require a permit.",
+        "Most signs require a permit ."
+      ]
+    },
+    {
+      "heading": "When you do not need a permit",
+      "paragraphs": [
+        "If you plan to install a non-commercial sign, you do not need a permit.",
+        "Many commercial signs do need a permit. However, you do not need a permit for these commercial signs:",
+        "Signs that are only attached to windows (window signs)",
+        "Signs that are only attached to awnings (awning signs)",
+        "Temporary sale or lease signs",
+        "Temporary advertising signs for people or firms doing construction work",
+        "Temporary business signs",
+        "Advertising signs on fixed newsrack units",
+        "Small copy changes on signs that involve frequent copy changes (theater marquee)",
+        "Regular sign maintenance and minor repairs",
+        "Signs painted on doors or windows if your building is in a neighborhood commercial, commercial, or industrial zone",
+        "Signs within a stadium, open-air theater, or arena",
+        "Advertising signs that are less than 24 square feet in area on Municipal Transportation Agency structures",
+        "Advertising signs that are less than 52 square feet in area on Department of Public Works kiosks",
+        "To learn more about these permit exceptions, read Section 603 from the Planning Code and the Planning Commission’s Sign information publication.",
+        "Find your building’s zoning."
+      ]
+    }
+  ],
+  "fetched_at": "2026-11-09T18:44:22+00:00",
+  "content_hash": "428cc8ce89732600"
+}

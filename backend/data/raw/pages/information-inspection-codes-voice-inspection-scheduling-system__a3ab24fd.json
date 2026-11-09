@@ -1,0 +1,90 @@
+{
+  "url": "https://www.sf.gov/information--inspection-codes-voice-inspection-scheduling-system",
+  "category": "permits",
+  "title": "Inspection codes for the Voice Inspection Scheduling System",
+  "sections": [
+    {
+      "heading": "",
+      "paragraphs": [
+        "Info Page",
+        "Find the code for the inspection type you want, before you call our automated scheduling system.",
+        "The Voice Inspection Scheduling system is only for permits obtained Over-the-Counter at the Permit Center, In-House, or through the DBI Registered Contractor portal. The permit numbers will start with numbers.",
+        "For permits starting with letters obtained through the PermitSF portal, request inspections online .",
+        "Use these inspection codes when calling 628-652-3401 to book an inspection."
+      ]
+    },
+    {
+      "heading": "Electrical (EID) scheduling codes",
+      "paragraphs": [
+        "100 - Rough cover/re-inspection",
+        "103 - Green tag - Energize service",
+        "105 - Orange tag - Energize temp service",
+        "109 - Survey",
+        "110 - Witness test (transfer to operator)",
+        "111 - Concrete encased electrode",
+        "117 - Long duration inspection (transfer to operator)",
+        "301 - Complete",
+        "302 - Complete with GT",
+        "307 - Witness test complete (transfer to operator)"
+      ]
+    },
+    {
+      "heading": "Plumbing (PID) scheduling codes",
+      "paragraphs": [
+        "100 - Gas tag request",
+        "101 - Survey inspection (transfer to operator)",
+        "105 - Complaint inspection (transfer to operator)",
+        "119 - More than one slot needed (transfer to operator)",
+        "200 - Underground dwv piping",
+        "201 - Underground domestic water piping",
+        "202 - Underground fire sprinkler service",
+        "208 - Boiler installation",
+        "212 - Radiant heat piping",
+        "213 - Building drain/sewer/house trap",
+        "228 - Shower pan installation",
+        "300 - Rough in drain, waste, and vent",
+        "302 - Rough in gas piping",
+        "304 - Rough in flues/vents/furnace",
+        "305 - Rough in fire sprinklers (transfer to operator)",
+        "320 - Rough in plumbing",
+        "400 - Final plumbing inspection",
+        "401 - Final mechanical inspection",
+        "402 - Final water heater",
+        "403 - Final furnace",
+        "404 - Final house trap/building sewer/storm sewer"
+      ]
+    },
+    {
+      "heading": "Building (BID) scheduling codes",
+      "paragraphs": [
+        "101 - Start work",
+        "106 - Final inspection",
+        "111 - Site verification",
+        "112 - Police permits - entertainment (transfer to operator)",
+        "113 - Fire permits - entertainment (transfer to operator)",
+        "120 - Forms",
+        "121 - Forms, partial",
+        "122 - Reinforcing steel/Rebar/Foundation/Concrete slab/Concrete pour/Piers/Shoring/Retaining wall/Anchor bolts",
+        "123 - Ok to pour",
+        "124 - Ceiling inspection",
+        "125 - Rough frame, partial",
+        "126 - Rough frame/Fire wall",
+        "127 - Insulation",
+        "129 - Shear wall/Plywood nailing",
+        "132 - Flues/vents/ducts (Fireplace/Grease shaft)",
+        "133 - Lath, exterior/Paper or Stucco wire",
+        "134 - Ok to cover/Interior lath",
+        "135 - Sheetrock nailing/Drywall nailing",
+        "142 - Pre-final",
+        "145 - Temporary certificate occupancy issued",
+        "146 - Mechanical",
+        "147 - Ceiling inspection, partial",
+        "153 - Ok to pour, partial",
+        "154 - Ok to cover, partial",
+        "200 - Long duration inspection (transfer to operator)"
+      ]
+    }
+  ],
+  "fetched_at": "2026-11-09T18:44:57+00:00",
+  "content_hash": "8b5979c9b52c497d"
+}

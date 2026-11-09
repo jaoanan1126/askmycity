@@ -1,0 +1,36 @@
+{
+  "url": "https://www.sf.gov/information--california-state-business-registration",
+  "category": "business",
+  "title": "California state business registration",
+  "sections": [
+    {
+      "heading": "",
+      "paragraphs": [
+        "Info Page",
+        "If you chose a Limited Liability Company (LLC), Corporation (Corp), Limited Partnership (LP), or Limited Liability Partnership (LLP) as your business structure, you must register or incorporate with the California Secretary of State."
+      ]
+    },
+    {
+      "heading": "Check name availability",
+      "paragraphs": [
+        "Check if the name you want is available .",
+        "Learn more about how to choose a business name ."
+      ]
+    },
+    {
+      "heading": "File",
+      "paragraphs": [
+        "After you know the name you want is available, file the appropriate forms for your business structure with the CA Secretary of State."
+      ]
+    },
+    {
+      "heading": "Submit a \"Statement of Information\"",
+      "paragraphs": [
+        "Once the CA Secretary of State has processed your filing, submit a Statement of Information within 90 days of your filing.",
+        "Log in to your account, search and select your entity name. You should see a Statement of Information button to file on the right hand side. The paper form is available here ."
+      ]
+    }
+  ],
+  "fetched_at": "2026-11-09T18:44:14+00:00",
+  "content_hash": "dc907410558fd80e"
+}

@@ -1,0 +1,23 @@
+{
+  "url": "https://media.api.sf.gov/documents/Parking_Diagram_Example.pdf",
+  "category": "permits",
+  "title": "Parking Diagram Example",
+  "sections": [
+    {
+      "heading": "",
+      "paragraphs": [
+        "PRODUCTION: ABC Productions",
+        "DATE & TIMES: Tuesday Sept 6th & Wednesday Sept 7th 2016 8am-3pm daily",
+        "CONTACT: John Smith",
+        "PHONE: 415-555-5555",
+        "# OF SIGNS: 4",
+        "LOCATION: Clay Street between Scott and Divisadero Streets",
+        "STREET SIDE: Southside (closer to Scott Street)",
+        "BLOCK #: 2801-2845"
+      ]
+    }
+  ],
+  "doc_type": "pdf",
+  "fetched_at": "2026-11-09T18:47:25+00:00",
+  "content_hash": "44fc5693e3f7bcf7"
+}

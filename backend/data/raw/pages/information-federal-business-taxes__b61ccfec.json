@@ -1,0 +1,44 @@
+{
+  "url": "https://www.sf.gov/information--federal-business-taxes",
+  "category": "business",
+  "title": "Federal business taxes",
+  "sections": [
+    {
+      "heading": "",
+      "paragraphs": [
+        "Info Page",
+        "Your business will owe federal taxes based on a few things. These include its structure, products and services, and whether you have employees. Here are some basics. Consult a tax professional for your business."
+      ]
+    },
+    {
+      "heading": "Examples of types of federal taxes › Income Tax",
+      "paragraphs": [
+        "All business entities pay income tax, though the specific tax return varies.",
+        "The federal Income Tax is meant to be paid throughout the year. If you do not pay the Income Tax through withholding, or do not pay enough, you may be asked to pay an Estimated Tax to make up the difference."
+      ]
+    },
+    {
+      "heading": "Examples of types of federal taxes › Employment Taxes",
+      "paragraphs": [
+        "These include Social Security and Medicare taxes as well as additional withholding and unemployment taxes for employees.",
+        "The Self-Employment Tax covers Social Security and Medicare taxes for people who work for themselves."
+      ]
+    },
+    {
+      "heading": "Examples of types of federal taxes › Excise taxes",
+      "paragraphs": [
+        "These are paid on certain business operations, including communications and air transportation; retail sale of heavy trucks, trailers, and tractors; accepting wagers of conducting a wagering pool or lottery; and more.",
+        "Visit the IRS website for full details about each type of business tax.",
+        "NOTE: You need an Employer Identification Number (EIN) in order to collect and pay federal taxes. If you are a sole proprietor, this may be your social security number. You may apply for an EIN through the IRS."
+      ]
+    },
+    {
+      "heading": "Get more information",
+      "paragraphs": [
+        "Tax types and rates vary by the type of business entity you have (e.g. LLC, S-Corp). Tax codes change often, so it's best to refer to the IRS' business website to get the most up-to-date details."
+      ]
+    }
+  ],
+  "fetched_at": "2026-11-09T18:44:40+00:00",
+  "content_hash": "e5518ed4d3415830"
+}

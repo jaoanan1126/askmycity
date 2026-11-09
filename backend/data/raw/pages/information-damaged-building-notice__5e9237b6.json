@@ -1,0 +1,48 @@
+{
+  "url": "https://www.sf.gov/information--damaged-building-notice",
+  "category": "permits",
+  "title": "Damaged Building Notice",
+  "sections": [
+    {
+      "heading": "",
+      "paragraphs": [
+        "Info Page",
+        "Learn how to read your Damaged Building Notice to address building damage, restore safety, and bring your property back into compliance after an incident."
+      ]
+    },
+    {
+      "heading": "What This Notice Means",
+      "paragraphs": [
+        "If you've received this notice, it means a building inspector has identified damage to your property that was done after-hours and needs to be addressed as soon as possible. While the damage may not currently pose an immediate life safety risk, repairs are needed to bring your property back into compliance with building codes and maintain safety for occupants and the public.",
+        "Please contact the Department of Building Inspection as soon as possible for more information on the specific repairs required and the process to bring your building back into compliance.",
+        "If these repairs are not addressed in a timely manner, you may be issued a Notice of Violation."
+      ]
+    },
+    {
+      "heading": "1. Reason for Notice",
+      "paragraphs": [
+        "This section indicates that a building inspector has assessed the property and outlines why the notice was issued, including the cause of the damage, which may have resulted in weather events, accidents, or other incidents. As part of the inspection, DBI evaluates whether the building is safe to enter:",
+        "\"Is safe\": The building can be entered with caution, but repairs are still required.",
+        "\"Is not safe\": Certain areas of the building are restricted and off-limits until repairs are completed.",
+        "However, if the entire building is deemed completely unsafe for entry, a separate Notice of Violation will be issued in place of this Damaged Building Notice."
+      ]
+    },
+    {
+      "heading": "2. Next Steps",
+      "paragraphs": [
+        "Here's what the property owner needs to do after receiving this notice:",
+        "Contact the inspector. The notice includes inspector's contact information, so you can call or email them for more information, direction, and next steps.",
+        "Depending on the extent of the damage, a licensed engineer may need to assess the building’s structural integrity, and a licensed design professional may need to develop plans. You may also need to obtain a building permit to repair the damage."
+      ]
+    },
+    {
+      "heading": "3. Inspector Contact Information",
+      "paragraphs": [
+        "The time and date on the notice indicate when DBI inspected your building and issued the notice.",
+        "Please reach out to the inspector listed on the notice. The listed inspector will help guide you through the next steps of the process of obtaining necessary permits and completing repairs."
+      ]
+    }
+  ],
+  "fetched_at": "2026-11-09T18:44:32+00:00",
+  "content_hash": "fbe90a649c701944"
+}

@@ -1,0 +1,34 @@
+{
+  "url": "https://www.sf.gov/information--treasure-island-parking",
+  "category": "parking",
+  "title": "Treasure Island Parking",
+  "sections": [
+    {
+      "heading": "",
+      "paragraphs": [
+        "Info Page",
+        "Information about parking and parking enforcement on Treasure Island.",
+        "Starting on April 10, 2024, there will be parking changes on Seven Seas Avenue, Johnson Street, Cravath Street and Bruton Street on Treasure Island. Please see parking signs and other markings on the block to avoid a ticket.",
+        "SFMTA parking enforcement will include:",
+        "Posted parking regulations",
+        "Loading zones",
+        "Double parking",
+        "Parking in a bike lane",
+        "Parking at a red curb, fire hydrant, or bus stop",
+        "Be mindful of accessible parking spots in these areas. For more information, visit SFMTA.com/ParkingAccess .",
+        "Visit sf.gov/tida and sfmta.com/projects/treasure-island-project to learn more about the development of the Treasure and Yerba Buena islands."
+      ]
+    },
+    {
+      "heading": "New parking lot",
+      "paragraphs": [
+        "At the corner of 9th Street and Seven Seas Avenue, the Treasure Island Development Authority opened a parking lot to paying customers early March. This lot will support long-term island residents moving from former Navy housing to new permanent housing with limited parking. This parking lot will be available for up to five years, as this location has been designated for residential development.",
+        "Please note that there is interim free curb space on surrounding streets. As buildout progresses, on-street parking will be regulated and metered. The community will be notified as additional on-street regulations are implemented.",
+        "Residents of Star View Court and Maceo May Apartments will be given priority to purchase monthly permits for $150. Residents of other properties will be charged $250 per month. Due to the limited capacity, each household may apply for one parking space.",
+        "Learn how to purchase monthly permits in the new parking lot."
+      ]
+    }
+  ],
+  "fetched_at": "2026-11-09T18:45:40+00:00",
+  "content_hash": "8f5f807f894b7179"
+}

@@ -1,0 +1,76 @@
+{
+  "url": "https://www.sf.gov/information--cannabis-cultivation-business-operations",
+  "category": "business",
+  "title": "Cannabis cultivation business operations",
+  "sections": [
+    {
+      "heading": "",
+      "paragraphs": [
+        "Info Page",
+        "If you cultivate cannabis to sell, you must tell the Office of Cannabis how you will run you business.",
+        "We will ask you for the following information on the cultivation operations form of the cannabis business application."
+      ]
+    },
+    {
+      "heading": "Your canopy space",
+      "paragraphs": [
+        "We will ask you for the total amount of square feet you plan on using for cultivation, including vertical shelving.",
+        "For dedicated cultivators, this space cannot be over 22,000 square feet. For microbusinesses doing cultivation, this space cannot be over 10,000 square feet.",
+        "Your nursery area does not count toward total cultivation space. However, you cannot sell your immature plants.",
+        "We will also ask you for the total wattage used by your lighting, across cultivation and nursery spaces."
+      ]
+    },
+    {
+      "heading": "Water source",
+      "paragraphs": [
+        "We will ask if you will use a source other than City water.",
+        "If you are not using City water, we will ask for:",
+        "Name of your water source",
+        "Name of your water supplier",
+        "Point of diversion for your water source"
+      ]
+    },
+    {
+      "heading": "Pesticides",
+      "paragraphs": [
+        "We will ask which of the legal pesticides you will use."
+      ]
+    },
+    {
+      "heading": "Fertilizers",
+      "paragraphs": [
+        "We will ask for the chemical name of any fertilizers you will use.",
+        "We will also ask how you will dilute and store your fertilizers."
+      ]
+    },
+    {
+      "heading": "Propagation materials",
+      "paragraphs": [
+        "We will ask about the materials you will use when growing cannabis plants from seeds, seedlings, or cuttings. These materials include:",
+        "Rockwool",
+        "Perlite",
+        "Expanded Clay Pellets/LECA/Hydroton",
+        "Coco Coir/Perlite Blend",
+        "Coco Coir/Expanded Clay Blend",
+        "Peat Moss Plugs",
+        "Coco Coir Plugs",
+        "Bubbleponics/Aquaponics systems, using plant collars and/or 1” net pots",
+        "We will also ask which methods of propagation you will use:",
+        "Seeds",
+        "Cuttings",
+        "Seedlings",
+        "Grafting",
+        "Tissue culture"
+      ]
+    },
+    {
+      "heading": "Reducing odors outside",
+      "paragraphs": [
+        "You must have ventilation so the public cannot smell cannabis from outside.",
+        "We will ask if you will use charcoal filters to vent air to the outside. We will also ask about other methods you will use to reduce odors."
+      ]
+    }
+  ],
+  "fetched_at": "2026-11-09T18:44:17+00:00",
+  "content_hash": "111c82e5bc35d4ee"
+}

@@ -1,0 +1,117 @@
+{
+  "url": "https://www.sf.gov/information--business-registration",
+  "category": "business",
+  "title": "Learn about business registration",
+  "sections": [
+    {
+      "heading": "",
+      "paragraphs": [
+        "Info Page",
+        "You must register your business if it operates in San Francisco. You may also need to register with state and federal agencies.",
+        "Get help registering your business from the Office of Small Business."
+      ]
+    },
+    {
+      "heading": "Pre-registration tips › Select a business structure",
+      "paragraphs": [
+        "When starting a business, you must decide on a business structure .",
+        "If you plan to start a Corporation, Limited Liability Company (LLC), Limited Partnership (LP), or Limited Liability Partnership (LLP), you must register with the state first."
+      ]
+    },
+    {
+      "heading": "Pre-registration tips › Research location & zoning",
+      "paragraphs": [
+        "Check zoning and decide on a location for your business before registering.",
+        "If you register your business before choosing a final location, you will have to update your registration with the new address.",
+        "This can cost money and time."
+      ]
+    },
+    {
+      "heading": "Pre-registration tips › Pick a name",
+      "paragraphs": [
+        "Consider and research your name before registering.",
+        "You will need a Business Registration Certificate to file for a Fictitious Business Name (FBN), but you should know whether or not your name is available."
+      ]
+    },
+    {
+      "heading": "Who needs to register",
+      "paragraphs": [
+        "Every person who engages in business in San Francisco must register at the SF Office of the Treasurer & Tax Collector (TTX) within 30 days of commencing business in the City."
+      ]
+    },
+    {
+      "heading": "Who needs to register › What does engaging in business in San Francisco look like?",
+      "paragraphs": [
+        "Do you:",
+        "Have a fixed place of business like a shop or an office?",
+        "Own or lease land or buildings for business purposes?",
+        "Regularly maintain goods for sale?",
+        "Solicit business for all or part of any seven days during one calendar year?",
+        "Perform work for all or part of any seven days during one calendar year?",
+        "Drive on SF streets for business purposes for all or part of any seven days during one calendar year?",
+        "If you answered yes to any of the questions above, you must register your business."
+      ]
+    },
+    {
+      "heading": "How to register",
+      "paragraphs": [
+        "Complete the online application form .",
+        "After submitting the application, you will receive two separate emails:",
+        "DocuSign that you must open, review, sign, and finish",
+        "Instructions to pay for your registration",
+        "Pay the registration fee(s) as instructed.",
+        "You will get a payment confirmation.",
+        "It will include your Business Account Number (BAN). You will need your BAN to apply for other permits within the City."
+      ]
+    },
+    {
+      "heading": "How to register › To register you need:",
+      "paragraphs": [
+        "Legal structure",
+        "Business name (for sole proprietors, this is your legal name)",
+        "Business Tax ID (for sole proprietors, this is your SSN or ITIN)",
+        "Business start date",
+        "Email address",
+        "Phone number",
+        "Mailing address",
+        "Owner name(s) and address(es)",
+        "Location information",
+        "Average number of employees per week",
+        "Estimated payroll expenses and gross receipts from SF",
+        "Payment information"
+      ]
+    },
+    {
+      "heading": "How to register › Payment options:",
+      "paragraphs": [
+        "Electronic Check",
+        "Credit/Debit (added fee applies)",
+        "In person at City Hall"
+      ]
+    },
+    {
+      "heading": "How to register › Cost:",
+      "paragraphs": [
+        "The First Year Free program waives your first registration fee for many businesses.",
+        "Business Registration Fees for new businesses are based on anticipated gross receipts.",
+        "Refer to the Treasurer & Tax Collector Rate Schedule to determine your registration fee.",
+        "NOTE: You must renew your business registration every year by the end of February.",
+        "The online system will automatically calculate your business registration fee and state fee as well as penalties, interest, and administrative fees (if applicable)."
+      ]
+    },
+    {
+      "heading": "Business Property Statement",
+      "paragraphs": [
+        "After you have registered with the Office of the Treasurer and Tax Collector, business registration information will be shared with the Office of the Assessor-Recorder.",
+        "All new businesses, including new locations under the same ownership, must submit the Business Property Statement (Form 571-L) along with the initial business registration.",
+        "Each Spring, you will receive a notice from the Assessor-Recorder. It will instruct you to fill out a Business Property Statement (Form 571-L) by reporting the book cost/full cost of all your supplies, equipment, furniture, machinery, and fixtures at each business location as of December 31st of each year.",
+        "You then pay a tax on the total derived value.",
+        "All businesses in California pay taxes on these items, which the state calls Business Personal Property.",
+        "NOTE: When you close a business, you must notify most of the entities above in order to close out your accounts.",
+        "Otherwise, you may continue to be charged for registration fees. Learn more about closing your business."
+      ]
+    }
+  ],
+  "fetched_at": "2026-11-09T18:44:10+00:00",
+  "content_hash": "7822456df978670a"
+}

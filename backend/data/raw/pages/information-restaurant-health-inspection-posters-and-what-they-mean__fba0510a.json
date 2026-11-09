@@ -1,0 +1,42 @@
+{
+  "url": "https://www.sf.gov/information--restaurant-health-inspection-posters-and-what-they-mean",
+  "category": "permits",
+  "title": "Restaurant health inspection posters and what they mean",
+  "sections": [
+    {
+      "heading": "",
+      "paragraphs": [
+        "Info Page",
+        "Food facilities must post the red, green, or yellow \"placard\" related to their last health inspection."
+      ]
+    },
+    {
+      "heading": "What the signs mean",
+      "paragraphs": [
+        "To check the food safety at San Francisco restaurants, look for green, yellow, or red placards. The restaurant must post the placard where the public can see it."
+      ]
+    },
+    {
+      "heading": "What the signs mean › Green : Pass",
+      "paragraphs": [
+        "The facility had zero to 1 major violations observed at time of inspection. If the restaurant had a major violation, it was corrected at the time of the inspection."
+      ]
+    },
+    {
+      "heading": "What the signs mean › Yellow : Conditional pass",
+      "paragraphs": [
+        "The facility had 2 or more major violations observed at the time of the routine inspection. At the time of the inspection, the restaurant corrected the major violations.",
+        "We will conduct a re-inspection and issue a new placard based on the results."
+      ]
+    },
+    {
+      "heading": "What the signs mean › Red : Closed",
+      "paragraphs": [
+        "We closed the facility because there are health hazards or major violations that can't be fixed right away.",
+        "The unsafe conditions must be corrected before the facility can reopen."
+      ]
+    }
+  ],
+  "fetched_at": "2026-11-09T18:45:28+00:00",
+  "content_hash": "92b9c5c8ca518607"
+}

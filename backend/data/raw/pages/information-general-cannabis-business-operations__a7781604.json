@@ -1,0 +1,139 @@
+{
+  "url": "https://www.sf.gov/information--general-cannabis-business-operations",
+  "category": "business",
+  "title": "General cannabis business operations",
+  "sections": [
+    {
+      "heading": "",
+      "paragraphs": [
+        "Info Page",
+        "All cannabis businesses must tell us how they will run some of their operations.",
+        "We will ask you for the following information on the general business operations form of the cannabis business application."
+      ]
+    },
+    {
+      "heading": "Using renewable energy",
+      "paragraphs": [
+        "All cannabis businesses must fulfill our renewable energy mandate. We will ask if you will:",
+        "Take part in CleanPowerSF's Green Service",
+        "Use Hetch Hetchy hydroelectric power supply through SF Public Utility Commission",
+        "Generate renewable energy onsite",
+        "The Department of the Environment or the Public Utilities Commission will look at how much energy your business uses in the first year."
+      ]
+    },
+    {
+      "heading": "Securing cannabis waste",
+      "paragraphs": [
+        "Your waste must be locked away from the public.",
+        "Recology is the only waste management company for San Francisco. Your business must use Recology to handle waste.",
+        "Recology is able to pick up your waste from an additional locked area, if you pay them an extra fee. We will ask you if you will be using this service."
+      ]
+    },
+    {
+      "heading": "Receiving shipments",
+      "paragraphs": [
+        "We will ask how you will log cannabis as it enters your business, including:",
+        "When and where you will receive your shipments",
+        "How you will unload your shipments",
+        "Who receives the shipments",
+        "How you will record the shipments",
+        "How you will ensure staff and public safety",
+        "How you will prevent theft",
+        "If your storefront retail business does not have a loading area in the back, contact the Office of Cannabis for more information."
+      ]
+    },
+    {
+      "heading": "Keeping track of your products",
+      "paragraphs": [
+        "We will ask how you will log your products, including:",
+        "How you will record cannabis products moved to and from inventory",
+        "How and how often you will do inventory reconciliation",
+        "All cannabis businesses must set up track and trace . You must contact the Office of Cannabis within 24 hours if there is more than 5% difference between your inventory logs and track and trace.",
+        "You must have an onsite employee overseeing your track and trace program. We will ask you for their name and phone number."
+      ]
+    },
+    {
+      "heading": "Logging hazardous materials",
+      "paragraphs": [
+        "You will need to tell us about hazardous materials you plan on using, if you are a:",
+        "Cultivator",
+        "Manufacturer",
+        "Testing laboratory",
+        "If you are, we will ask if you will have at your business:",
+        "Isopropyl alcohol or isopropanol",
+        "Acetone",
+        "Ethanol",
+        "Propane",
+        "Butane",
+        "Carbon dioxide",
+        "Bleach",
+        "Consumer-grade household cleaners",
+        "Chemicals for soil, such as nitrogen, phosphorus, potassium, calcium, magnesium, sulfur",
+        "Plant nutrients, such as boron, chlorine, copper, iron, manganese, zinc, molybdenum",
+        "Pesticides",
+        "Herbicides",
+        "Fungicides",
+        "Rodenticides",
+        "We will ask you how you plan on storing those materials safely. For example, if there is an earthquake.",
+        "We will ask you for more details about fertilizers and pesticides if you are a cultivator."
+      ]
+    },
+    {
+      "heading": "Handling cannabis",
+      "paragraphs": [
+        "We will ask how you will check batches going in and out of storage, including:",
+        "Product name",
+        "Company license",
+        "Storage date",
+        "ID",
+        "Batch number",
+        "Amounts",
+        "Expiration date",
+        "You will need to tell us how you will check labels for products you put up for sale, if you are a:",
+        "Storefront retailer",
+        "Delivery only retailer",
+        "Distributor",
+        "Cultivator",
+        "Manufacturer",
+        "If you are, checking labels may include the products’:",
+        "Weight",
+        "Source",
+        "Cultivation and packaging date",
+        "Cannabis type",
+        "Unique ID",
+        "We will ask how you will prevent cannabis products from going bad , including:",
+        "Pest control",
+        "Temperature control",
+        "Maintenance",
+        "Cleaning",
+        "We will ask how your business will handle returns, including:",
+        "How you will log returns into the track and trace system",
+        "What will happen to the product"
+      ]
+    },
+    {
+      "heading": "Transporting cannabis",
+      "paragraphs": [
+        "You need to tell us how you will move cannabis from your business to another cannabis business, if you are a:",
+        "Distributor",
+        "Retail business with multiple locations",
+        "If you are, we will ask you:",
+        "How you will prevent your cannabis products from going bad when you transport them (temperature control, maintenance, cleaning)",
+        "If you will hire drivers in house or contract out for transportation services",
+        "If you will hire drivers in house, we will ask:",
+        "What kinds of cannabis businesses you will be transporting cannabis to",
+        "If you will transport cannabis within San Francisco, the wider Bay Area, or elsewhere in the state",
+        "If your cannabis products will be on the road overnight",
+        "How cannabis will be stored in the vehicle (security and identification)",
+        "If you will contract out for transportation services, we will ask for:",
+        "The services you are contracting out for",
+        "Contracting company name",
+        "Full name of contact at the company",
+        "Phone number of contact",
+        "Copy of contract"
+      ]
+    }
+  ],
+  "fetched_at": "2026-11-09T18:44:47+00:00",
+  "content_hash": "65209a92760ca930"
+}

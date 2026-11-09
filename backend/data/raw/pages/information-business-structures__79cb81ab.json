@@ -1,0 +1,112 @@
+{
+  "url": "https://www.sf.gov/information--business-structures",
+  "category": "business",
+  "title": "Business structures",
+  "sections": [
+    {
+      "heading": "",
+      "paragraphs": [
+        "Info Page",
+        "When starting a business, you will need to select a business structure for your business. This decision impacts how much you pay in taxes and your personal liability (i.e. who is legally responsible for debts). You will need to decide before registering your business.",
+        "This is not a substitute for legal or professional advice. Find small business legal services ."
+      ]
+    },
+    {
+      "heading": "Types of Business Structure",
+      "paragraphs": [
+        "Compare the different types of structures before making your decision. There are pros and cons to each type, depending on your situation.",
+        "Find more detailed information from the US Small Business Administration (SBA) .",
+        "You should also consider consulting an attorney for legal and tax advice.",
+        "Once you choose your business structure, register your business with the City.",
+        "However, if you chose a corporation, or limited liability company (LLC) as your business structure you must register or incorporate with the CA Secretary of State first."
+      ]
+    },
+    {
+      "heading": "Sole Proprietorship",
+      "paragraphs": [
+        "A sole proprietorship is the most basic type of business to establish.",
+        "There's no legal distinction between the owner and the business itself.",
+        "This means the owner is personally liable for all the business's debts and obligations."
+      ]
+    },
+    {
+      "heading": "General Partnership",
+      "paragraphs": [
+        "A general partnership is a business structure where two or more people share ownership and management responsibilities.",
+        "You need to write our the details of this agreement.",
+        "The agreement should define the roles of each partner.",
+        "Include what would happen if the business fails."
+      ]
+    },
+    {
+      "heading": "Limited Partnership (LP) and Limited Liability Partnership (LLP)",
+      "paragraphs": [
+        "Limited Partnerships (LP) have both limited and general partners.",
+        "The general partners own and operate the business.",
+        "Limited partners invest in the business but have limited liability and input in its management.",
+        "A Limited Liability Partnership (LLP) is a partnership where all partners have limited liability for the business's debts and obligations.",
+        "This means that a partner's personal assets are generally protected from the business's liabilities, even if another partner makes a mistake or the business fails.",
+        "These business types are not usually used for retail or service businesses."
+      ]
+    },
+    {
+      "heading": "Limited Liability Company (LLC)",
+      "paragraphs": [
+        "An LLC is a hybrid between a corporation and a partnership.",
+        "Similar to a corporation, business owners in an LLC are not responsible for the debt of the company. In other words, they have limited liability.",
+        "However, unlike a corporation, the business itself does not file a separate tax return.",
+        "Instead, the profits and losses are passed through to the members, who report them on their individual tax returns.",
+        "LLCs can choose to be taxed as corporations, in which case they would file a separate tax return."
+      ]
+    },
+    {
+      "heading": "Corporation",
+      "paragraphs": [
+        "A corporation is a legal entity that is separate and distinct from its owners.",
+        "It is created under state law by filing articles of incorporation with the state.",
+        "A corporation can own property, enter into contracts, sue and be sued, and hire employees, just like an individual."
+      ]
+    },
+    {
+      "heading": "S-Corporation",
+      "paragraphs": [
+        "An S-Corporation is a type of corporation that has chosen to be taxed as a pass-through entity.",
+        "This means that the corporation's profits and losses are passed through to its shareholders, who report them on their individual tax returns.",
+        "S corporations are limited to 100 shareholders, all of whom must be U.S. citizens or resident aliens and can only have one class of stock."
+      ]
+    },
+    {
+      "heading": "B-Corporation",
+      "paragraphs": [
+        "A B-Corporation , also known as a B Corp, is a for-profit company that meets high standards of verified social and environmental performance, public transparency, and legal accountability.",
+        "It is not an entity type."
+      ]
+    },
+    {
+      "heading": "Featured Resources › Business Entity Types - U.S. Small Business Administration",
+      "paragraphs": [
+        "This table provides an at-a-glance reference to how the most common business entity types — sole proprietorship, general partnership, C corporation, S corporation, and LLC — compare in a number of key characteristics."
+      ]
+    },
+    {
+      "heading": "Featured Resources › Legal Services for Entrepreneurs",
+      "paragraphs": [
+        "Legal services for entrepreneurs to low-income individuals who want to start or develop for-profit businesses, and certain for-profit businesses committed to community economic development."
+      ]
+    },
+    {
+      "heading": "Featured Resources › Franchise Tax Board",
+      "paragraphs": [
+        "Find information about California state business taxes."
+      ]
+    },
+    {
+      "heading": "Featured Resources › IRS - Internal Revenue Service",
+      "paragraphs": [
+        "Find information about federal business taxes."
+      ]
+    }
+  ],
+  "fetched_at": "2026-11-09T18:44:12+00:00",
+  "content_hash": "2fadf965a702d9d9"
+}

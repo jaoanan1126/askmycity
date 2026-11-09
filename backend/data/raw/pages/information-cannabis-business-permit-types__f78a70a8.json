@@ -1,0 +1,111 @@
+{
+  "url": "https://www.sf.gov/information--cannabis-business-permit-types",
+  "category": "permits",
+  "title": "Cannabis business permit types",
+  "sections": [
+    {
+      "heading": "",
+      "paragraphs": [
+        "Info Page",
+        "Cannabis businesses in San Francisco can do only certain activities.",
+        "To sell adult use cannabis in San Francisco, you must also sell medical cannabis. You need to keep your medical cannabis separate from adult use stock."
+      ]
+    },
+    {
+      "heading": "Microbusinesses",
+      "paragraphs": [
+        "If you want to do many cannabis activities at your business, you can get a microbusiness permit. Getting a microbusiness permit will save on permit fees. Microbusinesses pay 1 permit fee for at least 3 of these activities at the same location:",
+        "Storefront or delivery retail",
+        "Manufacturing (nonvolatile solvents only)",
+        "Cultivation (in less than 10,000 square feet)",
+        "Distribution",
+        "Your location must be in a “permitted with microbusiness” zone. The state license type is Type 12."
+      ]
+    },
+    {
+      "heading": "Activity types",
+      "paragraphs": [
+        "Cannabis businesses must choose between the following activities on their application."
+      ]
+    },
+    {
+      "heading": "Retail storefront",
+      "paragraphs": [
+        "You can sell to the public using a storefront. You cannot be within 600 feet of a school or another cannabis retail storefront.",
+        "You can also deliver cannabis from your store.",
+        "This Planning Code Land Use Category is \"Cannabis Retail (Retail Sales and Service Category).\" The state license type is Type 10.",
+        "Check what you need for the storefront retail application"
+      ]
+    },
+    {
+      "heading": "Retail storefront with consumption lounge",
+      "paragraphs": [
+        "If you have a retail storefront, you can have a space where customers can consume products they just bought onsite.",
+        "Businesses allowing smoking or vaping must have a separate room with strict ventilation requirements . There are other structural requirements depending on how your staff prepares edible products for consumption .",
+        "You will need to build out new features at your business to have a consumption lounge. Total construction costs are usually over $100,000.",
+        "Get a consultation about your consumption lounge with the Department of Public Health (DPH) . They can look at your preliminary drawings before you submit final plans to the Department of Building Inspection (DBI)."
+      ]
+    },
+    {
+      "heading": "Delivery",
+      "paragraphs": [
+        "You can sell to customers without a location open to the public. You still need a location zoned for cannabis businesses.",
+        "This Planning Code Land Use Category is \"Parcel Delivery Service.\" The state license type is Type 9.",
+        "Check what you need for the delivery retail application"
+      ]
+    },
+    {
+      "heading": "Cultivation",
+      "paragraphs": [
+        "You can plant, harvest, trim, and create pre-rolls of mature cannabis flowers.",
+        "This Planning Code Land Use Category is \"Industrial Agriculture.\" The state license types are Types 1A, 1B, 1C, 2A, 2B, 3A, or 3B depending on size. See the California Business and Professions Code to find your exact license type.",
+        "Microbusinesses can only use a cultivation area less than 10,000 square feet.",
+        "Check what you need for the cultivation application"
+      ]
+    },
+    {
+      "heading": "Manufacturing",
+      "paragraphs": [
+        "You can create products from active cannabis compound, such as flower, oil, or resin. Products can include:",
+        "Flower",
+        "Pre-rolls",
+        "Edibles",
+        "Drinks",
+        "Extracts, such as tinctures, oils, shatter, or wax",
+        "Concentrates without solvents, such as kief, hash, rosin",
+        "Topicals, such as lotion",
+        "Capsules",
+        "Cannabis manufacturers are not allowed to manufacture noncannabis products.",
+        "Manufacturers can get a permit to use volatile solvents like butane, hexane, or pentane. Microbusinesses that manufacture cannot use volatile solvents. The Planning Code Land Use Category for manufacturers using volatile solvents is \"Agriculture and Beverage Processing 2.\" The state license type is Type 7.",
+        "Manufacturers, including microbusinesses, can also get a permit to use nonvolatile solvents . Nonvolatile methods include ethanol, butter, oil, water, carbon dioxide, or mechanical methods. This Planning Code Land Use Category is \"Light Manufacturing.\" The state license type is Type 6.",
+        "Check what you need for the manufacturing application"
+      ]
+    },
+    {
+      "heading": "Distribution",
+      "paragraphs": [
+        "You can buy, sell, or transport cannabis products between other cannabis businesses.",
+        "This Planning Code Land Use Category is \"Wholesale.\" This state license types are Type 11.",
+        "Check what you need for the distribution application"
+      ]
+    },
+    {
+      "heading": "Testing laboratory",
+      "paragraphs": [
+        "You test cannabis products to make sure they meet existing standards. You look at characteristics like packaging and labeling, toxic chemical levels, or heavy metals.",
+        "Microbusinesses cannot be testing labs.",
+        "This Planning Code Land Use Category is \"Laboratory.\" This state license type is Type 8.",
+        "Check what you need for the testing lab application"
+      ]
+    },
+    {
+      "heading": "Nursery",
+      "paragraphs": [
+        "Nursery permits specifically allow for the cultivation of clones, immature plants, seeds, and other agricultural products used specifically for the propagation of cultivation of cannabis.",
+        "Check what you need for the nursery application"
+      ]
+    }
+  ],
+  "fetched_at": "2026-11-09T18:44:15+00:00",
+  "content_hash": "09f4197d9ccc39e2"
+}

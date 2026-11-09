@@ -1,0 +1,31 @@
+{
+  "url": "https://www.sf.gov/information--about-routine-housing-inspections",
+  "category": "permits",
+  "title": "About routine housing inspections",
+  "sections": [
+    {
+      "heading": "",
+      "paragraphs": [
+        "Info Page",
+        "What to expect."
+      ]
+    },
+    {
+      "heading": "Routine inspections help keep older buildings safe for residents",
+      "paragraphs": [
+        "Routine building inspections can help find problems before they become worse. They can reduce risks to residents. They can also reduce the cost of repairs."
+      ]
+    },
+    {
+      "heading": "What to expect with a routine housing inspection",
+      "paragraphs": [
+        "Housing Inspection Services (from the Department of Building Inspection) will send you a letter. It will have an inspection date.",
+        "The letter will also include a maintenance checklist . The checklist is an overview of what the inspector will look for.",
+        "On the inspection date, the inspector will inspect the property. They will make sure that minimum standards are maintained. They will also look for health and safety hazards.",
+        "If you have questions, contact Housing Inspection Services at 628-652-3700."
+      ]
+    }
+  ],
+  "fetched_at": "2026-11-09T18:43:57+00:00",
+  "content_hash": "5ddd2d67ce04c744"
+}

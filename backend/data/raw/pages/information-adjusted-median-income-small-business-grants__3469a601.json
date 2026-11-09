@@ -1,0 +1,60 @@
+{
+  "url": "https://www.sf.gov/information--adjusted-median-income-small-business-grants",
+  "category": "business",
+  "title": "Adjusted median income for small business grants",
+  "sections": [
+    {
+      "heading": "",
+      "paragraphs": [
+        "Info Page",
+        "Your family income must qualify as moderate or low-income to be eligible for a small business grant."
+      ]
+    },
+    {
+      "heading": "Follow these steps to understand your eligibility › 1. Check income requirements for the grant you want to apply to.",
+      "paragraphs": [
+        "Each small business grant has different income rules. Check the requirements for each grant you want to apply to."
+      ]
+    },
+    {
+      "heading": "Follow these steps to understand your eligibility › 2. Count how many people are in your family.",
+      "paragraphs": [
+        "A family is a single person or a group of people who live together, regardless of actual or perceived sexual orientation, gender identity, or marital status."
+      ]
+    },
+    {
+      "heading": "Follow these steps to understand your eligibility › 3. Find your Adjusted Gross Income (AGI) on your 2024 IRS Form 1040.",
+      "paragraphs": [
+        "Look at line 11 on your tax return (Form 1040). Use that number as your total income."
+      ]
+    },
+    {
+      "heading": "Follow these steps to understand your eligibility › 4. Check if your income qualifies as low.",
+      "paragraphs": [
+        "Family of 1 must have an income between $41,150 and $68,550",
+        "Family of 2 must have an income between $47,001 and $78,350",
+        "Family of 3 must have an income between $52,901 and $88,150",
+        "Family of 4 must have an income between $58,751 and $97,900",
+        "Family of 5 must have an income between $63,451 and $105,750",
+        "Family of 6 must have an income between $68,151 and $113,600",
+        "Family of 7 must have an income between $72,851 and $121,400",
+        "Family of 8 or more must have an income between $77,551 and $129,250"
+      ]
+    },
+    {
+      "heading": "Follow these steps to understand your eligibility › 5. Check if your income qualifies as moderate.",
+      "paragraphs": [
+        "Family of 1 must have an income between $68,551 and $109,700",
+        "Family of 2 must have an income between $78,351 and $125,350",
+        "Family of 3 must have an income between $88,151 and $141,000",
+        "Family of 4 must have an income between $97,901 and $156,650",
+        "Family of 5 must have an income between $105,751 and $169,200",
+        "Family of 6 must have an income between $113,601 and $181,750",
+        "Family of 7 must have an income between $121,401 and $194,250",
+        "Family of 8 or more must have an income between $129,251 and $206,800"
+      ]
+    }
+  ],
+  "fetched_at": "2026-11-09T18:44:02+00:00",
+  "content_hash": "fcba3b301ecdda35"
+}

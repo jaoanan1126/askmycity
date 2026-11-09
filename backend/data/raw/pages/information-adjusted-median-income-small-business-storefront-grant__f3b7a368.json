@@ -1,0 +1,36 @@
+{
+  "url": "https://www.sf.gov/information--adjusted-median-income-small-business-storefront-grant",
+  "category": "business",
+  "title": "Adjusted median income for a small business storefront grant",
+  "sections": [
+    {
+      "heading": "",
+      "paragraphs": [
+        "Info Page",
+        "Your family income must qualify as extremely low to moderate income to be eligible for a small business storefront grant."
+      ]
+    },
+    {
+      "heading": "Follow these steps to understand your eligibility › 1. Count how many people are in your family.",
+      "paragraphs": [
+        "A family is a single person or a group of people who live together, regardless of actual or perceived sexual orientation, gender identity, or marital status."
+      ]
+    },
+    {
+      "heading": "Follow these steps to understand your eligibility › 3. Find if your income qualifies",
+      "paragraphs": [
+        "Family of 1 must have an income less than $97,600",
+        "Family of 2 must have an income less than $111,550",
+        "Family of 3 must have an income less than $125,500",
+        "Family of 4 must have an income less than $139,400",
+        "Family of 5 must have an income less than $150,600",
+        "Family of 6 must have an income less than $161,750",
+        "Family of 7 must have an income less than $172,900",
+        "Family of 8 or more must have an income less than $184,050",
+        "If you are eligible, see how to apply for the small business storefront grant."
+      ]
+    }
+  ],
+  "fetched_at": "2026-11-09T18:44:03+00:00",
+  "content_hash": "84d59eb4fa8dfc95"
+}

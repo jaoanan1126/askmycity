@@ -1,0 +1,33 @@
+{
+  "url": "https://www.sf.gov/information--check-if-your-building-permit-needs-plans",
+  "category": "permits",
+  "title": "Check if your building permit needs plans",
+  "sections": [
+    {
+      "heading": "",
+      "paragraphs": [
+        "Info Page",
+        "Most building permit applications require architectural plans.",
+        "We review every building permit application for life safety and building code compliance."
+      ]
+    },
+    {
+      "heading": "“No plans” projects",
+      "paragraphs": [
+        "These projects do not require plans:",
+        "Replace windows in-kind (same size and location): must be applied for through the PermitSF portal",
+        "Replace doors in-kind (same size and location): must be applied for through the PermitSF portal",
+        "Replace or repair exterior siding in-kind (same size and location): must be applied for through the PermitSF portal",
+        "Non-structural re-roofing : must be applied for through the PermitSF portal",
+        "In-kind, non-structural kitchen or bathroom work in an occupancy class R-3 residential building or an R-2 apartment building constructed before 1991: must be applied for through the PermitSF portal",
+        "Replace garage doors : apply over-the-counter .",
+        "Repair less than 50% of a deck and exterior stairs and without adding any new firewalls : apply over-the-counter .",
+        "Minor dry rot repairs : apply over-the-counter .",
+        "See San Francisco Building Code Section 106 A.2",
+        "All other projects require architectural plans. Follow our instructions to create PDFs of your plans ."
+      ]
+    }
+  ],
+  "fetched_at": "2026-11-09T18:44:24+00:00",
+  "content_hash": "8e07343dc0af8dd0"
+}

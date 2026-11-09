@@ -22,6 +22,7 @@ scipy>=1.11
 # --- Web crawler & data pipeline ---
 requests>=2.31
 beautifulsoup4>=4.12
+pypdf>=5.0
 
 # --- Config & observability (Langfuse keys optional in .env) ---
 python-dotenv>=1.0

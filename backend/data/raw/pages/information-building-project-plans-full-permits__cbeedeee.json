@@ -1,0 +1,179 @@
+{
+  "url": "https://www.sf.gov/information--building-project-plans-full-permits",
+  "category": "permits",
+  "title": "Building project plans for Full Permits",
+  "sections": [
+    {
+      "heading": "",
+      "paragraphs": [
+        "Info Page",
+        "Follow these rules to create plans for Full Permit Review. These directions are for Full Permits without a Site Permit.",
+        "We need all the information on your plans to make sure they meet building code requirements.",
+        "The drawings must show the location, nature and extent of the work proposed.",
+        "They must show that the work follows the building code and all relevant laws, ordinances, rules, and regulations.",
+        "See the original San Francisco Building Code for these requirements in Section 106A.3.3 ."
+      ]
+    },
+    {
+      "heading": "Plans and specifications",
+      "paragraphs": [
+        "Draw plans and specifications to scale on paper at least 11-inch by 17-inch (279.4 mm by 431.8 mm) or larger, with a minimum text size of 1/8 inch tall when printed. Please use the same sheet size for the entire plan set.",
+        "Include the Assessor’s block and lot number on the first sheet or page of each set of plans and other submittal documents."
+      ]
+    },
+    {
+      "heading": "Plans and specifications › Dimensioned plot plan",
+      "paragraphs": [
+        "Your dimensioned plot plan must show:",
+        "Sidewalk widths",
+        "Street widths",
+        "Lot lines",
+        "Locations of proposed or existing buildings or structures on the property,",
+        "Full widths, heights and setbacks of buildings on adjacent properties if their locations or heights affect the code requirements",
+        "Locations of parking or loading spaces",
+        "Locations of above-ground hydrants and utility poles",
+        "We may require that you have a registered land surveyor or registered civil engineer survey and stake the lot. This helps determine the proper location of the building on the lot. You must file a copy of this survey with your permit application."
+      ]
+    },
+    {
+      "heading": "Plans and specifications › Grades",
+      "paragraphs": [
+        "Show all existing and future finished grades for new buildings or structures and additions to existing buildings or structures.",
+        "Show the official curb and street grades."
+      ]
+    },
+    {
+      "heading": "Plans and specifications › Soil Disturbance Volume",
+      "paragraphs": [
+        "Provide estimated soil disturbance volume on first proposed grading plan, floorplan, or basement floorplan. For the purposes of this calculation, exclude materials that would be excavated as construction debris (i.e. concrete, asphalt, subbase gravels, etc.). If none, state so on first existing grading plan, floor plan, or basement plan. If volume is between 0 and 50 cubic yards, provide calculation."
+      ]
+    },
+    {
+      "heading": "Plans and specifications › Parcel Area",
+      "paragraphs": [
+        "Show the total size of the parcel(s) in acres as project information on the first sheet or site plan."
+      ]
+    },
+    {
+      "heading": "Plans and specifications › Dimensioned exterior elevations",
+      "paragraphs": [
+        "Show:",
+        "All types of wall materials, locations and sizes of wall openings",
+        "Roof heights",
+        "Setbacks from property lines",
+        "The existing and future exterior grade profiles on each side of the building extending to any adjoining buildings",
+        "Structures or properties which might be affected by this work (unless you submit a topographic map prepared by a licensed surveyor)."
+      ]
+    },
+    {
+      "heading": "Plans and specifications › Dimensioned architectural floor plan",
+      "paragraphs": [
+        "Show each floor, basement and roof unless the floor plans are identical.",
+        "Separately show the existing and proposed floor plans. the existing plans may include demolition but the proposed plans should only show final design.",
+        "The scale must be bigger than 1/8 inch (3.175 mm) to 1 foot (304.8 mm).",
+        "The floor plan must show the gross area of each use area on each floor, and the total area of each floor.",
+        "Identify the use or occupancy classifications of all new and existing areas of the building.",
+        "Do not superimpose structural, mechanical and other detailed information unless the floor plans are legible and understandable.",
+        "Alteration plans: Show all existing partitions and construction that are to be removed or altered and all that are to remain unchanged."
+      ]
+    },
+    {
+      "heading": "Plans and specifications › Cross-sections",
+      "paragraphs": [
+        "As necessary, include information on location and depth of footings of adjacent buildings or structures which might be affected by this work."
+      ]
+    },
+    {
+      "heading": "Plans and specifications › Architectural and structural materials",
+      "paragraphs": [
+        "Information about all architectural and structural materials to be installed in the building."
+      ]
+    },
+    {
+      "heading": "Plans and specifications › Fire-resistive assemblies",
+      "paragraphs": [
+        "Show all fire-resistive assemblies and elements.",
+        "Show provisions for keeping the integrity of fire-resistive assemblies or elements where penetrated."
+      ]
+    },
+    {
+      "heading": "Plans and specifications › Building utilities",
+      "paragraphs": [
+        "Show the installation, location, and support of building utilities. This includes plumbing systems, and electrical equipment, wiring, and systems."
+      ]
+    },
+    {
+      "heading": "Structural plans and calculations",
+      "paragraphs": [
+        "Show all components of the vertical load carrying system. This includes joists, beams, girders, columns, bearing walls and locations and depths of footings.",
+        "Show connection details and cross-sections. We need to see how the loads are transferred and carried from the roof to the foundation.",
+        "Show the live load on the plan for each use area.",
+        "Show all elements of the lateral force resisting system. This includes horizontal and vertical diaphragms, connections, and details that completely identify the lateral force load path from the roof to the foundation."
+      ]
+    },
+    {
+      "heading": "Specialty plan review",
+      "paragraphs": [
+        "Incorporate all of the following as applicable.",
+        "Title-24 California Energy Code compliance forms .",
+        "Smoke Control compliance per Administrative Bulletin AB-047 .",
+        "San Francisco Health Code Article-38 compliance .",
+        "Better Roof compliance per San Francisco Green Building Code .",
+        "Green Building Submittal Forms.",
+        "Compliance with the All-Electric New Construction Ordinance .",
+        "Electric company service report.",
+        "1-year of maximum electrical demand data"
+      ]
+    },
+    {
+      "heading": "Special inspections",
+      "paragraphs": [
+        "Complete and embed the Special Inspection and Structural Observation form into the structural drawings",
+        "Include any special inspections and structural observation programs required by Sections 106A.3.5, 1704 and 1709."
+      ]
+    },
+    {
+      "heading": "Geotechnical report or third-party engineering review",
+      "paragraphs": [
+        "Some projects may need a geotechnical report or heightened engineering review to protect San Francisco's hillside properties and ensure safe construction.",
+        "Learn when your project requires a geotechnical report or third-party engineering review ."
+      ]
+    },
+    {
+      "heading": "Sprinkler systems and standpipes",
+      "paragraphs": [
+        "Show hydraulic design drawings and calculations for sprinkler systems and standpipes."
+      ]
+    },
+    {
+      "heading": "Other information to show",
+      "paragraphs": [
+        "Information on plans showing compliance with:",
+        "Energy conservation requirements",
+        "Sound transmission requirements",
+        "Disabled access requirements",
+        "Water conservation and reclamation requirements",
+        "Lactation room requirements of Section 1209.5 of the Building Code.",
+        "For a building that has a notice of violation, show how all unsafe conditions will be fixed.",
+        "All other information necessary for determining compliance with applicable codes and regulations."
+      ]
+    },
+    {
+      "heading": "Other materials",
+      "paragraphs": [
+        "For some projects the Planning Department, Department of Public Works, or other agencies need landscaping and irrigation plans.",
+        "Include photographs when the Planning Department or other agencies need them."
+      ]
+    },
+    {
+      "heading": "Stamps",
+      "paragraphs": [
+        "Professionals of record must stamp the plans.",
+        "See more in our Information Sheet G-01 Signature on Plans .",
+        "See more about how to add electronic stamps ."
+      ]
+    }
+  ],
+  "fetched_at": "2026-11-09T18:44:08+00:00",
+  "content_hash": "fa99c7c8740fd63a"
+}

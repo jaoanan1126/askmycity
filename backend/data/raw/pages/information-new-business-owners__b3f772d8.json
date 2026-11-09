@@ -1,0 +1,45 @@
+{
+  "url": "https://www.sf.gov/information--new-business-owners",
+  "category": "business",
+  "title": "New Business Owners",
+  "sections": [
+    {
+      "heading": "",
+      "paragraphs": [
+        "Info Page",
+        "This page outlines general information about business personal property assessments that new businesses should know."
+      ]
+    },
+    {
+      "heading": "Ask for help",
+      "paragraphs": [
+        "All new businesses must file a Business Property Statement (Form 571-L) with the Office of the Assessor-Recorder.",
+        "For any questions about your assessable business assets, first time filings and more, please do not hesitate to reach out to the Office of the Assessor-Recorder at askBPP@sfgov.org or via 628-652-8100."
+      ]
+    },
+    {
+      "heading": "Business Personal Property",
+      "paragraphs": [
+        "Businesses in the City & County of San Francisco are required by California State Law to annually file the Business Property Statement (Form 571-L), which identifies the acquisition cost of their business personal property (i.e. equipment, furniture, computers, etc.) and improvements (i.e. leasehold/tenant improvements, trade fixtures etc.) to the Assessor and are responsible for the potential taxes on that property. The State Constitution says all property is subject to property tax.",
+        "Business personal property is appraised annually. If you are a registered business in the City & County of San Francisco and you’ve received a Business Property Statement (Form 571-L), this statement must be completed and submitted by the date indicated. It is important to note that a 10% penalty will be applied if the statement is not received by the Assessor-Recorder’s Office by the due date. Business owners should report their business inventory, application software, and licensed motor vehicles are all exempt.",
+        "State law requires that at least once each four (4) years the Assessor’s Office audit the books and records of a significant number of businesses. Other entities are audited on a random basis or when requested by the taxpayer."
+      ]
+    },
+    {
+      "heading": "I have registered my business with the Treasurer & Tax Collector, what should I expect next?",
+      "paragraphs": [
+        "The Office of the Treasurer and Tax Collector will share your business registration information with the Office of the Assessor-Recorder.",
+        "After receiving your business registration information, the Assessor-Recorder will generate an account number and PIN, and mail you a Notice of Requirement to File Form 571-L, in February, so that you can declare all assessable business property situated in this county which you owned, claimed, possessed, controlled or managed on the tax lien date. A new PIN is generated annually and can be found on your annual business personal property notice.",
+        "If you did not receive a Notice of Requirement to File a Form 571-L following your registration, you still need to file. Please contact our office by calling 628-652-8100 or email us at askbpp@sfgov.org ."
+      ]
+    },
+    {
+      "heading": "Get help from the Office of Small Business",
+      "paragraphs": [
+        "The Office of Small Business is San Francisco's central point of information for small businesses. They have information online and staff ready to help you start, operate and grow a business. Visit their website , call 415-554-6134 or email sfosb@sfgov.org."
+      ]
+    }
+  ],
+  "fetched_at": "2026-11-09T18:45:16+00:00",
+  "content_hash": "15b311a5871318aa"
+}

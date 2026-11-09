@@ -1,0 +1,51 @@
+{
+  "url": "https://www.sf.gov/departments--sf-planning",
+  "category": "planning",
+  "title": "San Francisco Planning | SF Planning",
+  "sections": [
+    {
+      "heading": "New: Interactive Fee Schedule and Calculator",
+      "paragraphs": [
+        "Explore Planning fees and estimate costs for your project."
+      ]
+    },
+    {
+      "heading": "The Family Zoning Plan",
+      "paragraphs": [
+        "Learn more about the plan."
+      ]
+    },
+    {
+      "heading": "Development Impact Fee Calculator",
+      "paragraphs": [
+        "Quickly estimate impact fees for your development project."
+      ]
+    },
+    {
+      "heading": "PermitSF Permitting Portal",
+      "paragraphs": [
+        "Apply for your permit online for in-kind door, window, and siding replacements."
+      ]
+    },
+    {
+      "heading": "Hearings & Events › New ADU Permit Review RoundTable",
+      "paragraphs": [
+        "Learn how you can create housing in your basement, garage, or backyard."
+      ]
+    },
+    {
+      "heading": "Hearings & Events › Entitlement Extensions",
+      "paragraphs": [
+        "State law now offers 18-month entitlement extensions for eligible housing projects."
+      ]
+    },
+    {
+      "heading": "Hearings & Events › Ministerial Projects",
+      "paragraphs": [
+        "Some projects may qualify for a ministerial, non-discretionary review."
+      ]
+    }
+  ],
+  "fetched_at": "2026-11-09T18:43:56+00:00",
+  "content_hash": "98026e484123df2f"
+}

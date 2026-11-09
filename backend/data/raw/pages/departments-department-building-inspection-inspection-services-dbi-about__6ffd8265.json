@@ -1,0 +1,51 @@
+{
+  "url": "https://www.sf.gov/departments--department-building-inspection--inspection-services-dbi--about",
+  "category": "permits",
+  "title": "About Inspection Services at DBI",
+  "sections": [
+    {
+      "heading": "",
+      "paragraphs": [
+        "About Us"
+      ]
+    },
+    {
+      "heading": "Our purpose",
+      "paragraphs": [
+        "The Inspection Services section at the Department of Building Inspection inspects buildings for compliance with code requirements, scope of work in accordance with building permits, and responds to complaints on residential and commercial buildings."
+      ]
+    },
+    {
+      "heading": "Our divisions › Building Inspection Division (BID)",
+      "paragraphs": [
+        "BID is responsible for inspecting the construction of all new and existing buildings and structures for conformity with approved plans and permits, and for compliance with state and local building code requirements. BID responds to emergency situations and complaints of unsafe structures, work without permit, and prepares Notices of Violation as necessary. Unabated cases are referred to Code Enforcement for Director’s Hearings and further action. This division also conducts inspections for Police and Fire permits issued by those agencies and issues Noise Permits for construction work at night as prescribed in the in the San Francisco Police Code.",
+        "Building Inspection Division is also responsible for a wide variety of programs with emphasis on the following:",
+        "Code Enforcement Section (CES) investigates complaints of violations of the Building, Plumbing and Electrical Codes and employs abatement procedures to correct code deficiencies. This section also initiates follow-up enforcement when cases have been referred by other divisions within DBI by holding Director’s Hearings and referring cases to the City Attorney for litigation. Assessment fees are collected from building owners that have code violations in order to recover costs incurred by investigations. The section also assists in the preparation and issuance of Emergency Orders for imminent hazards arising from natural disasters and emergencies.",
+        "Condo Conversion (CC) program processes requests and performs inspections for condominium conversion in residential and commercial buildings.",
+        "Disable Access Services (DAS) receives and processes accessibility complaints and answers California Building Code (CBC) questions related to accessibility. It also coordinates the Access appeals Commission (ACC) and issues regarding the American with Disability Act (ADA).",
+        "Special Inspection (SI) processes and reviews Special Inspection reports and monitors Special Inspection field work.",
+        "Unreinforced Masonry Building (UMB) program monitors and inspects UMB seismic upgrades."
+      ]
+    },
+    {
+      "heading": "Our divisions › Electrical Inspection Division (EID)",
+      "paragraphs": [
+        "EID provides for personnel and structure safety by inspecting electrical, life safety, and communication systems to ensure compliance with the adopted codes and regulations."
+      ]
+    },
+    {
+      "heading": "Our divisions › Housing Inspection Services (HIS)",
+      "paragraphs": [
+        "HIS implements and enforces the San Francisco Housing Code and pertinent related City Codes. HIS establishes and maintains minimum maintenance standards for existing residential buildings to safeguard life, limb, health, property, and public welfare by conducting periodic health and safety inspections and responding to tenant complaints. HIS also oversees the Code Enforcement Outreach Program."
+      ]
+    },
+    {
+      "heading": "Our divisions › Plumbing Inspection Division (PID)",
+      "paragraphs": [
+        "PID is responsible for assuring, through inspections, the proper functioning for installations of drainage, water, gas, and other mechanical systems covered in the Plumbing and Mechanical Codes. These inspections are carried out in buildings which are newly constructed, remodeled, or repaired.PID additionally inspects fire sprinkler installations to assure compliance with the plans approved by the Fire Department plan check staff, and conducts inspections as required by various ordinances. Such ordinances include: the Night Club and Massage Parlor Ordinances (which require code compliance prior to business license issuance); and the Boiler Ordinance which requires that PID maintain records, send renewal notices, and prepare Notices of Violations against non-complying property owners."
+      ]
+    }
+  ],
+  "fetched_at": "2026-11-09T18:43:48+00:00",
+  "content_hash": "9cbe75eace6ab9d2"
+}

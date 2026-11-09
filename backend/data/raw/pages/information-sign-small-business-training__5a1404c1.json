@@ -1,0 +1,35 @@
+{
+  "url": "https://www.sf.gov/information--sign-small-business-training",
+  "category": "business",
+  "title": "Sign up for small business training",
+  "sections": [
+    {
+      "heading": "",
+      "paragraphs": [
+        "Info Page",
+        "The City funds nonprofit organizations to provide small business training and one-on-one counseling."
+      ]
+    },
+    {
+      "heading": "Training Providers",
+      "paragraphs": [
+        "Below is a list of organizations that offer pre-qualified trainings for the Business Training Grant . Please visit their websites or contact them directly for more information.",
+        "Blissen and SF Tech Council Focus Areas: Older adult entrepreneurs (Ages 50+) Languages: English",
+        "Calle 24 Focus Areas: Mission district, one-on-one counseling Languages: English, Spanish",
+        "Children's Council of San Francisco Focus Areas: Childcare Languages: English, Spanish",
+        "Clecha Focus Areas: Latino entrepreneurs Languages: English, Spanish",
+        "En2action Focus Areas: Black entrepreneurs, m arketing, food incubation Languages: English",
+        "La Cocina Focus Areas: Food incubation Languages: English, Spanish",
+        "Mission Economic Development Agency (MEDA) Focus Areas: Latino entrepreneurs Languages: English, Spanish",
+        "New Community Leadership Foundation Focus Areas: Black entrepreneurs Languages: English",
+        "Renaissance Entrepreneurship Center Focus Areas: Startup, fashion, food Languages: English, Spanish",
+        "SF Black Wallstreet Focus Areas: Black entrepreneurs Languages: English",
+        "SF LGBT Center Focus Areas: LGBT entrepreneurs Languages: English",
+        "The Transgender District Focus Areas: LGBT entrepreneurs Languages: English",
+        "Wu Yee Children's Services Focus Areas: Childcare Languages: English, Chinese, Spanish"
+      ]
+    }
+  ],
+  "fetched_at": "2026-11-09T18:45:34+00:00",
+  "content_hash": "f37b717df47f2d3c"
+}

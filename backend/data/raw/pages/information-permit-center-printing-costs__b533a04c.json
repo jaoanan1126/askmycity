@@ -1,0 +1,47 @@
+{
+  "url": "https://www.sf.gov/information--permit-center-printing-costs",
+  "category": "permits",
+  "title": "Permit Center printing costs",
+  "sections": [
+    {
+      "heading": "",
+      "paragraphs": [
+        "Info Page",
+        "See costs for print, copying, and scanning."
+      ]
+    },
+    {
+      "heading": "Printing and copying costs",
+      "paragraphs": [
+        "New pricing as of January 2, 2026",
+        "The following prices without sales tax.",
+        "Printed and copied documents on letter-sized paper (8.5” x 11”):",
+        "$0.52 per page (black-and-white)",
+        "$1.03 per page (color)",
+        "Printed and copied documents on legal-sized paper (8.5” x 14”):",
+        "$0.52 per page (black-and-white)",
+        "$1.03 per page (color)",
+        "Printed and copied documents on ledger-sized paper (11” x 17”):",
+        "$1.03 per page (black-and-white)",
+        "$2.06 per page (color)",
+        "Printed and copied plan sets:",
+        "18x24 B&W $3.98/page Color $12.43/page",
+        "24x36 B&W $7.95/page Color $24.86/page",
+        "36x48 B&W $15.91/page Color $49.71/page",
+        "Tow-away signs:",
+        "Printed in color on 11” x 17” weather-resistant paper",
+        "$6.87 per sign"
+      ]
+    },
+    {
+      "heading": "Scanning cost",
+      "paragraphs": [
+        "New pricing as of January 2, 2026",
+        "$1.12 per document page (sales tax included)",
+        "$13.50 per plan set page, up to 5 pages 24x36 in size."
+      ]
+    }
+  ],
+  "fetched_at": "2026-11-09T18:45:19+00:00",
+  "content_hash": "22b1b2cfa871ec03"
+}

@@ -1,0 +1,47 @@
+{
+  "url": "https://www.sf.gov/information--permit-center-business-services",
+  "category": "permits",
+  "title": "Permit Center Business Services",
+  "sections": [
+    {
+      "heading": "",
+      "paragraphs": [
+        "Info Page",
+        "We offer over-the-counter services and permits for businesses."
+      ]
+    },
+    {
+      "heading": "Business Permit Support Services",
+      "paragraphs": [
+        "We offer support services to all businesses in San Francisco. The Permit Center and the Office of Small Business are here to support new and existing businesses in San Francisco. Our team offers high quality direct services and programs, drives practical policy solutions, and serves as a champion for San Francisco’s diverse business community.",
+        "Our staff are available to assist you in person at the Permit Center",
+        "Monday: 9:00 am to 5:00 pm (Closed from 12:00 pm to 1:00 pm for lunch)",
+        "Tuesday-Friday: 8:00 am to 5:00 pm (Closed from 12:00 pm to 1:00 pm for lunch)",
+        "We can also be reached by emailing us at businesspermithelp@sfgov.org"
+      ]
+    },
+    {
+      "heading": "SF Planning Consultation Services",
+      "paragraphs": [
+        "Get your small business permits with a 30-day review. Open a new business or change your business under Proposition H.",
+        "Additional information on Proposition H is found here."
+      ]
+    },
+    {
+      "heading": "SF Department of Public Health (DPH)",
+      "paragraphs": [
+        "The Environmental Health Branch (EHB) issues permits to mobile food vendors to lower the risk of food-borne illness.",
+        "Additional information for the application process is found here."
+      ]
+    },
+    {
+      "heading": "San Francisco Fire Department (SFFD)",
+      "paragraphs": [
+        "A Fire Department operational permit constitutes permission to maintain, store, use or handle materials, or to conduct processes which produce conditions hazardous to life or property, or to install equipment used in connection with such activities.",
+        "Additional information on operational permits can be found here."
+      ]
+    }
+  ],
+  "fetched_at": "2026-11-09T18:45:18+00:00",
+  "content_hash": "76fb8c2ae9da1585"
+}

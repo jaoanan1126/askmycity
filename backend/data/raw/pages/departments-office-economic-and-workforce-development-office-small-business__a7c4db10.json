@@ -1,0 +1,23 @@
+{
+  "url": "https://www.sf.gov/departments--office-economic-and-workforce-development--office-small-business",
+  "category": "business",
+  "title": "Office of Small Business",
+  "sections": [
+    {
+      "heading": "",
+      "paragraphs": [
+        "Agency",
+        "San Francisco's central point of information for small businesses."
+      ]
+    },
+    {
+      "heading": "About",
+      "paragraphs": [
+        "The Office of Small Business is the City's central point of information for small businesses located in the City and County of San Francisco.",
+        "Our mission is to equitably support, preserve and protect small businesses in San Francisco. We provide high quality direct services and programs, drive practical policy solutions, and serve as a champion for San Francisco’s diverse small business community."
+      ]
+    }
+  ],
+  "fetched_at": "2026-11-09T18:43:53+00:00",
+  "content_hash": "ca66b51e06bdbdf9"
+}

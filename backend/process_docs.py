@@ -13,15 +13,22 @@ Chunking strategy
   still makes sense on its own (and the heading words help search).
 - Keep chunks under the embedding model's limit: all-MiniLM-L6-v2 only
   reads the first 256 tokens, so anything longer is invisible to search.
+  Word counts are only a first pass; every chunk is then measured with the
+  model's own tokenizer and split further if needed (dense PDF tables pack
+  many tokens into few words).
 - Text is NOT stripped of symbols: "$76", "sf.gov/parking" and emails
   stay intact.
 """
 from __future__ import annotations
 
 import json
+import os
 import re
 import sys
 from pathlib import Path
+
+os.environ.setdefault("ANONYMIZED_TELEMETRY", "False")
+from chromadb.utils.embedding_functions.onnx_mini_lm_l6_v2 import ONNXMiniLM_L6_V2
 
 BASE_DIR = Path(__file__).resolve().parent
 PAGES_DIR = BASE_DIR / "data" / "raw" / "pages"
@@ -31,8 +38,38 @@ TARGET_WORDS = 150      # aim for this many words per chunk body
 MAX_WORDS = 180         # hard cap (~230 tokens + header stays under 256)
 MIN_SECTION_WORDS = 40  # smaller sections are merged into the next one
 OVERLAP_WORDS = 25      # carried into the next chunk of the SAME section
+MAX_TOKENS = 256        # embedding model's window, header included
+# Long PDFs are reports/studies that would crowd out how-to pages in search.
+# Each PDF page with text is one section, so this counts pages with text.
+MAX_PDF_PAGES = 20
 
 _SENTENCE_SPLIT = re.compile(r"(?<=[.!?])\s+")
+_tokenizer = None
+
+
+def _tokens(text: str) -> int:
+    """Token count using the same tokenizer as the embedding model."""
+    global _tokenizer
+    if _tokenizer is None:
+        _tokenizer = ONNXMiniLM_L6_V2().tokenizer
+        _tokenizer.no_truncation()
+        _tokenizer.no_padding()
+    return len(_tokenizer.encode(text).ids)
+
+
+def fit_to_token_limit(header: str, body: str) -> list[str]:
+    """Split body (by lines, then words) until each header+body fits MAX_TOKENS."""
+    if _tokens(f"{header}\n\n{body}") <= MAX_TOKENS:
+        return [body]
+    lines = body.split("\n")
+    if len(lines) > 1:
+        halves = ["\n".join(lines[:len(lines) // 2]), "\n".join(lines[len(lines) // 2:])]
+    else:
+        words = body.split()
+        if len(words) < 2:
+            return [body]  # a single huge "word"; the model will truncate it
+        halves = [" ".join(words[:len(words) // 2]), " ".join(words[len(words) // 2:])]
+    return [piece for half in halves for piece in fit_to_token_limit(header, half)]
 
 
 def _words(text: str) -> int:
@@ -111,7 +148,8 @@ def chunk_page(page: dict, slug: str) -> list[dict]:
     for section in merge_small_sections(page["sections"]):
         header = f"{title} › {section['heading']}" if section["heading"] else title
         for body in chunk_section(section["paragraphs"]):
-            chunks.append({"header": header, "section": section["heading"], "body": body})
+            for piece in fit_to_token_limit(header, body):
+                chunks.append({"header": header, "section": section["heading"], "body": piece})
 
     result = []
     for i, chunk in enumerate(chunks):
@@ -128,7 +166,7 @@ def chunk_page(page: dict, slug: str) -> list[dict]:
                 "chunk": i,
                 "total_chunks": len(chunks),
                 "fetched_at": page["fetched_at"],
-                "doc_type": "government_doc",
+                "doc_type": page.get("doc_type", "government_doc"),
             },
         })
     return result
@@ -145,10 +183,16 @@ def process_all_documents() -> int:
         return 1
 
     all_chunks: list[dict] = []
+    skipped_pdfs = []
     for path in page_files:
         page = json.loads(path.read_text(encoding="utf-8"))
+        if page.get("doc_type") == "pdf" and len(page["sections"]) > MAX_PDF_PAGES:
+            skipped_pdfs.append(page["title"])
+            continue
         slug = path.stem.split("__")[0]
         all_chunks.extend(chunk_page(page, slug))
+    if skipped_pdfs:
+        print(f"Skipped {len(skipped_pdfs)} PDFs over {MAX_PDF_PAGES} pages: {skipped_pdfs}\n")
 
     ids = [c["id"] for c in all_chunks]
     duplicates = len(ids) - len(set(ids))

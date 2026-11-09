@@ -1,0 +1,69 @@
+{
+  "url": "https://www.sf.gov/information--building-permits-business",
+  "category": "permits",
+  "title": "Building permits for business",
+  "sections": [
+    {
+      "heading": "",
+      "paragraphs": [
+        "Info Page",
+        "You have a location zoned for your business, now it's time to go through the building permit process. From application to review to inspection, learn more about each step."
+      ]
+    },
+    {
+      "heading": "Start at the Permit Center",
+      "paragraphs": [
+        "Office of Small Business staff are available to help you with permits needed for your small business in San Francisco.",
+        "Please visit the Help Desk on the second floor of the Permit Center at 49 South Van Ness Ave., Mon-Fri, 9:00-noon & 1:00 PM - 5:00 PM.",
+        "Submit a request or schedule an appointment",
+        "Directions and access to the Permit Center"
+      ]
+    },
+    {
+      "heading": "Building",
+      "paragraphs": [
+        "There are six basic steps required to do a construction project in San Francisco. The Planning Department walks you through each step in detail in its Permit Process Overview .",
+        "Visit or call the Planning Information Center",
+        "Understand what's allowed",
+        "Fill out building permit forms and pay fees",
+        "Permit submittal and review",
+        "Permit approved",
+        "Inspection"
+      ]
+    },
+    {
+      "heading": "Inspections",
+      "paragraphs": [
+        "Every department conducts it’s own inspections at both the local and the state level. City requirements and state requirements are often different, so be sure to comply with both before any inspection. The San Francisco departments that most often sign off on building and location changes are the SF Department of Building Inspection (DBI), SF Fire Department, and, if you plan on serving food, the SF Department of Public Health (DPH).",
+        "Department of Building Inspection",
+        "The DBI Inspection Services Division checks that construction conforms with approved plans and permits and complies with local and state building codes, including electrical and plumbing regulations. Schedule, reschedule, or cancel an inspection with the division through DBI’s phone-based scheduling system .",
+        "Fire Department",
+        "The Inspection Section of SF Fire inspects the life safety components of new building construction, building remodels, and fire sprinkler and fire alarm systems. They conduct a plan check for all building permits among other things, so expect to complete at least one, if not more, fire inspections before you open any physical space.",
+        "SF Fire also signs off on capacity (the amount of people that can legally be in a space), so if you intend to have more than 49 people at a time in your space, you must obtain a Place of Assembly permit . Check with the Fire Department to see if your location already has a Place of Assembly permit associated with it. If the location is not listed by the department, it is likely that the space does not have an associated permit as the Department does not track spaces that accommodate less than 49 people.",
+        "If you will be operating a kitchen on the premises, the Fire Department has specific requirements for kitchen ducts and hoods which must be serviced every 6 months.",
+        "NOTE: You will be responsible for maintaining records of all fire tests and inspections and keeping them on the premises. The Inspection Section has a list of the records you ought to maintain.",
+        "Department of Public Health (DPH)",
+        "If you are creating a food business, DPH is also part of the building permit process. They conduct a plan check to ensure you follow the DPH construction guidelines after you receive approval from Planning, DBI, and Fire and begin construction. You must schedule appointments with the DPH Plan Check inspector at least three days in advance for each of the three phases:",
+        "Preliminary: rough plumbing sign-off",
+        "Pre-final: installation of finishes and equipment",
+        "Final inspection at completion of project",
+        "NOTE: You must provide safe ladders and climbing equipment for Plan Check Inspections.",
+        "If you have applied for a Health Permit to Operate , after these three checks are complete and approved, the District Health Inspector will conduct an application inspection to grant approval of the Health Permit.",
+        "NOTE: The facility should be in a clean and sanitary state, equipment fully operational and sanitary supplies in place prior to the Health Permit inspection."
+      ]
+    },
+    {
+      "heading": "Featured Resources",
+      "paragraphs": [
+        "How to Get a Building Permit",
+        "A guide to doing construction work in San Francisco from the Department of Building Inspection (DBI).",
+        "Guide to Building Expansion / Change of Use – Commercial or Industrial",
+        "SF Planning Department Guide to building expansion and/or change of use project in a commercial district.",
+        "Guide to Sign Permits",
+        "SF Planning Department Guide to obtaining a Sign Permit. Includes information on erecting, re-erecting, painting, posting, applying, altering, or structurally repairing signs."
+      ]
+    }
+  ],
+  "fetched_at": "2026-11-09T18:44:07+00:00",
+  "content_hash": "d7853a1968f8e17a"
+}

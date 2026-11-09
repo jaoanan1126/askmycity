@@ -1,0 +1,55 @@
+{
+  "url": "https://www.sf.gov/information--check-if-your-construction-project-needs-permit",
+  "category": "permits",
+  "title": "Check if your construction project needs a permit",
+  "sections": [
+    {
+      "heading": "",
+      "paragraphs": [
+        "Info Page",
+        "Some construction projects do not need a permit.",
+        "The following work does not need a permit."
+      ]
+    },
+    {
+      "heading": "Interior projects",
+      "paragraphs": [
+        "Replacement of inside doors, unless they are required for fire protection.",
+        "Movable cases, counters and partitions not over 5 feet 9 inches (1753 mm) high.",
+        "Painting, papering and similar finish work.",
+        "Minor repairs to existing interior plaster or wallboard, unless they are required for fire protection.",
+        "Surface mounting of readily removable materials on interior walls.",
+        "Installations or replacement of floor coverings in areas other than bathrooms not requiring the removal of existing required flooring.",
+        "Repair and replacement of glass in conformity with this code, and provided wire glass shall be replaced in kind."
+      ]
+    },
+    {
+      "heading": "Roofing projects",
+      "paragraphs": [
+        "Reroofing without the installation, repair or removal of roof material, if the total surface area of the roof reroofed in any 12-month period does not exceed 25 percent of the entire surface area of the roof.",
+        "A small residential rooftop solar energy system, as defined in Section 106A.1.15.1, installed on a building that is not a designated landmark. An electrical permit or other permit may be required depending on the system."
+      ]
+    },
+    {
+      "heading": "Exterior projects",
+      "paragraphs": [
+        "One-story detached accessory buildings or structures used as tool and storage sheds, playhouses and similar uses, if the projected roof area is less than 100 square feet (9.29 m2) and no taller than 8 feet. Frequently Asked Questions on Storage Sheds Exempt From a Building Permit",
+        "Fences less than 6 feet (1829 mm) high located at the rear and side lot lines at the rear of the property.",
+        "Retaining walls that are not over 4 feet (1219 mm) in height measured from the bottom of the footing to the top of the wall, unless supporting a surcharge or impounding Class I, II or III-A liquids.",
+        "Amusement devices not on fixed foundations.",
+        "Platforms, sidewalks, walks and driveways when not part of an exit, and not more than 30 inches (762 mm) above grade and not over any basement or story below and which, for residential buildings required to be accessible to persons with disabilities, are not part of a required accessible route."
+      ]
+    },
+    {
+      "heading": "Other",
+      "paragraphs": [
+        "Water tanks supported directly upon grade if the capacity does not exceed 5,000 gallons (18927 L) and the ratio of height to diameter or width does not exceed 2.1.",
+        "Temporary motion picture, television and theater stage sets and scenery.",
+        "Prefabricated swimming pools accessory to a Group R, Division 3 Occupancy in which the pool walls are entirely above the adjacent grade and if the capacity does not exceed 5,000 gallons (18927 L).",
+        "See the complete list, including exemptions on government property, in the San Francisco Building Code 106A.2 Work exempt from permit"
+      ]
+    }
+  ],
+  "fetched_at": "2026-11-09T18:44:25+00:00",
+  "content_hash": "6518a41994b00be6"
+}

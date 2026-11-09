@@ -1,0 +1,87 @@
+{
+  "url": "https://www.sf.gov/information--check-what-you-need-apply-building-permit",
+  "category": "permits",
+  "title": "Check what you need to apply for a building permit",
+  "sections": [
+    {
+      "heading": "",
+      "paragraphs": [
+        "Info Page",
+        "You will need property and construction details to fill out your building permit application."
+      ]
+    },
+    {
+      "heading": "What we need from you › 1. You and your project team",
+      "paragraphs": [
+        "We will ask about:",
+        "You",
+        "The property owner",
+        "Professionals working on the project, like an architect, contractor, or engineer and their license number and expiration date",
+        "Anyone else on the project team"
+      ]
+    },
+    {
+      "heading": "What we need from you › 2. Building location",
+      "paragraphs": [
+        "We will ask you about your building site:",
+        "Street address of project",
+        "Block and lot number",
+        "Look up your block and lot number through our property information map using your street address.",
+        "Block and lot number are also called parcel. If a parcel number is 0000/111, then the block number is 0000 and the lot number is 111."
+      ]
+    },
+    {
+      "heading": "What we need from you › 3. Project plan",
+      "paragraphs": [
+        "We will ask you about your project plan including:",
+        "Type of construction (See our construction type definitions )",
+        "Dwelling units",
+        "Stories of occupancy",
+        "Basements and cellars",
+        "Present use",
+        "Occupancy class",
+        "Estimated cost of project",
+        "Project scope of work",
+        "You can also tell us your construction lender name, branch designation, and address."
+      ]
+    },
+    {
+      "heading": "What we need from you › 4. Construction details",
+      "paragraphs": [
+        "We will ask you if your project will:",
+        "Add a driveway (also called an auto runway)",
+        "Extend beyond the property line",
+        "Use street space",
+        "Use sub-sidewalk space",
+        "Include electrical work",
+        "Include plumbing work",
+        "Create additional height or stories to the building",
+        "Create a deck or horizontal extension to the building"
+      ]
+    },
+    {
+      "heading": "What we need from you › New construction (In-House review projects)",
+      "paragraphs": [
+        "For new construction for in-house review projects , we will ask about:",
+        "Size of lot",
+        "Building location relative to nearby streets",
+        "Other buildings on the lot",
+        "Additional stories"
+      ]
+    },
+    {
+      "heading": "What we need from you › Addenda",
+      "paragraphs": [
+        "For In-House review projects, if you are submitting addenda to site permit originally submitted electronically, follow these instructions."
+      ]
+    },
+    {
+      "heading": "What we need from you › Legal terms",
+      "paragraphs": [
+        "You will need to tell us about your worker’s compensation insurance and agree to our legal terms."
+      ]
+    }
+  ],
+  "fetched_at": "2026-11-09T18:44:27+00:00",
+  "content_hash": "ce14df76dcc42291"
+}
