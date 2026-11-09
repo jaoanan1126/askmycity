@@ -8,7 +8,7 @@ WHY THIS FILE?
 - Type safety
 """
 from pydantic import BaseModel, Field
-from typing import List, Optional
+from typing import Any, Dict, List, Optional
 from datetime import datetime
 
 class AskRequest(BaseModel):
@@ -75,6 +75,12 @@ class AskResponse(BaseModel):
     conversation_id: str
     response_time_ms: float
     timestamp: datetime = Field(default_factory=datetime.utcnow)
+    # Optional extras (dropped silently by FastAPI unless declared here)
+    trace_id: Optional[str] = None
+    tokens: Optional[Dict[str, int]] = None
+    cached: bool = False
+    validation: Optional[Dict[str, Any]] = None
+    advanced_features_used: Optional[List[str]] = None
 
 class HealthResponse(BaseModel):
     """Health check response"""
@@ -89,6 +95,8 @@ class StatsResponse(BaseModel):
     total_conversations: int
     average_response_time_ms: float
     documents_in_db: int
+    cache: Dict[str, Any]       # SemanticCache.get_stats()
+    analytics: Dict[str, Any]   # AnalyticsService.get_analytics_summary() (all-time, persisted)
 
 class ErrorResponse(BaseModel):
     """Error response"""

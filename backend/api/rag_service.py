@@ -7,6 +7,8 @@ WHY THIS FILE?
 - Can reuse in other contexts (CLI, notebooks, etc.)
 """
 import anthropic
+import asyncio
+import math
 import chromadb
 from chromadb.utils.embedding_functions.onnx_mini_lm_l6_v2 import ONNXMiniLM_L6_V2
 import os
@@ -138,6 +140,24 @@ class RAGService:
         use_advanced: bool = False  # 🆕 Enable advanced features
     ) -> Dict:
         """
+        Async entry point for the RAG pipeline.
+
+        The pipeline is CPU/IO-bound synchronous code (Anthropic client,
+        ChromaDB, cross-encoder), so it runs in a worker thread to keep the
+        event loop free for other requests (e.g. /health).
+        """
+        return await asyncio.to_thread(
+            self._ask_sync, question, conversation_id, max_results, use_advanced
+        )
+
+    def _ask_sync(
+        self,
+        question: str,
+        conversation_id: Optional[str] = None,
+        max_results: int = 3,
+        use_advanced: bool = False
+    ) -> Dict:
+        """
         Main RAG function with advanced features
 
         New features:
@@ -166,7 +186,7 @@ class RAGService:
                 "advanced_features": use_advanced
             }
         )
-        trace_id = trace.id if trace else None
+        trace_id = trace.trace_id if trace else None
 
         try:
             # 🆕 STEP 1: Query Rewriting (if advanced)
@@ -186,9 +206,9 @@ class RAGService:
                 search_query, n_results=retrieve_count)
 
             # Log retrieval
-            if trace_id:
+            if trace:
                 observability.log_retrieval(
-                    trace_id=trace_id,
+                    trace,
                     name="chromadb_search",
                     input_query=search_query,
                     output_documents=[
@@ -271,7 +291,7 @@ class RAGService:
                     "source": meta['source'],
                     "category": meta['category'],
                     "chunk": meta['chunk'],
-                    "relevance_score": round(result.get('rerank_score', result.get('hybrid_score', 0.5)), 3)
+                    "relevance_score": round(self._relevance(result), 3)
                 })
 
             logger.info(f"📚 Built context from {len(sources)} sources")
@@ -342,9 +362,9 @@ class RAGService:
             full_response = response.content[0].text
 
             # Log generation
-            if trace_id:
+            if trace:
                 observability.log_generation(
-                    trace_id=trace_id,
+                    trace,
                     name="claude_generation_advanced" if use_advanced else "claude_generation",
                     model="claude-haiku-4-5-20251001",
                     input_text=current_message[:1000] + "..." if len(current_message) > 1000 else current_message,
@@ -364,13 +384,9 @@ class RAGService:
                 f"✅ Generated {
                     response.usage.output_tokens} output tokens")
 
-            # 🆕 STEP 10: Enhance citations (if advanced)
-            if use_advanced:
-                logger.info("📎 Enhancing citations...")
-                full_response = self.advanced_rag.enhance_citations(
-                    full_response, sources)
-
-            # 🆕 STEP 11: Validate answer quality (if advanced)
+            # 🆕 STEP 10: Validate answer quality (if advanced)
+            # Runs on Claude's raw answer, BEFORE citations are added, so the
+            # citation check reflects what the model actually wrote.
             validation = None
             if use_advanced:
                 logger.info("✅ Validating answer quality...")
@@ -382,6 +398,12 @@ class RAGService:
 
                 if not validation['is_valid']:
                     logger.warning(f"⚠️  Quality issues: {validation['issues']}")
+
+            # 🆕 STEP 11: Enhance citations (if advanced)
+            if use_advanced:
+                logger.info("📎 Enhancing citations...")
+                full_response = self.advanced_rag.enhance_citations(
+                    full_response, sources)
 
             # STEP 12: Save conversation
             self.save_conversation_turn(
@@ -436,23 +458,33 @@ class RAGService:
 
             logger.info(f"⏱️  Total response time: {response_time_ms:.2f}ms")
 
+            observability.end_trace(trace, output=full_response)
+
             return result
 
         except Exception as e:
             logger.error(f"❌ Error in RAG pipeline: {e}", exc_info=True)
 
-            if trace_id:
-                observability.log_score(
-                    trace_id=trace_id,
-                    name="error",
-                    value=0,
-                    comment=str(e)
-                )
+            observability.log_score(trace, name="error", value=0, comment=str(e))
+            observability.end_trace(trace, error=str(e))
 
             raise
 
         finally:
             observability.flush()
+
+    @staticmethod
+    def _relevance(result: Dict) -> float:
+        """
+        Relevance in the 0-1 range for display.
+
+        The cross-encoder's rerank_score is an unbounded logit (e.g. 5.2 or
+        -3.1), so squash it with a sigmoid. Vector/hybrid scores are
+        already 0-1.
+        """
+        if 'rerank_score' in result:
+            return 1 / (1 + math.exp(-result['rerank_score']))
+        return result.get('hybrid_score', 0.5)
 
     def get_stats(self) -> Dict:
         """Get service statistics"""

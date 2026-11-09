@@ -2,7 +2,7 @@
 
 import { useState, useRef, useEffect } from 'react';
 import { Message } from '@/lib/types';
-import { apiClient } from '@/lib/api';
+import { apiClient, describeError } from '@/lib/api';
 import ChatMessage from '@/components/ChatMessage';
 import ChatInput from '@/components/ChatInput';
 import LoadingIndicator from '@/components/LoadingIndicator';
@@ -64,14 +64,14 @@ export default function Home() {
       setConversationId(response.conversation_id);
     } catch (err) {
       console.error('Error:', err);
-      setError('Sorry, something went wrong. Please check if the API is running.');
+      const errorText = describeError(err);
+      setError(errorText);
 
       // Add error message
       const errorMessage: Message = {
         id: (Date.now() + 1).toString(),
         role: 'assistant',
-        content:
-          '❌ Sorry, I encountered an error. Please make sure the API server is running at http://localhost:8000',
+        content: `❌ ${errorText}`,
         timestamp: new Date(),
       };
       setMessages((prev) => [...prev, errorMessage]);

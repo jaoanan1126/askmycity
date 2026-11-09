@@ -105,10 +105,12 @@ def set_request_context(
     """
     Set context for all logs in this request
     
-    Call this at the start of each request
+    Can be called more than once per request: new fields are merged into
+    the existing context (e.g. the request_id set by the middleware is kept
+    when an endpoint adds conversation_id).
     """
-    context = {}
-    
+    context = dict(request_context.get())
+
     if request_id:
         context['request_id'] = request_id
     if conversation_id:
@@ -118,7 +120,7 @@ def set_request_context(
     if ip_address:
         context['ip_address'] = ip_address
     
-    context.update(kwargs)
+    context.update({k: v for k, v in kwargs.items() if v is not None})
     request_context.set(context)
 
 def clear_request_context():

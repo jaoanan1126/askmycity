@@ -8,6 +8,7 @@ from typing import Dict, List, Any, Optional
 from datetime import datetime, timedelta
 from collections import defaultdict
 import logging
+import threading
 
 logger = logging.getLogger(__name__)
 
@@ -16,18 +17,26 @@ class CostTracker:
     Track LLM costs and provide budget insights
     """
     
-    # Claude Sonnet 3.5 pricing (per million tokens)
+    # Pricing in USD per million tokens
     PRICING = {
+        "claude-haiku-4-5-20251001": {
+            "input": 1.0,   # $1 per 1M input tokens
+            "output": 5.0   # $5 per 1M output tokens
+        },
         "claude-3-5-sonnet-20241022": {
             "input": 3.0,   # $3 per 1M input tokens
             "output": 15.0  # $15 per 1M output tokens
         }
     }
+    DEFAULT_MODEL = "claude-haiku-4-5-20251001"
     
     def __init__(self, data_file: str = "cost_data.json"):
         """Initialize cost tracker"""
         self.data_file = Path(data_file)
         self.data = self._load_data()
+        # track_request is called from RAG worker threads; serialize
+        # updates and file writes so concurrent requests don't clobber them.
+        self._lock = threading.Lock()
         logger.info("✓ Cost tracker initialized")
     
     def _load_data(self) -> Dict[str, Any]:
@@ -67,7 +76,11 @@ class CostTracker:
                 "total_cost": 0.0135
             }
         """
-        pricing = self.PRICING.get(model, self.PRICING["claude-3-5-sonnet-20241022"])
+        pricing = self.PRICING.get(model)
+        if pricing is None:
+            logger.warning(
+                f"No pricing for model '{model}', using {self.DEFAULT_MODEL} rates")
+            pricing = self.PRICING[self.DEFAULT_MODEL]
         
         input_cost = (input_tokens / 1_000_000) * pricing["input"]
         output_cost = (output_tokens / 1_000_000) * pricing["output"]
@@ -111,22 +124,23 @@ class CostTracker:
             "metadata": metadata or {}
         }
         
-        self.data["requests"].append(request_data)
-        
-        # Update daily totals
-        date_key = datetime.utcnow().strftime("%Y-%m-%d")
-        if date_key not in self.data["daily_totals"]:
-            self.data["daily_totals"][date_key] = {
-                "total_cost": 0,
-                "total_requests": 0,
-                "total_tokens": 0
-            }
-        
-        self.data["daily_totals"][date_key]["total_cost"] += costs["total_cost"]
-        self.data["daily_totals"][date_key]["total_requests"] += 1
-        self.data["daily_totals"][date_key]["total_tokens"] += input_tokens + output_tokens
-        
-        self._save_data()
+        with self._lock:
+            self.data["requests"].append(request_data)
+
+            # Update daily totals
+            date_key = datetime.utcnow().strftime("%Y-%m-%d")
+            if date_key not in self.data["daily_totals"]:
+                self.data["daily_totals"][date_key] = {
+                    "total_cost": 0,
+                    "total_requests": 0,
+                    "total_tokens": 0
+                }
+
+            self.data["daily_totals"][date_key]["total_cost"] += costs["total_cost"]
+            self.data["daily_totals"][date_key]["total_requests"] += 1
+            self.data["daily_totals"][date_key]["total_tokens"] += input_tokens + output_tokens
+
+            self._save_data()
         
         return costs
     
